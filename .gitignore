@@ -23,6 +23,7 @@ pdfs/
 
 # Generated reports and temporary harness output
 *_report.json
+mock_exam_ingest_report*.json
 validation_report.json
 streamlit_ui_report.json
 project3_report.json

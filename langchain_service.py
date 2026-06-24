@@ -628,8 +628,23 @@ Context:
                 docs.append(doc)
                 if len(docs) >= limit:
                     break
-            if not docs:
-                docs = self._lexical_mock_exam_search(query, limit, provider, role)
+            lexical_docs = self._lexical_mock_exam_search(query, limit * 2, provider, role)
+            if lexical_docs:
+                merged: list[Document] = []
+                seen = set()
+                for doc in [*lexical_docs, *docs]:
+                    key = (
+                        doc.metadata.get("document_id"),
+                        doc.metadata.get("page_number"),
+                        doc.metadata.get("chunk_number"),
+                    )
+                    if key in seen:
+                        continue
+                    merged.append(doc)
+                    seen.add(key)
+                    if len(merged) >= limit:
+                        break
+                docs = merged
             return self._format_retrieved_documents(docs, limit=limit)
         except Exception as exc:
             print(f"모의고사 검색 실패: {exc}")
