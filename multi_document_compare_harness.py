@@ -22,11 +22,15 @@ def main_harness() -> int:
     checks["health_ok"] = health.status_code == 200
     checks["multi_feature_flag"] = bool(features.get("multi_document_query"))
     checks["graph_feature_flag"] = bool(features.get("document_compare_graph"))
+    checks["graph_persistence_flag"] = bool(features.get("langgraph_persistence"))
+    checks["graph_store_flag"] = bool(features.get("langgraph_store"))
 
     openapi = client.get("/openapi.json")
     schemas = openapi.json().get("components", {}).get("schemas", {}) if openapi.status_code == 200 else {}
     query_props = schemas.get("QueryRequest", {}).get("properties", {})
+    compare_props = schemas.get("DocumentCompareRequest", {}).get("properties", {})
     checks["query_accepts_document_ids"] = "document_ids" in query_props
+    checks["compare_accepts_thread_id"] = "thread_id" in compare_props
     checks["compare_endpoint_present"] = "/documents/compare" in openapi.json().get("paths", {})
 
     uploaded = client.get("/uploaded-documents")
@@ -54,6 +58,8 @@ def main_harness() -> int:
         checks["compare_has_answer"] = bool(compare_payload.get("answer"))
         checks["compare_balanced_summaries"] = len(compare_payload.get("document_summaries", [])) == 2
         checks["compare_uses_graph"] = compare_payload.get("workflow") == "langgraph"
+        checks["compare_returns_thread_id"] = bool(compare_payload.get("thread_id"))
+        checks["compare_returns_trace"] = len(compare_payload.get("trace", [])) >= 3
 
         retrieved = client.post(
             "/documents",
@@ -69,6 +75,8 @@ def main_harness() -> int:
         checks["compare_has_answer"] = False
         checks["compare_balanced_summaries"] = False
         checks["compare_uses_graph"] = False
+        checks["compare_returns_thread_id"] = False
+        checks["compare_returns_trace"] = False
         checks["multi_documents_status_ok"] = False
         checks["multi_documents_returned"] = False
 
@@ -80,6 +88,8 @@ def main_harness() -> int:
             "selected_document_ids": selected_ids,
             "compare_status": compare_status,
             "workflow": compare_payload.get("workflow"),
+            "thread_id": compare_payload.get("thread_id"),
+            "trace_nodes": [item.get("node") for item in compare_payload.get("trace", [])],
             "summary_count": len(compare_payload.get("document_summaries", [])),
         },
     }

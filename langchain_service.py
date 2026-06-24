@@ -592,6 +592,7 @@ Context:
         question: str,
         document_ids: list[str],
         k_per_doc: int = 6,
+        thread_id: str | None = None,
     ) -> dict[str, Any]:
         """여러 업로드 문서를 같은 비중으로 검색해 비교·요약한다."""
         selected_document_ids = self._normalize_document_ids(None, document_ids)
@@ -602,6 +603,8 @@ Context:
                 "document_summaries": [],
                 "documents": [],
                 "missing_document_ids": selected_document_ids,
+                "thread_id": thread_id,
+                "trace": [],
                 "workflow": "not_started",
             }
         try:
@@ -612,6 +615,7 @@ Context:
                 question=question,
                 document_ids=selected_document_ids,
                 k_per_doc=k_per_doc,
+                thread_id=thread_id,
             )
             return {
                 "status": "success",
@@ -619,9 +623,13 @@ Context:
                 "document_summaries": result.get("document_summaries", []),
                 "documents": result.get("documents", []),
                 "missing_document_ids": result.get("missing_document_ids", []),
+                "thread_id": result.get("thread_id", thread_id),
+                "trace": result.get("trace", []),
                 "workflow": result.get("workflow", "langgraph"),
             }
         except Exception as exc:
+            from langgraph_runtime import new_thread_id
+
             documents_by_id = self._retrieve_documents_by_ids(
                 question,
                 selected_document_ids,
@@ -648,6 +656,14 @@ Context:
                     limit=12,
                 ),
                 "missing_document_ids": missing,
+                "thread_id": thread_id or new_thread_id("document-compare-fallback"),
+                "trace": [
+                    {
+                        "node": "service_fallback",
+                        "status": "error",
+                        "detail": {"error": str(exc)},
+                    }
+                ],
                 "workflow": "service_fallback",
             }
 

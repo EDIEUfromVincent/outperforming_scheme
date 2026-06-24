@@ -69,6 +69,7 @@ def get_backend_status() -> dict:
                     features.get("document_aware_query")
                     and features.get("multi_document_query")
                     and features.get("document_compare_graph")
+                    and features.get("langgraph_persistence")
                 ),
                 "version": data.get("version"),
                 "message": "최신 백엔드 연결됨",
@@ -362,13 +363,21 @@ with tab1:
                 st.error(f"문서 비교 오류: {e}")
         if st.session_state.comparison_result:
             result = st.session_state.comparison_result
-            st.caption(f"워크플로: {result.get('workflow', 'unknown')}")
+            trace = result.get("trace", [])
+            st.caption(
+                f"워크플로: {result.get('workflow', 'unknown')} · "
+                f"thread: {result.get('thread_id', 'n/a')} · "
+                f"steps: {len(trace)}"
+            )
             st.markdown(result.get("answer", "비교 결과가 없습니다."))
             with st.expander("문서별 요약/근거"):
                 for summary in result.get("document_summaries", []):
                     st.markdown(f"**{summary.get('label')}**")
                     st.write(summary.get("summary", ""))
                     st.caption(f"주요어: {', '.join(summary.get('key_terms', []))}")
+            if trace:
+                with st.expander("LangGraph 실행 trace"):
+                    st.json(trace)
     
     # 이전 대화 기록 표시
     for message in st.session_state.messages:

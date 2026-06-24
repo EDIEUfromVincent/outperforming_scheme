@@ -24,10 +24,11 @@ from langchain_service import LangChainService  # LangChain 서비스 불러오�
 from comparison_service import CurriculumComparisonService
 from agents.supervisor_agent import SupervisorAgent
 from learning_service import LearningService
+from langgraph_runtime import langgraph_status
 from lecture_note_parser import looks_like_lecture_note, parse_lecture_note
 
 
-APP_VERSION = "2026-06-24-multi-document-compare"
+APP_VERSION = "2026-06-24-langgraph-runtime"
 
 
 # ============================================
@@ -109,6 +110,7 @@ class DocumentCompareRequest(BaseModel):
     question: str = "선택한 문서들의 핵심 내용, 공통점, 차이점을 근거와 함께 비교해 주세요."
     document_ids: list[str]
     k_per_doc: int = 6
+    thread_id: str | None = None
 
 
 class LibraryResponse(BaseModel):
@@ -193,6 +195,7 @@ def read_root():
 
 @app.get("/health")
 def health():
+    graph_status = langgraph_status()
     return {
         "status": "ok",
         "version": APP_VERSION,
@@ -200,9 +203,12 @@ def health():
             "document_aware_query": True,
             "multi_document_query": True,
             "document_compare_graph": True,
+            "langgraph_persistence": graph_status["has_checkpointer"],
+            "langgraph_store": graph_status["has_store"],
             "upload_document": True,
             "lecture_note_ingestion": True,
         },
+        "langgraph": graph_status,
     }
 
 
@@ -576,6 +582,7 @@ def compare_documents(request: DocumentCompareRequest):
         question=request.question,
         document_ids=clean_ids,
         k_per_doc=max(2, min(request.k_per_doc, 12)),
+        thread_id=request.thread_id,
     )
 
 
