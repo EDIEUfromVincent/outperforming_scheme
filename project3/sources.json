@@ -1,0 +1,47 @@
+{
+  "core_sources": [
+    {
+      "name": "한국교육과정평가원",
+      "category": "기출·시험자료",
+      "url": "https://www.kice.re.kr/",
+      "keywords": ["초등", "임용", "교원", "기출", "문제", "정답", "채점", "시행"]
+    },
+    {
+      "name": "교육부",
+      "category": "교육과정·정책",
+      "url": "https://www.moe.go.kr/",
+      "keywords": ["교육과정", "2022 개정", "고시", "초등", "교원", "임용", "평가"]
+    },
+    {
+      "name": "국가교육과정정보센터",
+      "category": "교육과정 원문",
+      "url": "https://ncic.re.kr/",
+      "keywords": ["2015 개정", "2022 개정", "교육과정", "성취기준", "평가기준"]
+    },
+    {
+      "name": "온라인 교직원 채용",
+      "category": "시도교육청 채용 공고",
+      "url": "https://www.edurecruit.go.kr/nxui/index.html",
+      "keywords": ["초등", "교사", "임용", "공고", "원서", "합격", "시험", "일정"]
+    }
+  ],
+  "regional_sources": [
+    {"name": "서울특별시교육청", "url": "https://www.sen.go.kr/", "keywords": ["초등", "임용", "교사", "공고", "시험"]},
+    {"name": "부산광역시교육청", "url": "https://www.pen.go.kr/", "keywords": ["초등", "임용", "교사", "공고", "시험"]},
+    {"name": "대구광역시교육청", "url": "https://www.dge.go.kr/", "keywords": ["초등", "임용", "교사", "공고", "시험"]},
+    {"name": "인천광역시교육청", "url": "https://www.ice.go.kr/", "keywords": ["초등", "임용", "교사", "공고", "시험"]},
+    {"name": "광주광역시교육청", "url": "https://www.gen.go.kr/", "keywords": ["초등", "임용", "교사", "공고", "시험"]},
+    {"name": "대전광역시교육청", "url": "https://www.dje.go.kr/", "keywords": ["초등", "임용", "교사", "공고", "시험"]},
+    {"name": "울산광역시교육청", "url": "https://www.use.go.kr/", "keywords": ["초등", "임용", "교사", "공고", "시험"]},
+    {"name": "세종특별자치시교육청", "url": "https://www.sje.go.kr/", "keywords": ["초등", "임용", "교사", "공고", "시험"]},
+    {"name": "경기도교육청", "url": "https://www.goe.go.kr/", "keywords": ["초등", "임용", "교사", "공고", "시험"]},
+    {"name": "강원특별자치도교육청", "url": "https://www.gwe.go.kr/", "keywords": ["초등", "임용", "교사", "공고", "시험"]},
+    {"name": "충청북도교육청", "url": "https://www.cbe.go.kr/", "keywords": ["초등", "임용", "교사", "공고", "시험"]},
+    {"name": "충청남도교육청", "url": "https://www.cne.go.kr/", "keywords": ["초등", "임용", "교사", "공고", "시험"]},
+    {"name": "전북특별자치도교육청", "url": "https://www.jbe.go.kr/", "keywords": ["초등", "임용", "교사", "공고", "시험"]},
+    {"name": "전라남도교육청", "url": "https://www.jne.go.kr/", "keywords": ["초등", "임용", "교사", "공고", "시험"]},
+    {"name": "경상북도교육청", "url": "https://www.gbe.kr/", "keywords": ["초등", "임용", "교사", "공고", "시험"]},
+    {"name": "경상남도교육청", "url": "https://www.gne.go.kr/", "keywords": ["초등", "임용", "교사", "공고", "시험"]},
+    {"name": "제주특별자치도교육청", "url": "https://www.jje.go.kr/", "keywords": ["초등", "임용", "교사", "공고", "시험"]}
+  ]
+}

@@ -1,0 +1,397 @@
+{
+  "id": "2025-A",
+  "year": 2025,
+  "form": "A",
+  "source": "2025학년도_초등학교_교육과정A.pdf",
+  "page_count": 9,
+  "extraction_methods": [
+    "pypdf"
+  ],
+  "warnings": [],
+  "questions": [
+    {
+      "id": "2025-A-Q01",
+      "number": 1,
+      "subject": "국어",
+      "score": 4,
+      "pages": [
+        1
+      ],
+      "curriculum_mentions": [],
+      "achievement_codes": [],
+      "visual_references": [],
+      "needs_visual_context": false,
+      "text": "1. (가)는 1학년 국어 ‘소리와 표기가 다른 단어 바르게 읽기’를\n지도하기 위해 예비 교사가 구상한 자료이고, (나)는 (가)의\n활동 2를 지도하기 위한 예비 교사와 지도 교사의 대화이다.\n물음에 답하시오. [4점]\n(가)\n◦활동 1: 단어 카드의 단어 바르게 읽기\n◦활동 2: 단어 카드를 활용한 문장 바르게 읽기\n◦활동 자료: 받침소리가 ( ㉠ )의 3가지 자음 중 하나로\n발음되는 단어 카드 묶음\n◦지도를 위한 핵심 내용\n∙받침의 자음이 1개인 단어의 경우, 음절 끝소리에 올 수\n없는 자음은 해당 자음의 대표음으로 대치된다.\n∙㉡받침의 자음이 2개인 단어의 경우, 음절 끝소리에 올\n수 있는 자음의 최대 개수는 1개이므로 2개의 자음 중\n하나가 탈락된다.\n(나)\n예비 교사 : 소리와 표기가 다른 단어 중에서 받침이 있는\n단어를 지도하려고 활동을 구상하는 중인데요. ‘활동 2’를\n진행할 때 유의할 점이 있을까요?\n지도 교사 : 네. 개별 단어 읽기가 아니라 문장 속 단어 읽기를\n지도하려면 조사나 어미와 결합할 때의 발음, 단어와 단어\n사이의 발음에 좀 더 신경 써야 합니다. 2가지 이상의 음운\n현상이 단계적으로 나타나기도 하거든요.\n예비 교사 : 아, 저도 그 부분을 고려해서 평파열음화 또는\n자음군 단순화가 적용된 후에, ( ㉢ )이/가 공통적으로\n적용되는 문장들을 만들어 봤는데요. 좀 살펴봐 주시겠어요?\n지도 교사 : 받침소리별로 2개씩 문장을 만들었군요. 그리고\n전체적으로 문장들을 살펴보니, 현재형 어미와의 결합을\n통해 ( ㉢ )을/를 연습할 수 있게 문장을 구성한 점도\n좋습니다.\n예비 교사 : 그런데 일부 학생들이 ‘글씨를 바르게 읽는다’의\n‘읽는다’를 ‘[일른다]’로, ‘낙엽 밟는’의 ‘밟는’을 ‘[발른]’으로\n틀리게 발음하는 경우가 있는 것 같아요. 게다가 지난 시간에\n“바르게 ㉣읽고”를 잘못 발음하는 친구들도 많더라고요.\n지도 교사 : 맞아요. ‘읽다’, ‘읽는’, ‘읽고’는 수업 시간에 정말\n많이 쓰는 말인데도 틀리게 발음하는 경우가 많으니 주의\n해서 지도해야 해요.\n예비 교사 : 다양한 음운 현상에 대한 이해가 있어야 표준\n발음을 지도할 수 있는 거네요. 감사합니다.\n1) (가)의 ① 괄호 안의 ㉠에 들어갈 자음을 모두 쓰고, ② 밑줄 친\n㉡의 음운 현상이 적용되는 단어를 (가)의 ‘활동 자료’에서 찾아\n모두 쓰시오. [2점]\n①\n②\n2) (나)의 ① 괄호 안의 ㉢에 공통으로 들어갈 음운 현상을 쓰고,\n② 밑줄 친 ㉣의 올바른 발음을 쓰시오. [2점]\n①\n②",
+      "subquestions": [
+        {
+          "number": 1,
+          "score": 2,
+          "text": "1) (가)의 ① 괄호 안의 ㉠에 들어갈 자음을 모두 쓰고, ② 밑줄 친\n㉡의 음운 현상이 적용되는 단어를 (가)의 ‘활동 자료’에서 찾아\n모두 쓰시오. [2점]\n①\n②"
+        },
+        {
+          "number": 2,
+          "score": 2,
+          "text": "2) (나)의 ① 괄호 안의 ㉢에 공통으로 들어갈 음운 현상을 쓰고,\n② 밑줄 친 ㉣의 올바른 발음을 쓰시오. [2점]\n①\n②"
+        }
+      ]
+    },
+    {
+      "id": "2025-A-Q02",
+      "number": 2,
+      "subject": "국어",
+      "score": 3,
+      "pages": [
+        1,
+        2
+      ],
+      "curriculum_mentions": [],
+      "achievement_codes": [],
+      "visual_references": [],
+      "needs_visual_context": false,
+      "text": "2. (가)는 6학년 국어 ‘자료 활용하여 발표하기’ 활동을 준비하며\n교사와 학생이 나눈 대화이고, (나)는 이를 바탕으로 한 학생 발표\n담화의 일부이다. 물음에 답하시오. [3점]\n(가)\n학생 : 선생님, 다음 시간 발표를 위해 과제를 작성 중인데, 질문이\n있어서요.\n<과제> 자료 활용 발표를 위한 개요 작성하기\n∙생활 속에서 발견하고 나누고 싶은 주제를 정해 발표를\n위한 개요를 작성하고 학급 친구들에게 발표해 보자.\n2025학년도 공립 초등학교 교사 임용후보자 선정경쟁시험 (제1차)\n초등학교 교육과정 A\n수험번호 : ( ) 성명 : ( )\n2 교시 11문항 41점시 험 시 간 70분\n교사 :‘ 달콤한 과자’? 요즘 학생들이 즐겨 먹는, 설탕을\n듬뿍 바른 간식을 말하는 거지?\n학생 : 네, 엄청 인기라서 안 먹어 본 애들이 없을 정도예요.\n교사 : 그렇구나. 개인적 경험을 바탕으로 청중이 관심\n있어 할 만한 주제로 잘 골랐네.\n학생 : 그리고 이 문제는 우리 학교 학생뿐 아니라 많은 초등\n학생들이 경험하고 있다는 걸 객관적인 자료를 통해\n보여 주려고 했어요.\n교사 : 아, 그래서 신문 기사의 통계 자료를 활용했구나. 아주\n좋은데?\n학생 : 감사합니다. 그런데 ‘Ⅲ. 초등학생의 지나친 당 섭취의\n문제점’에 어떤 자료를 활용해야 할지 모르겠어요.\n교사 : 통계 자료를 보면서 뭐가 문제라고 생각했니?\n학생 : 무심코 먹는 과자에 생각보다 많은 당이 들어 있고, 밥\n대신에 과자만 먹는 학생들도 있더라고요. 그러면 건강에\n해로우니 조심하자고 알려 주고 싶어요.\n교사 : 그렇구나. 그런데 친구들을 설득하기 위해서는 지나친\n당 섭취가 건강에 왜, 얼마나 안 좋은지를 설명해 줄\n수 있는 정보가 필요해. 그러니까 해당 분야에 대한\n충분한 경험과 지식을 갖춘 사람의 견해를 찾아보면\n어떨까? 이런 ( ㉠ )을/를 갖춘 자료를 활용하면\n발표 내용을 잘 뒷받침할 수 있고 청중이 믿을 만하다고\n생각할 거야. 그리고 혹시 인터넷에서 자료를 찾을 거면,\n자료 출처 부분을 살펴보고 식품이나 영양 분야 전문가의\n견해를 중심으로 선택하면 되겠다.\n학생 : 네, 그게 좋겠네요. 그리고 혹시 실제 발표할 때 주의해야\n할 점도 알려 주실 수 있나요?\n교사 : 발표는 말로 전달하다 보니 청중이 내용에 집중해서\n듣고 그 내용을 잘 이해할 수 있도록 안내할 필요가\n있어. 예를 들어, ‘우선’, ‘다음으로’, ‘지금까지’, ‘그래서’,\n‘그런데’와 같은 표현을 적절히 사용하면 발표 내용의\n연결 관계를 보여 줄 수 있어.\n[A]\n(나)\n여러분, 요즘 알록달록한 색깔과 달콤한 맛으로 인기인 과자\n다들 먹어 본 경험이 있으실 텐데요. 저도 하굣길에 단맛의\n유혹을 못 참고 하루도 빠짐없이 즐겨 먹었답니다. 그런데\n오늘은 우리 모두가 좋아하는 이 과자에 대한 중요한 정보를\n드리고자 합니다.\n…(중략)…\n초등학생의 지나친 당 섭취는 여러 가지 문제를 가져\n올 수 있습니다. 우선, 몸에 남은 당이 지방으로 쌓여 혈당\n조절을 어렵게 해서 비만과 당뇨병의 위험이 있습니다.\n㉡다음으로\n, 당은 영양소는 없고 칼로리만 높아 성장에\n도움이 되지 않고 과식이나 폭식으로 발달을 저해하기도\n합니다. 마지막으로, 단맛을 한번 경험하면 더 단맛을\n찾게 되는 악순환으로 이어져 단맛에 중독되어 오히려\n스트레스를 받을 수 있습니다. ㉢지금까지, 입에는 달콤\n하지만 몸에는 해로운 과자의 문제점을 신체적, 발달적,\n정서적 측면 세 가지로 나눠 차례대로 살펴보았습니다.\n[B]\n1) (가)의 괄호 안의 ㉠에 들어갈 자료의 조건에 해당하는 용어를\n1단어로 쓰시오. [1점]\n2) ① (가)의 [A]를 참고하여 (나)의 도입부에서 청중의 관심 유발을\n위해 활용한 전략을 (가)의 ⓐ와 관련하여 쓰고, ②( 가)의 ⓑ가\n(나)의 [B]에 해당할 때, 밑줄 친 ㉡과 ㉢의 담화 표지로서의\n기능을 각각 쓰시오. [2점]\n①\n②",
+      "subquestions": [
+        {
+          "number": 1,
+          "score": 1,
+          "text": "1) (가)의 괄호 안의 ㉠에 들어갈 자료의 조건에 해당하는 용어를\n1단어로 쓰시오. [1점]"
+        },
+        {
+          "number": 2,
+          "score": 2,
+          "text": "2) ① (가)의 [A]를 참고하여 (나)의 도입부에서 청중의 관심 유발을\n위해 활용한 전략을 (가)의 ⓐ와 관련하여 쓰고, ②( 가)의 ⓑ가\n(나)의 [B]에 해당할 때, 밑줄 친 ㉡과 ㉢의 담화 표지로서의\n기능을 각각 쓰시오. [2점]\n①\n②"
+        }
+      ]
+    },
+    {
+      "id": "2025-A-Q03",
+      "number": 3,
+      "subject": "국어",
+      "score": 4,
+      "pages": [
+        2,
+        3
+      ],
+      "curriculum_mentions": [],
+      "achievement_codes": [],
+      "visual_references": [],
+      "needs_visual_context": false,
+      "text": "3. (가)는 4학년 국어 ‘제안하는 글 쓰기’ 수업을 준비하며 두\n교사가 나눈 대화이고, (나)는 교사 A의 수업에서 학생이 쓴\n글이며, (다)는 교사 A가 작성한 학생 관찰 기록지의 일부이다.\n물음에 답하시오. [4점]\n(가)\n교사 A: ㉠ ‘대상에 대한 자신의 의견과 그렇게 생각한 이유가\n드러나게 글을 쓸 수 있다.’라는 성취기준을 토대로\n수업을 준비 중이에요. 그런데 설득을 목적으로 하는\n글 쓰기는 학생들이 어려워하는 경우가 많아 고민\n이에요. ㉡ ‘우리 문화재를 보호하자는 주제로 제안\n하는 글 쓰기’를 쓰기 과제로 제시하려고 하는데, 괜\n찮을까요?\n교사 B: 설득을 목적으로 하는 글 쓰기도 쓰기 과제의 실제성을\n고려한다면 재밌고 효과적인 수업이 가능해요. 쓰기\n과제를 학습용으로만 제한하거나 교실 안에서 평가\n하고 끝내는 게 아니라, 학생들이 겪는 실제 삶의\n문제와 연계하면 어떨까요?\n교사 A: 아, 초등학교 4학년 학생들이 남수단의\n물 부족 문제에 대한 글을 읽고 해결 방안을\n찾다가, 기부금 모금 운동을 실시하게 해 달라는\n제안서를 작성해 학교 교사들에게 전달했다는\n기사를 봤어요. 모금 운동을 통해 마련한 돈으로\n남수단 국민들의 건강한 삶을 도울 수 있다는\n이유를 들었더라고요.\n교사 B: 네, 저도 실제로 기부금을 보냈다는 그 기사 봤어요.\n이 사례처럼 학생들이 구체적인 삶의 맥락과 연계된\n글쓰기를 하면 쓰기를 매개로 한 소통의 힘을 체험\n하게 되는 것 같아요. 자신이 쓴 글이 삶의 문제를\n해결한다는 것에 대한 성취감도 느끼고요.\n교사 A: 맞아요. 쓰기 전략을 익히는 것만큼이나 ㉢자신이\n쓰기를 성공적으로 수행할 수 있을 거라는 기대나\n믿음을 키워주는 게 정말 중요하다고 생각해요 .\n실제적 쓰기에 대한 경험이 필자로서의 자기에 대한\n이러한 판단이나 신념에도 긍정적인 영향을 줄 수\n있겠지요? 선생님 조언을 반영해서 ㉣ ‘우리 학교의\n개선해야 할 점을 찾아 교장 선생님께 제안하는\n편지를 써서 전달하기’로 쓰기 과제를 수정해 수업을\n해야겠어요.\n[A]\n(나)\n교장 선생님께\n안녕하세요. 저는 4학년 서☆☆입니다. 요즘 들어 비가 자주\n내립니다. 그런데 어제처럼 소나기가 갑자기 내리는 날에는\n우산을 미처 준비하지 못해 비를 맞으며 집에 갈 수밖에 없고,\n친구들이 감기에 걸리는 경우도 있습니다. 이 문제를 해결한다면\n비 오는 날에도 모두가 안전하고 건강하게 하교할 수 있을\n것입니다. 제 편지를 읽어 주셔서 감사합니다.\n-2024년 11월 △일 서☆☆ 올림-\n(다)\n1) ① (가)의 밑줄 친 ㉠을 근거로, [A]와 비교하여 (나)의 문제점을\n쓰고, ② 교사 A가 (가)의 밑줄 친 ㉡을 ㉣로 수정한 이유를\n‘쓰기 과제의 실제성’ 측면에서 2가지 쓰시오. [2점]\n①\n②\n2) ① 쓰기의 정의적 요인 중 (가)의 밑줄 친 ㉢에 해당하는\n용어를 쓰고, ②( 다)를 통해 알 수 있는, 쓰기의 정의적 요인\n평가상의 유의점을 쓰시오. [2점]\n①\n②",
+      "subquestions": [
+        {
+          "number": 1,
+          "score": 2,
+          "text": "1) ① (가)의 밑줄 친 ㉠을 근거로, [A]와 비교하여 (나)의 문제점을\n쓰고, ② 교사 A가 (가)의 밑줄 친 ㉡을 ㉣로 수정한 이유를\n‘쓰기 과제의 실제성’ 측면에서 2가지 쓰시오. [2점]\n①\n②"
+        },
+        {
+          "number": 2,
+          "score": 2,
+          "text": "2) ① 쓰기의 정의적 요인 중 (가)의 밑줄 친 ㉢에 해당하는\n용어를 쓰고, ②( 다)를 통해 알 수 있는, 쓰기의 정의적 요인\n평가상의 유의점을 쓰시오. [2점]\n①\n②"
+        }
+      ]
+    },
+    {
+      "id": "2025-A-Q04",
+      "number": 4,
+      "subject": "영어",
+      "score": 3,
+      "pages": [
+        3,
+        4
+      ],
+      "curriculum_mentions": [
+        "2022"
+      ],
+      "achievement_codes": [],
+      "visual_references": [],
+      "needs_visual_context": false,
+      "text": "4. 다음은 교사 A의 4학년 수업의 일부이다. 물음에 답하시오. [3점]\n(교사 A는 학생들에게 수업 시작을 알린다.)\nT:H i , everyone. 어제는 화요일이었죠? What day is it\ntoday?\nSs : It’s Wednesday.\nT:G o o d job. I like carrots. S1, do you like carrots?\nS1 : No.\nT:O h , who likes carrots? Raise your hands.\nSs : (몇몇 학생들이 손을 든다.)\nT:( 학생들 수를 세면서 ) Wow, only five of you like\ncarrots. Vegetables are good for your\nhealth. S2, do\nyou like tomatoes?\nS2 : I... tomato... like.\nT:I see. You like tomatoes.\nS2 : Yes.\nT:G o o d . Today, we’re going to learn how to describe\nwhat someone looks like. Listen and repeat after me.\nSs : Yes.\nT:I have a big nose.\nSs : I have a big nose.\n…(중략)…\nT:N o w , it’s time for a game. You have to listen\ncarefully and do as I say. Your action should\nmatch the sentence. For example, I might say the\nsentence (코를 만지며) “Touch your nose.” Then...\n(학생들을 바라보며 반응을 기다린다.)\nSs :코를 만져요.\nT:G o o d job! Are you ready to play the game?\nSs : Yes.\nT:A l l right. Stand up, class. Now, I’ll say a sentence.\n“Touch your mouth.”\nSs : (학생들이 입을 만진다.)\nT:T o u c h your eyes.\nSs : (학생들이 눈을 만진다.)\n…(하략)…\n[A]\n1) 교사의 발화 중 ‘display question’에 해당하는 1문장을 찾아\n쓰시오. [1점]\n2) 다음을 참고하여 교사A가 [A]에서 활용한 교수법을 쓰시오.\n[1점]\nThe method was developed by James Asher. The\nobjective of this method is to teach oral proficiency at a\nbeginning level. Another goal is to reduce the stress or\nanxiety that students might feel while learning foreign\nlanguages and encourage them to participate in their\nstudy beyond a beginning level of proficiency.\n3) 다음은 수업 후 교사A와 교사B가 나눈 대화이다. 괄호 안의\n㉠에 공통으로 들어갈 말을 2022 개정 영어과 교육과정에 제시된\n용어로 쓰시오. [1점]\n교사 A: 다음 주에 비언어적 표현과 관련된 문화 수업을 준비\n하고 있는데 어디까지 다루어야 할지 모르겠어요.\n교사 B: 일단 영어과 교육과정을 바탕으로 내용을 정해야\n할 것 같아요. 2022 개정 영어과 교육과정의 내용\n체계에서 ‘지식･이해’를 살펴보면 언어와 ( ㉠ )\n(으)로 구분하여 학습 내용을 제시하고 있어요.\n교사 A: 네, 본 적이 있어요. 언어 범주에는 의사소통 기능과\n예시문 등이 포함되어 있는 건 알고 있는데, ( ㉠ )\n범주에는 어떤 내용이 포함되어 있나요?\n교사 B: 영어 사용의 문제 해결에 필요한 구체적인 상황을\n범주화한 주제 및 문화적 내용을 다루고 있어요.\n예를 들어, 3～4학년군에서는 다양한 문화권에 속한\n사람들의 비언어적 의사소통 방식을 다루고 있어요.\n교사 A: 교육과정 문서에 제가 놓쳤던 많은 내용이 있네요.\n다음 수업 때 다양한 문화권의 비언어적 표현과\n관련한 의사소통 방식에 대해서 다루어야겠어요.",
+      "subquestions": [
+        {
+          "number": 1,
+          "score": 1,
+          "text": "1) 교사의 발화 중 ‘display question’에 해당하는 1문장을 찾아\n쓰시오. [1점]"
+        },
+        {
+          "number": 2,
+          "score": 1,
+          "text": "2) 다음을 참고하여 교사A가 [A]에서 활용한 교수법을 쓰시오.\n[1점]\nThe method was developed by James Asher. The\nobjective of this method is to teach oral proficiency at a\nbeginning level. Another goal is to reduce the stress or\nanxiety that students might feel while learning foreign\nlanguages and encourage them to participate in their\nstudy beyond a beginning level of proficiency."
+        },
+        {
+          "number": 3,
+          "score": 1,
+          "text": "3) 다음은 수업 후 교사A와 교사B가 나눈 대화이다. 괄호 안의\n㉠에 공통으로 들어갈 말을 2022 개정 영어과 교육과정에 제시된\n용어로 쓰시오. [1점]\n교사 A: 다음 주에 비언어적 표현과 관련된 문화 수업을 준비\n하고 있는데 어디까지 다루어야 할지 모르겠어요.\n교사 B: 일단 영어과 교육과정을 바탕으로 내용을 정해야\n할 것 같아요. 2022 개정 영어과 교육과정의 내용\n체계에서 ‘지식･이해’를 살펴보면 언어와 ( ㉠ )\n(으)로 구분하여 학습 내용을 제시하고 있어요.\n교사 A: 네, 본 적이 있어요. 언어 범주에는 의사소통 기능과\n예시문 등이 포함되어 있는 건 알고 있는데, ( ㉠ )\n범주에는 어떤 내용이 포함되어 있나요?\n교사 B: 영어 사용의 문제 해결에 필요한 구체적인 상황을\n범주화한 주제 및 문화적 내용을 다루고 있어요.\n예를 들어, 3～4학년군에서는 다양한 문화권에 속한\n사람들의 비언어적 의사소통 방식을 다루고 있어요.\n교사 A: 교육과정 문서에 제가 놓쳤던 많은 내용이 있네요.\n다음 수업 때 다양한 문화권의 비언어적 표현과\n관련한 의사소통 방식에 대해서 다루어야겠어요."
+        }
+      ]
+    },
+    {
+      "id": "2025-A-Q05",
+      "number": 5,
+      "subject": "영어",
+      "score": 4,
+      "pages": [
+        4,
+        5
+      ],
+      "curriculum_mentions": [],
+      "achievement_codes": [],
+      "visual_references": [],
+      "needs_visual_context": false,
+      "text": "5. 다음은 예비 교사가 참관한 5학년 영어 수업의 일부이다. 물음에\n답하시오. [4점]\n교사 A의 수업\nT:A l r i g h t , class! Before doing a game, let’s review the key\nvocabulary. (‘화가’ 그림을 보여 주며) What is this? S1?\nS1 : Um, painter/feɪntər/.\nT:N i c e try, but it is painter/peɪntər/. Can you try again?\nS1 : Painter/feɪntər/.\nT:O k , one more time, everyone. Put your hand in front of\nyour mouth and say it! You can feel a bigger air flow\nwhen you pronounce /p/ than /f/.\nSs : (학생들이 따라 하며 소리를 낸다.)\n…(중략)…\nT:N o w , let’s play a bingo game using the pictures of jobs.\nAll of your cards have different pictures without\nwords. I’m going to say the name of a job. If you have\nit, you can put a picture sticker on it. Then, say where\nit is. Do you understand? Let’s get started.\n…(하략)…\n교사 B의 수업\nT:T o d a y we’re going to read a storybook about jobs.\nLet’s start. The title says, (글자를 가리키며) “What Do\nYou Want to Be?” Can you read this with me?\nSs : What Do You Want to Be.\nT:G r e a t ! What do you see in this picture here?\nS1 : I see a girl.\nT:Y e s ! She is thinking about dreams. Let’s read this part\ntogether. I’ll read first, (글자를 가리키며) “I want to\nbe a nurse.”\nSs : I want to be a nurse.\nT:W h y do you think she wants to be a nurse?\nS2 :아픈 사람을 도와주려고요.\nT:G o o d . She wants to look after ill people. Ok. Now, S3,\nwhat do YOU want to be?\nS3 : Me? Pianist. I like to pray/preɪ/ the piano.\nT:( 낱말을 칠판에 적으며) Do you mean /preɪ/ or /pleɪ/?\nS3 : Um... oh, I mean I like to play the piano.\nT:P e r f e c t ! (그림을 보며) Let’s read this one together.\n(글자를 가리키며) “I want to be a teacher.”\nSs : I want to be a teacher.\nT:G r e a t job, anyone who wants to be a teacher?\nSs : (손을 들며) I want to be a teacher like you.\n…(하략)…\n교사 C의 수업\nT:N o w , we’re going to write a sentence by using “My\nfriend wants to be a(n)...”. Before writing some\nsentences about future jobs, I’ll show you an example.\n(예시 글에서 ‘scientist’를 가리키며) We learned this\nword yesterday. Anyone who knows this word? S1?\nS1 : Yes, it is ‘과학자’ in Korean.\nT:V e r y good! It is a scientist.\nS2 : Teacher, can I say “She want to be a doctor?” Wait...\num... oh, she wants to be a doctor! Right?\nT:G r e a t !\n…(중략)…\nT:A l l of you did a great job with your writing task! Here\nis your last activity to check your vocabulary. (활동지를\n들어서 보여 주며) There are two types of vocabulary\nworksheets with different colors. The yellow one is\neasier than the blue one. You can choose the yellow one\nif you need to practice with easy words, or you can\nchoose the blue one if you want to practice with more\ndifficult words.\n…(하략)…\n1) 다음은 예비 교사가 세 교사의 수업을 참관한 후에 기록한 관찰\n일지의 일부이다. 밑줄 친 ⓐ～ⓔ 중에서 수업 내용과 일치하지\n않는 2가지를 찾아 그 기호와 이유를 각각 쓰시오. [2점]\n수업 관찰 일지\n• 참관 대상 : 교사 A의 수업\n- 빙고 게임 전에 주요 어휘를 복습했다.\n-ⓐ 조음 위치를 활용하여 파열음을 지도하였다.\n-ⓑ 듣기･말하기 활동으로 그림 카드를 활용한 빙고 게임을\n하도록 설명했다.\n• 참관 대상 : 교사 B의 수업\n- 활동 중 교사와 학생 간의 유의미한 상호작용이 있었다.\n-ⓒ 학생이 우리말로 표현했을 때 교사가 영어로 말해 주었다.\n- 시각적 자료를 활용하여 읽기 지도를 하였다.\n• 참관 대상 : 교사 C의 수업\n- 친구의 장래 희망을 주제로 수업을 진행했다.\n-ⓓ 학생이 자신의 문법 오류를 스스로 수정하였다.\n-ⓔ 학생의 흥미에 따라 학습지를 구분하여 제시하였다.\n∙\n∙\n2) 다음은 교사B가 수업에 활용한 읽기 지도 방법에 대한 설명\n이다. 다음의 () 안에 들어갈 용어를 첫 단어가 ‘s’로 시작\n하는 2단어의 영어로 쓰시오. [1점]\n() is a type of reading instruction that can\nbe used with young learners in the stages between guided\nand independent reading. It is a technique that emphasizes\ncollaboration and scaffolded interaction while practicing\nthe target phrases in a meaningful context. A large screen\nis usually used so that everyone can see the illustrations\nand the words in the text. While the teacher is pointing\nto each word in the text, the teacher and the students read\nthe text aloud together.\n3) 교사 B는 학생의 발음 오류를 지도하기 위해 최소대립쌍을\n활용하였다. 다음은 최소대립쌍이 성립하기 위한 조건이다.\n다음의 () 안에 들어갈 내용을 쓰시오. [1점]\n-분절음의 수가 같아야 한다.\n-한 곳의 분절음만 달라야 한다.\n-( )",
+      "subquestions": [
+        {
+          "number": 1,
+          "score": 2,
+          "text": "1) 다음은 예비 교사가 세 교사의 수업을 참관한 후에 기록한 관찰\n일지의 일부이다. 밑줄 친 ⓐ～ⓔ 중에서 수업 내용과 일치하지\n않는 2가지를 찾아 그 기호와 이유를 각각 쓰시오. [2점]\n수업 관찰 일지\n• 참관 대상 : 교사 A의 수업\n- 빙고 게임 전에 주요 어휘를 복습했다.\n-ⓐ 조음 위치를 활용하여 파열음을 지도하였다.\n-ⓑ 듣기･말하기 활동으로 그림 카드를 활용한 빙고 게임을\n하도록 설명했다.\n• 참관 대상 : 교사 B의 수업\n- 활동 중 교사와 학생 간의 유의미한 상호작용이 있었다.\n-ⓒ 학생이 우리말로 표현했을 때 교사가 영어로 말해 주었다.\n- 시각적 자료를 활용하여 읽기 지도를 하였다.\n• 참관 대상 : 교사 C의 수업\n- 친구의 장래 희망을 주제로 수업을 진행했다.\n-ⓓ 학생이 자신의 문법 오류를 스스로 수정하였다.\n-ⓔ 학생의 흥미에 따라 학습지를 구분하여 제시하였다.\n∙\n∙"
+        },
+        {
+          "number": 2,
+          "score": 1,
+          "text": "2) 다음은 교사B가 수업에 활용한 읽기 지도 방법에 대한 설명\n이다. 다음의 () 안에 들어갈 용어를 첫 단어가 ‘s’로 시작\n하는 2단어의 영어로 쓰시오. [1점]\n() is a type of reading instruction that can\nbe used with young learners in the stages between guided\nand independent reading. It is a technique that emphasizes\ncollaboration and scaffolded interaction while practicing\nthe target phrases in a meaningful context. A large screen\nis usually used so that everyone can see the illustrations\nand the words in the text. While the teacher is pointing\nto each word in the text, the teacher and the students read\nthe text aloud together."
+        },
+        {
+          "number": 3,
+          "score": 1,
+          "text": "3) 교사 B는 학생의 발음 오류를 지도하기 위해 최소대립쌍을\n활용하였다. 다음은 최소대립쌍이 성립하기 위한 조건이다.\n다음의 () 안에 들어갈 내용을 쓰시오. [1점]\n-분절음의 수가 같아야 한다.\n-한 곳의 분절음만 달라야 한다.\n-( )"
+        }
+      ]
+    },
+    {
+      "id": "2025-A-Q06",
+      "number": 6,
+      "subject": "음악",
+      "score": 5,
+      "pages": [
+        5,
+        6
+      ],
+      "curriculum_mentions": [
+        "2015",
+        "2022"
+      ],
+      "achievement_codes": [],
+      "visual_references": [],
+      "needs_visual_context": false,
+      "text": "6. (가)는 2022 개정 음악과 교육과정에 따른 4학년 음악 수업을\n위한 지도 교사와 예비 교사들의 대화이다. (나)는 2015 개정\n음악과 교육과정에 따른 6학년 음악 수업 내용의 일부이고, (다)는\n6학년 감상 수업을 준비하는 교사들의 대화 일부이다. 물음에\n답하시오. [5점]\n(가)\n지도 교사 :‘ 가을’을 주제로 하는 음악과 프로젝트 수업을\n어떻게 구성하면 좋을지 이야기해 봅시다.\n예비 교사A: 가을을 표현한 노래를 불러 보고, 기악 합주\n활동을 구성하면 어떨까요? 비발디의 “사계”\n중 ‘가을’을 듣고 음악적 특징에 대해 이야기를\n하는 것도 좋겠습니다.\n예비 교사 B: 가을을 상상하며 떠오르는 느낌을 음악으로 나타\n내는 활동을 함께 구성해 보지요. 예를 들어,\n㉠은행잎이 떨어지는 모습을 상상하면서 떠오\n르는 생각이나 느낌을 정해진 형식 없이 바로\n목소리나 악기 등으로 나타내는 활동은 어떨까요?\n지도 교사 : 여러분들이 이야기한 내용을 바탕으로 프로젝트\n수업을 구성한다면, 학생들에게 다양한 음악\n경험을 제공할 수 있겠네요.\n(나)\n◦주요 활동\n∙ 6\n8 박자의 리듬꼴을 익혀 제재곡 부르기\n∙㉡성부 구성을 알고 노래 부르기\n∙바른 주법으로 멜로디언 반주하기\n◦활동 자료\n(다)\n교사 A: 저는 우리나라의 종묘 제례악을 감상하는 수업을\n준비하고 있습니다. 악곡에 대한 학생들의 이해를\n높이기 위한 방법을 이야기해 봅시다.\n교사 B: 종묘 제례악은 종묘에서 제사를 드릴 때 연주하는\n의식 음악입니다. 종묘 제례악은 악기 연주(樂), 노래\n(歌), 춤(舞)으로 구성되어 있으므로, 사진과 영상\n자료를 활용하여 지도하면 좋을 것 같습니다.\n교사 C: 종묘 제례악과 문묘 제례악 같은 제례악은 시작 부분이\n여타 국악곡과 다른 특징이 있으므로, 시작 부분을\n주의 깊게 듣도록 지도해야 할 것 같습니다.\n교사 A: 그러면, 이번에 감상할 ㉢종묘 제례악 중 ‘보태평’의\n시작 부분을 자세하게 설명해 주어야겠습니다.\n…(중략)…\n교사 B: 종묘 제례악에 편성된 여러 가지 타악기의 특징을\n이해하는 것도 필요할 것 같습니다.\n교사 C: 종묘 제례악에는 ㉣선율을 연주할 수 있는 타악기가\n포함되므로, 이러한 타악기에 대하여 알아보는 활동을\n하면 좋을 것 같습니다.\n1) (가)의 밑줄 친 ㉠은 2022 개정 음악과 교육과정 창작 영역의\n‘과정･기능’ 중 어떤 내용 요소에 근거한 것인지 쓰시오. [1점]\n2) (나)의 ① 밑줄 친 ㉡의 측면에서 ⓐ와 ⓑ의 차이점을 비교\n하여 설명하고, ② ⓒ에서 중점적으로 지도할 수 있는 음악\n요소를 2015 개정 음악과 교육과정 ‘음악 요소와 개념 체계표’\n에서 1가지 쓰시오. [2점]\n①\n②\n3) ① 다음의 <악보>를 참고하여 악기를 중심으로 (다)의 밑줄 친\n㉢을 설명하고, ② 밑줄 친 ㉣에 해당하는 악기를 1가지 쓰시오.\n[2점]\n<악 보>\n①\n②",
+      "subquestions": [
+        {
+          "number": 1,
+          "score": 1,
+          "text": "1) (가)의 밑줄 친 ㉠은 2022 개정 음악과 교육과정 창작 영역의\n‘과정･기능’ 중 어떤 내용 요소에 근거한 것인지 쓰시오. [1점]"
+        },
+        {
+          "number": 2,
+          "score": 2,
+          "text": "2) (나)의 ① 밑줄 친 ㉡의 측면에서 ⓐ와 ⓑ의 차이점을 비교\n하여 설명하고, ② ⓒ에서 중점적으로 지도할 수 있는 음악\n요소를 2015 개정 음악과 교육과정 ‘음악 요소와 개념 체계표’\n에서 1가지 쓰시오. [2점]\n①\n②"
+        },
+        {
+          "number": 3,
+          "score": 2,
+          "text": "3) ① 다음의 <악보>를 참고하여 악기를 중심으로 (다)의 밑줄 친\n㉢을 설명하고, ② 밑줄 친 ㉣에 해당하는 악기를 1가지 쓰시오.\n[2점]\n<악 보>\n①\n②"
+        }
+      ]
+    },
+    {
+      "id": "2025-A-Q07",
+      "number": 7,
+      "subject": "사회",
+      "score": 5,
+      "pages": [
+        6,
+        7
+      ],
+      "curriculum_mentions": [],
+      "achievement_codes": [],
+      "visual_references": [],
+      "needs_visual_context": false,
+      "text": "7. (가)는 4학년 ‘지역문제의 해결’을 주제로 준비한 모의 수업에\n대해 예비 교사와 지도 교수가 나눈 대화이고, (나)는 예비 교사가\n작성한 교수･학습 과정안이다. 물음에 답하시오. [5점]\n(가)\n지도 교수 : 이 주제는 5～6학년군 ‘정치’ 및 ‘법’ 영역의 선수\n학습에 해당하고, 정치에 대한 기초 인식을 형성하게\n합니다. 4학년 학생들에게 정치의 의미를 국가의 행위로\n한정할 필요는 없습니다. 그보다는 ( ㉠ ) 관계가 존재\n하는 모든 사회 집단에서 갈등과 문제가 발생하며, 이를\n해결하는 과정이 정치임을 이해하도록 지도하는 것이 중요\n합니다. 성취기준도 분석해 보았나요?\n예비 교사 : 해당 성취기준은 지역사회에서 발생하는 문제의\n해결 과정을 배우는 데 중점을 둡니다. 사회과 교육과정에\n제시된 성취기준을 ㉡지역사회의 특성과 실정에 적합한\n내용으로 재구성하기 위해 교수 ･학습 과정안에 우리\n지역의 상황을 구체적으로 제시해 보았습니다.\n지도 교수 : 내용 재구성이 잘 이루어진 것 같습니다 .\n다만, 우리 지역의 문제를 선택할 때에는 주의할 점이\n있습니다. 듀이(J. Dewey)에 따르면, 지식은 학습자가\n실제로 해 보거나 학습자와 관련된 것일 때 의미가\n있습니다. 문제 상황에서 시작된 사고의 과정을 경험\n하는 것이 바로 학습인 것이지요. 그래서 도입 단계에\n적합한 문제를 제공해야 합니다.\n그 밖에 중점을 둔 부분은 무엇인가요?\n예비 교사 : 학생들의 고차 사고력 형성이 사회과 수업의 중요한\n목적이라고 생각합니다. 울레버(R. Woolever)와 스콧\n(K. Scott)은 다양한 종류의 고차 사고력을 제안하는데,\n이번 수업에서는 어느 것에 집중해야 할까요?\n지도 교수 : 이 수업에서는 과학적인 지식 형성을 강조하는\n‘탐구력’이나 진위 여부에 초점을 둔 ‘비판적 사고력’보다는\n여러 대안 중 현재 직면한 문제에 대한 적절한 해결책을\n선택하는 ( ㉢ )에 중점을 두었으면 합니다. 각 방안을\n평가할 수 있어야 최종 결정을 내릴 수 있기 때문입니다.\n다만, 학생들이 사고를 반성하는 과정, 즉 자신의\n사고에 대해 다시 사고해 보는 메타 인지의 과정도\n기초적인 수준에서 반영해 보기를 권합니다. 특히,\n[활동 1]～[활동 3]을 한 후에 학생들에게 메타 인지를\n활용할\n기회가 부여되면 좋을 것 같습니다.\n[A]\n[B]\n(나)\n학습 문제 우리 지역의 문제를 해결해 봅시다.\n단계 교수･학습 활동\n도입 ∙㉣본시 학습에 적합한 문제 제시하기\n쓰레기 처리가 제대로 되지 않아 심한 악취와 해충이\n발생한 우리 지역의 환경 문제를 사례로 제시한다.\n∙문제를 확인하고 문제 상황에 공감하기\n전개 ∙[활동 1] 문제가 발생한 까닭 예상하기\n･쓰레기를 분리배출하지 않는 주민이 많을 것이다.\n･쓰레기 배출량에 비해 수거 횟수가 적은 것 같다.\n∙[활동 2] 해결 방안과 관련된 정보 정리하기\n- 현장을 살펴보고, 주민들의 의견을 듣는다.\n- 쓰레기 배출량과 수거 횟수 및 양을 조사한다.\n∙[활동 3] 우리 지역 문제의 해결 방안 제시하기\n<방법 1> 친구들과 쓰레기 분리배출 캠페인을 벌인다.\n<방법 2> 구청에 쓰레기 수거 횟수 증가를 건의한다.\n- 각 해결 방안을 평가하고 순위를 매긴다.\n정리 ∙활동의 정리 및 해결 방안 결정하기\n1) 다음을 참고하여 (가)의 괄호 안의 ㉠에 해당하는 용어를\n쓰시오. [1점]\n이는 정치학의 주요 개념으로 개인이나 집단이 타인의\n행위에 영향을 주고, 그것을 변경･수정시킬 수 있는 힘이다.\n다른 말로, 자기의 의사를 관철시킬 수 있는 일체의 가능성\n이나 타인의 행동을 통제할 수 있는 능력을 말한다.\n2) ① (가)의 밑줄 친 ㉡의 목적을 학습자의 가치･태도 함양\n측면에서 1가지 쓰고, ②( 가)의 [A]를 반영하여 (나)의 밑줄 친\n㉣의 성격을 쓰시오. [2점]\n①\n②\n3) ①( 가)의 괄호 안의 ㉢에 해당하는 고차 사고력을 쓰고 ,\n②( 가)의 [B]를 참고하여 메타 인지 형성을 위해 (나)의 정리\n단계에 사용할 발문을 1가지 쓰시오. [2점]\n①\n②",
+      "subquestions": [
+        {
+          "number": 1,
+          "score": 1,
+          "text": "1) 다음을 참고하여 (가)의 괄호 안의 ㉠에 해당하는 용어를\n쓰시오. [1점]\n이는 정치학의 주요 개념으로 개인이나 집단이 타인의\n행위에 영향을 주고, 그것을 변경･수정시킬 수 있는 힘이다.\n다른 말로, 자기의 의사를 관철시킬 수 있는 일체의 가능성\n이나 타인의 행동을 통제할 수 있는 능력을 말한다."
+        },
+        {
+          "number": 2,
+          "score": 2,
+          "text": "2) ① (가)의 밑줄 친 ㉡의 목적을 학습자의 가치･태도 함양\n측면에서 1가지 쓰고, ②( 가)의 [A]를 반영하여 (나)의 밑줄 친\n㉣의 성격을 쓰시오. [2점]\n①\n②"
+        },
+        {
+          "number": 3,
+          "score": 2,
+          "text": "3) ①( 가)의 괄호 안의 ㉢에 해당하는 고차 사고력을 쓰고 ,\n②( 가)의 [B]를 참고하여 메타 인지 형성을 위해 (나)의 정리\n단계에 사용할 발문을 1가지 쓰시오. [2점]\n①\n②"
+        }
+      ]
+    },
+    {
+      "id": "2025-A-Q08",
+      "number": 8,
+      "subject": "사회",
+      "score": 4,
+      "pages": [
+        7
+      ],
+      "curriculum_mentions": [],
+      "achievement_codes": [],
+      "visual_references": [
+        "<자료 1>",
+        "<자료 2>"
+      ],
+      "needs_visual_context": true,
+      "text": "8. (가)는 5학년 ‘국토와 자연환경’ 주제에 관한 수석 교사와\n교사의 대화이고, (나)는 교사의 교재 연구 자료이다. 물음에\n답하시오. [4점]\n(가)\n교사 : 다음 주에는 디지털 영상 지도와 지형도, 지형 단면도\n등을 활용해 우리나라의 지형에 관한 수업을 하려고\n합니다.\n수석 교사 : 오늘날 인터넷과 ( ㉠ )이/가 발달하면서 ,\n스마트 기기를 활용해 지도와 함께 지형을 입체적으로\n조망할 수 있습니다. 여러 분야에서 유용하게 쓰이는\n( ㉠ )은/는 컴퓨터에 각종 지리 자료를 수집･\n저장\n하고, 목적에 따라 가공･분석･활용할 수 있도록 만든\n종합 시스템을 말하지요. 수업을 통해 학생들이 다양한\n지도 활용 방법을 익히게 될 것이라 기대합니다. 수업\n에서 중점을 두는 부분은 무엇인가요?\n교사 : 지리 탐구 활동에 중점을 두려고 합니다. 저는 학생들이\n자료를 활용해 지형의 특징을 탐구하여, 하천의 흐름을\n파악하도록 지도하려 합니다.\n수석 교사 : 네, 좋습니다. 지리 탐구 단계를 어떻게 설정\n하였나요?\n교사 : ㉡ ‘지형적 특징 탐색’ → ‘주요 하천의 흐름 파악’ →\n㉢ ‘지형적 특징과 주요 하천의 관계 도출’의 순으로\n진행하려 합니다. ‘지형적 특징 탐색’, ‘주요 하천의 흐름\n파악’에서는 자료를 제시하여 학생들이 탐구하도록 할\n예정입니다. 마지막 단계에서는 탐구한 지형적 특성에\n따라 주요 하천이 어느 바다로 흘러갈지 추측하고 확인\n하도록 할 것입니다.\n수석 교사 : 네, 좋습니다. 이전 차시의 전통적 지역 구분과\n관련지어 생각하게 해도 좋겠습니다. 예로부터 지형\n등의 자연환경은 지역을 구분하는 기준이었습니다 .\n예를 들어 ( ㉣ )은/는 영동 지역과 영서 지역을\n구분하는 기준이 되었습니다. 이렇게 구분된 지명은\n오늘날에도 일기예보 등 일상생활에서 여전히 사용되고\n있습니다.\n(나)\n<자료 1> ‘지형적 특징 탐색’ 단계 자료\n<자료 2> ‘주요 하천의 흐름 파악’ 단계 자료\n하천의 흐름은 산지 분포\n등의 지형적 특징과 관련이\n깊다. 산줄기는 하늘에서\n내린 강수가 나뉘는 경계가\n된다. 산줄기에 따라 나뉜\n물이 모여 하천을 이루며\n유로를 따라 흐른다.\n1) (가)의 괄호 안의 ㉠에 공통으로 들어갈 용어를 쓰시오. [1점]\n2) (나)에 근거하여 (가)의 ① 밑줄 친 ㉡을 쓰고, ② 밑줄 친\n㉢을 쓰시오. [2점]\n①\n②\n3) (가)의 괄호 안의 ㉣에 들어갈 지형의 명칭을 쓰시오. [1점]",
+      "subquestions": [
+        {
+          "number": 1,
+          "score": 1,
+          "text": "1) (가)의 괄호 안의 ㉠에 공통으로 들어갈 용어를 쓰시오. [1점]"
+        },
+        {
+          "number": 2,
+          "score": 2,
+          "text": "2) (나)에 근거하여 (가)의 ① 밑줄 친 ㉡을 쓰고, ② 밑줄 친\n㉢을 쓰시오. [2점]\n①\n②"
+        },
+        {
+          "number": 3,
+          "score": 1,
+          "text": "3) (가)의 괄호 안의 ㉣에 들어갈 지형의 명칭을 쓰시오. [1점]"
+        }
+      ]
+    },
+    {
+      "id": "2025-A-Q09",
+      "number": 9,
+      "subject": "도덕",
+      "score": 4,
+      "pages": [
+        8
+      ],
+      "curriculum_mentions": [],
+      "achievement_codes": [],
+      "visual_references": [],
+      "needs_visual_context": false,
+      "text": "9. (가)는 5학년 1단원 4차시 ‘바르고 곧은 마음을 길러요’를 지도\n하기 위해 예비 교사와 지도 교수가 나눈 대화이고, (나)는 예비\n교사가 이 수업에 활용할 도덕과 수업 과정･절차이다. 물음에\n답하시오. [4점]\n(가)\n예비 교사 : 이 차시에서는 학생들이 자신의 행동을 솔직하게\n반성하는 활동을 해 보게 하고, 일상에서 정직한 생활을\n실천하는 성향과 의지를 기르게 하고자 합니다 . 수업\n준비에 도움이 되는 이론이 있을까요?\n지도 교수 : 선의지와 실천 이성을 중시한 칸트(I. Kant)를\n들 수 있습니다. 그는 유아기, 아동기, 학생기에 따라 서로\n다른 교육적 접근을 제시했습니다. 칸트는 도덕 교육으로\n특히 ( ㉠ )과/와 도야를 강조했습니다. ( ㉠ )은/는\n인간의 동물적인 본성을 인간성으로 바꾸는 교육적 작용을\n말합니다. 또한 그는 바람직한 행위 양식의 습득과 규칙\n준수의 ( ㉡ )도 중요하게 여겼습니다.\n예비 교사 : 이성의 발달과 관련하여 살펴볼 현대 도덕 이론이\n있을까요?\n지도 교수 : 도덕 판단의 발달을 중시한 콜버그(L. Kohlberg)\n의 이론을 살펴볼 수 있습니다. 그의 도덕성 발달 단계의\n일반적 특징으로는 도덕적 문제를 추론하는 ㉢사고 방식의\n질적 차이를 들 수 있습니다.\n예비 교사 : 도덕성 발달을 위해서는 정서와 감정도 고려해야\n겠지요?\n지도 교수 : 네, 정서의 고양도 간과해서는 안 됩니다. 학생들이\n실천 의지를 갖도록 하기 위해서는 가치 규범을 정서적 차원\n에서 받아들이고 사랑할 수 있는 경험을 제공할 필요가\n있습니다.\n예비 교사 : 그렇군요. 저는 이러한 내용을 고려하여 (나)의\n수업 과정･\n절차를 사용하려 합니다. ( ㉣ ) 단계에서는\n정직한 생활을 실천하려는 마음을 다지고 정직의 가치를\n좋아하며 존중하게 하고자 합니다.\n(나)\n학습 문제 인식 및 동기 유발\n⬇\n가치 사례의 제시 및 성찰\n⬇\n( ㉣ )\n⬇\n도덕적 정서 및 의지의 강화\n⬇\n정리 및 확대 적용과 실천 생활화\n1) (가)의 괄호 안의 ㉠에 공통으로 들어갈 용어를 쓰시오. [1점]\n2) (가)의 ① 괄호 안의 ㉡에 들어갈 내용을 쓰고, ② 밑줄 친\n㉢의 특징을 1가지 쓰시오. [2점]\n①\n②\n3) (가)와 (나)의 괄호 안의 ㉣에 공통으로 들어갈 내용을 쓰시오.\n[1점]",
+      "subquestions": [
+        {
+          "number": 1,
+          "score": 1,
+          "text": "1) (가)의 괄호 안의 ㉠에 공통으로 들어갈 용어를 쓰시오. [1점]"
+        },
+        {
+          "number": 2,
+          "score": 2,
+          "text": "2) (가)의 ① 괄호 안의 ㉡에 들어갈 내용을 쓰고, ② 밑줄 친\n㉢의 특징을 1가지 쓰시오. [2점]\n①\n②"
+        },
+        {
+          "number": 3,
+          "score": 1,
+          "text": "3) (가)와 (나)의 괄호 안의 ㉣에 공통으로 들어갈 내용을 쓰시오.\n[1점]"
+        }
+      ]
+    },
+    {
+      "id": "2025-A-Q10",
+      "number": 10,
+      "subject": "바른 생활",
+      "score": 1,
+      "pages": [
+        8
+      ],
+      "curriculum_mentions": [
+        "2022"
+      ],
+      "achievement_codes": [],
+      "visual_references": [],
+      "needs_visual_context": false,
+      "text": "10. 다음은 1학년 2학기 ‘하루’ 단원의 지도에 대해 교사 A와 교사\nB가 나눈 대화이다. 괄호 안의 ㉠에 들어갈 내용을 2022 개정\n바른 생활과 교육과정에 제시된 용어로 쓰시오. [1점]\n교사 A: ‘하루’ 단원의 학습 목표는 ‘건강하고 활기차게 하루를\n살아가며 지금을 소중히 여긴다.’입니다. 이번 단원의\n평가에서는 무엇에 중점을 둘 계획인가요?\n교사 B: 이번 단원에서는 학생이 자신의 학습 성장을 점검\n하는 데 주안점을 둘 생각입니다. 학생이 주 평가자가\n되어 배운 것을 스스로 확인하고 , 학습 주도성을\n지속적으로 높이는 평가를 실시하려 합니다.\n교사 A: 그렇다면, 선생님은 ( ㉠ )을/를 선택하셨군요.\n교사 B: 네, 학생들에게 개인적으로 의미 있는 배움, ‘하루’와\n관련한 배움 등이 무엇인지 스스로 평가하게 할 계획\n입니다.",
+      "subquestions": []
+    },
+    {
+      "id": "2025-A-Q11",
+      "number": 11,
+      "subject": "실과",
+      "score": 4,
+      "pages": [
+        9
+      ],
+      "curriculum_mentions": [
+        "2015"
+      ],
+      "achievement_codes": [],
+      "visual_references": [],
+      "needs_visual_context": false,
+      "text": "11. (가)는 예비 교사가 실과 수업 후 작성한 수업 성찰 일지의\n일부이고, (나)는 예비 교사가 대학의 소프트웨어 관련 수업에서\n제출한 과제 결과물이다. 물음에 답하시오. [4점]\n(가)\n이번 수업 실습에서는 6학년 실과 교과의 식생활과 소프트\n웨어 관련 공개 수업을 준비했다.\n첫 번째 공개 수업인 식생활 관련 차시를 준비하기 위하여\n실과 교육과정의 내용 체계를 살펴보았는데 ‘균형 잡힌 식생활’,\n‘식재료의 특성과 음식의 맛’ 등의 내용 요소가 있었다. 5학년\n교과서에서 식생활 관련 내용을 살펴보니 ‘균형 잡힌 식사’,\n‘올바른 식습관 형성’, ㉠ ‘건강한 간식’ 등으로 구성되어 있었으며\n6학년 식생활 교육 내용과 관련이 있었다. 6학년 교과서는\n‘김밥 만들기’와 ‘밥버거 만들기’ 등 다양한 조리 실습 중심\n으로 교육 내용이 구성되어 있었다. 조리 실습 수업을 위해 조리\n실습 계획서를 구안하여 수업의 도입 단계에서 활용하였다.\n학생들이 조리 실습 시 유의 사항을 자세하게 알 수 있어 모둠\n별로 실습을 진행하는 데 많은 도움이 되었다고 하였다. 그리고\n조리 실습을 통해 ㉡식사를 스스로 해결할 수 있는 능력을\n갖게 되었다고 자랑스러워하는 학생도 있었다.\n두 번째 공개 수업인 소프트웨어 관련 수업을 위하여 교육\n과정의 학습 요소에 제시된 ‘프로그램 설계와 제작’을 학습\n할 수 있도록 계획하였다. 입력과 출력을 연결한 순차, 선택,\n반복 요소를 수업하기 위해 대학에서 학습하고 과제 결과물로\n제출했던 (나)와 같은 프로그램을 살펴보았다.\n…(하략)…\n(나)\n[A] 지도 교수가 제시한 과제\n다음 기능을 수행하는 놀이공원의 놀이 기구 탑승 프로그램을\n블록 기반 프로그래밍 도구를 사용하여 작성하시오.\n<놀이 기구 탑승 프로그램의 기능>\n∙입력된 신장값이 120 이상인 사람만 놀이 기구에 탑승을\n허가한다.\n∙입력된 신장값이 120 이상이면 ‘탈 수 있습니다 .’라고\n알려 준다.\n∙입력된 신장값이 120보다 작으면 ‘아직은 탈 수 없습니다.’\n라고 알려 준다.\n∙탑승 가능 인원 20명이 채워지면 출발 준비를 알려 준다.\n∙500명 단위로 개별 신장값을 입력할 수 있다.\n(신장값 단위:c m )\n[B] 예비 교사가 작성한 프로그램\n1) 성장기 아동에게 (가)의 밑줄 친 ㉠이 중요한 이유를 영양소\n측면과 식사량 측면에서 1가지씩 쓰시오. [1점]\n∙\n∙\n2) (가)의 밑줄 친 ㉡에 해당하는 실과 교과 역량을 2015 개정\n실과 교육과정에 근거하여 1가지 쓰시오. [1점]\n3) (나)의 ① ⓐ에 들어갈 명령어를 쓰고, ②[ A ]의 <놀이 기구\n탑승 프로그램의 기능> 중 예비 교사가 [B] 프로그램에서 구현\n하지 못한 기능을 쓰시오. [2점]\n①\n②",
+      "subquestions": [
+        {
+          "number": 1,
+          "score": 1,
+          "text": "1) 성장기 아동에게 (가)의 밑줄 친 ㉠이 중요한 이유를 영양소\n측면과 식사량 측면에서 1가지씩 쓰시오. [1점]\n∙\n∙"
+        },
+        {
+          "number": 2,
+          "score": 1,
+          "text": "2) (가)의 밑줄 친 ㉡에 해당하는 실과 교과 역량을 2015 개정\n실과 교육과정에 근거하여 1가지 쓰시오. [1점]"
+        },
+        {
+          "number": 3,
+          "score": 2,
+          "text": "3) (나)의 ① ⓐ에 들어갈 명령어를 쓰고, ②[ A ]의 <놀이 기구\n탑승 프로그램의 기능> 중 예비 교사가 [B] 프로그램에서 구현\n하지 못한 기능을 쓰시오. [2점]\n①\n②"
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "text": "초등학교 교육과정 A (9면 중 1 면)\n국 어\n1. (가)는 1학년 국어 ‘소리와 표기가 다른 단어 바르게 읽기’를\n지도하기 위해 예비 교사가 구상한 자료이고, (나)는 (가)의\n활동 2를 지도하기 위한 예비 교사와 지도 교사의 대화이다.\n물음에 답하시오. [4점]\n(가)\n◦활동 1: 단어 카드의 단어 바르게 읽기\n◦활동 2: 단어 카드를 활용한 문장 바르게 읽기\n◦활동 자료: 받침소리가 ( ㉠ )의 3가지 자음 중 하나로\n발음되는 단어 카드 묶음\n◦지도를 위한 핵심 내용\n∙받침의 자음이 1개인 단어의 경우, 음절 끝소리에 올 수\n없는 자음은 해당 자음의 대표음으로 대치된다.\n∙㉡받침의 자음이 2개인 단어의 경우, 음절 끝소리에 올\n수 있는 자음의 최대 개수는 1개이므로 2개의 자음 중\n하나가 탈락된다.\n(나)\n예비 교사 : 소리와 표기가 다른 단어 중에서 받침이 있는\n단어를 지도하려고 활동을 구상하는 중인데요. ‘활동 2’를\n진행할 때 유의할 점이 있을까요?\n지도 교사 : 네. 개별 단어 읽기가 아니라 문장 속 단어 읽기를\n지도하려면 조사나 어미와 결합할 때의 발음, 단어와 단어\n사이의 발음에 좀 더 신경 써야 합니다. 2가지 이상의 음운\n현상이 단계적으로 나타나기도 하거든요.\n예비 교사 : 아, 저도 그 부분을 고려해서 평파열음화 또는\n자음군 단순화가 적용된 후에, ( ㉢ )이/가 공통적으로\n적용되는 문장들을 만들어 봤는데요. 좀 살펴봐 주시겠어요?\n지도 교사 : 받침소리별로 2개씩 문장을 만들었군요. 그리고\n전체적으로 문장들을 살펴보니, 현재형 어미와의 결합을\n통해 ( ㉢ )을/를 연습할 수 있게 문장을 구성한 점도\n좋습니다.\n예비 교사 : 그런데 일부 학생들이 ‘글씨를 바르게 읽는다’의\n‘읽는다’를 ‘[일른다]’로, ‘낙엽 밟는’의 ‘밟는’을 ‘[발른]’으로\n틀리게 발음하는 경우가 있는 것 같아요. 게다가 지난 시간에\n“바르게 ㉣읽고”를 잘못 발음하는 친구들도 많더라고요.\n지도 교사 : 맞아요. ‘읽다’, ‘읽는’, ‘읽고’는 수업 시간에 정말\n많이 쓰는 말인데도 틀리게 발음하는 경우가 많으니 주의\n해서 지도해야 해요.\n예비 교사 : 다양한 음운 현상에 대한 이해가 있어야 표준\n발음을 지도할 수 있는 거네요. 감사합니다.\n1) (가)의 ① 괄호 안의 ㉠에 들어갈 자음을 모두 쓰고, ② 밑줄 친\n㉡의 음운 현상이 적용되는 단어를 (가)의 ‘활동 자료’에서 찾아\n모두 쓰시오. [2점]\n①\n②\n2) (나)의 ① 괄호 안의 ㉢에 공통으로 들어갈 음운 현상을 쓰고,\n② 밑줄 친 ㉣의 올바른 발음을 쓰시오. [2점]\n①\n②\n2. (가)는 6학년 국어 ‘자료 활용하여 발표하기’ 활동을 준비하며\n교사와 학생이 나눈 대화이고, (나)는 이를 바탕으로 한 학생 발표\n담화의 일부이다. 물음에 답하시오. [3점]\n(가)\n학생 : 선생님, 다음 시간 발표를 위해 과제를 작성 중인데, 질문이\n있어서요.\n<과제> 자료 활용 발표를 위한 개요 작성하기\n∙생활 속에서 발견하고 나누고 싶은 주제를 정해 발표를\n위한 개요를 작성하고 학급 친구들에게 발표해 보자.\n2025학년도 공립 초등학교 교사 임용후보자 선정경쟁시험 (제1차)\n초등학교 교육과정 A\n수험번호 : ( ) 성명 : ( )\n2 교시 11문항 41점시 험 시 간 70분",
+      "method": "pypdf",
+      "char_count": 1595
+    },
+    {
+      "page": 2,
+      "text": "초등학교 교육과정 A (9면 중 2 면)\n교사 :‘ 달콤한 과자’? 요즘 학생들이 즐겨 먹는, 설탕을\n듬뿍 바른 간식을 말하는 거지?\n학생 : 네, 엄청 인기라서 안 먹어 본 애들이 없을 정도예요.\n교사 : 그렇구나. 개인적 경험을 바탕으로 청중이 관심\n있어 할 만한 주제로 잘 골랐네.\n학생 : 그리고 이 문제는 우리 학교 학생뿐 아니라 많은 초등\n학생들이 경험하고 있다는 걸 객관적인 자료를 통해\n보여 주려고 했어요.\n교사 : 아, 그래서 신문 기사의 통계 자료를 활용했구나. 아주\n좋은데?\n학생 : 감사합니다. 그런데 ‘Ⅲ. 초등학생의 지나친 당 섭취의\n문제점’에 어떤 자료를 활용해야 할지 모르겠어요.\n교사 : 통계 자료를 보면서 뭐가 문제라고 생각했니?\n학생 : 무심코 먹는 과자에 생각보다 많은 당이 들어 있고, 밥\n대신에 과자만 먹는 학생들도 있더라고요. 그러면 건강에\n해로우니 조심하자고 알려 주고 싶어요.\n교사 : 그렇구나. 그런데 친구들을 설득하기 위해서는 지나친\n당 섭취가 건강에 왜, 얼마나 안 좋은지를 설명해 줄\n수 있는 정보가 필요해. 그러니까 해당 분야에 대한\n충분한 경험과 지식을 갖춘 사람의 견해를 찾아보면\n어떨까? 이런 ( ㉠ )을/를 갖춘 자료를 활용하면\n발표 내용을 잘 뒷받침할 수 있고 청중이 믿을 만하다고\n생각할 거야. 그리고 혹시 인터넷에서 자료를 찾을 거면,\n자료 출처 부분을 살펴보고 식품이나 영양 분야 전문가의\n견해를 중심으로 선택하면 되겠다.\n학생 : 네, 그게 좋겠네요. 그리고 혹시 실제 발표할 때 주의해야\n할 점도 알려 주실 수 있나요?\n교사 : 발표는 말로 전달하다 보니 청중이 내용에 집중해서\n듣고 그 내용을 잘 이해할 수 있도록 안내할 필요가\n있어. 예를 들어, ‘우선’, ‘다음으로’, ‘지금까지’, ‘그래서’,\n‘그런데’와 같은 표현을 적절히 사용하면 발표 내용의\n연결 관계를 보여 줄 수 있어.\n[A]\n(나)\n여러분, 요즘 알록달록한 색깔과 달콤한 맛으로 인기인 과자\n다들 먹어 본 경험이 있으실 텐데요. 저도 하굣길에 단맛의\n유혹을 못 참고 하루도 빠짐없이 즐겨 먹었답니다. 그런데\n오늘은 우리 모두가 좋아하는 이 과자에 대한 중요한 정보를\n드리고자 합니다.\n…(중략)…\n초등학생의 지나친 당 섭취는 여러 가지 문제를 가져\n올 수 있습니다. 우선, 몸에 남은 당이 지방으로 쌓여 혈당\n조절을 어렵게 해서 비만과 당뇨병의 위험이 있습니다.\n㉡다음으로\n, 당은 영양소는 없고 칼로리만 높아 성장에\n도움이 되지 않고 과식이나 폭식으로 발달을 저해하기도\n합니다. 마지막으로, 단맛을 한번 경험하면 더 단맛을\n찾게 되는 악순환으로 이어져 단맛에 중독되어 오히려\n스트레스를 받을 수 있습니다. ㉢지금까지, 입에는 달콤\n하지만 몸에는 해로운 과자의 문제점을 신체적, 발달적,\n정서적 측면 세 가지로 나눠 차례대로 살펴보았습니다.\n[B]\n1) (가)의 괄호 안의 ㉠에 들어갈 자료의 조건에 해당하는 용어를\n1단어로 쓰시오. [1점]\n2) ① (가)의 [A]를 참고하여 (나)의 도입부에서 청중의 관심 유발을\n위해 활용한 전략을 (가)의 ⓐ와 관련하여 쓰고, ②( 가)의 ⓑ가\n(나)의 [B]에 해당할 때, 밑줄 친 ㉡과 ㉢의 담화 표지로서의\n기능을 각각 쓰시오. [2점]\n①\n②\n3. (가)는 4학년 국어 ‘제안하는 글 쓰기’ 수업을 준비하며 두\n교사가 나눈 대화이고, (나)는 교사 A의 수업에서 학생이 쓴\n글이며, (다)는 교사 A가 작성한 학생 관찰 기록지의 일부이다.\n물음에 답하시오. [4점]\n(가)\n교사 A: ㉠ ‘대상에 대한 자신의 의견과 그렇게 생각한 이유가\n드러나게 글을 쓸 수 있다.’라는 성취기준을 토대로\n수업을 준비 중이에요. 그런데 설득을 목적으로 하는\n글 쓰기는 학생들이 어려워하는 경우가 많아 고민\n이에요. ㉡ ‘우리 문화재를 보호하자는 주제로 제안\n하는 글 쓰기’를 쓰기 과제로 제시하려고 하는데, 괜\n찮을까요?\n교사 B: 설득을 목적으로 하는 글 쓰기도 쓰기 과제의 실제성을\n고려한다면 재밌고 효과적인 수업이 가능해요. 쓰기\n과제를 학습용으로만 제한하거나 교실 안에서 평가\n하고 끝내는 게 아니라, 학생들이 겪는 실제 삶의\n문제와 연계하면 어떨까요?\n교사 A: 아, 초등학교 4학년 학생들이 남수단의\n물 부족 문제에 대한 글을 읽고 해결 방안을\n찾다가, 기부금 모금 운동을 실시하게 해 달라는\n제안서를 작성해 학교 교사들에게 전달했다는\n기사를 봤어요. 모금 운동을 통해 마련한 돈으로\n남수단 국민들의 건강한 삶을 도울 수 있다는\n이유를 들었더라고요.\n교사 B: 네, 저도 실제로 기부금을 보냈다는 그 기사 봤어요.\n이 사례처럼 학생들이 구체적인 삶의 맥락과 연계된\n글쓰기를 하면 쓰기를 매개로 한 소통의 힘을 체험\n하게 되는 것 같아요. 자신이 쓴 글이 삶의 문제를\n해결한다는 것에 대한 성취감도 느끼고요.\n교사 A: 맞아요. 쓰기 전략을 익히는 것만큼이나 ㉢자신이\n쓰기를 성공적으로 수행할 수 있을 거라는 기대나\n믿음을 키워주는 게 정말 중요하다고 생각해요 .\n실제적 쓰기에 대한 경험이 필자로서의 자기에 대한\n이러한 판단이나 신념에도 긍정적인 영향을 줄 수\n있겠지요? 선생님 조언을 반영해서 ㉣ ‘우리 학교의\n개선해야 할 점을 찾아 교장 선생님께 제안하는\n편지를 써서 전달하기’로 쓰기 과제를 수정해 수업을\n해야겠어요.\n[A]",
+      "method": "pypdf",
+      "char_count": 2584
+    },
+    {
+      "page": 3,
+      "text": "초등학교 교육과정 A (9면 중 3 면)\n(나)\n교장 선생님께\n안녕하세요. 저는 4학년 서☆☆입니다. 요즘 들어 비가 자주\n내립니다. 그런데 어제처럼 소나기가 갑자기 내리는 날에는\n우산을 미처 준비하지 못해 비를 맞으며 집에 갈 수밖에 없고,\n친구들이 감기에 걸리는 경우도 있습니다. 이 문제를 해결한다면\n비 오는 날에도 모두가 안전하고 건강하게 하교할 수 있을\n것입니다. 제 편지를 읽어 주셔서 감사합니다.\n-2024년 11월 △일 서☆☆ 올림-\n(다)\n1) ① (가)의 밑줄 친 ㉠을 근거로, [A]와 비교하여 (나)의 문제점을\n쓰고, ② 교사 A가 (가)의 밑줄 친 ㉡을 ㉣로 수정한 이유를\n‘쓰기 과제의 실제성’ 측면에서 2가지 쓰시오. [2점]\n①\n②\n2) ① 쓰기의 정의적 요인 중 (가)의 밑줄 친 ㉢에 해당하는\n용어를 쓰고, ②( 다)를 통해 알 수 있는, 쓰기의 정의적 요인\n평가상의 유의점을 쓰시오. [2점]\n①\n②\n영 어\n4. 다음은 교사 A의 4학년 수업의 일부이다. 물음에 답하시오. [3점]\n(교사 A는 학생들에게 수업 시작을 알린다.)\nT:H i , everyone. 어제는 화요일이었죠? What day is it\ntoday?\nSs : It’s Wednesday.\nT:G o o d job. I like carrots. S1, do you like carrots?\nS1 : No.\nT:O h , who likes carrots? Raise your hands.\nSs : (몇몇 학생들이 손을 든다.)\nT:( 학생들 수를 세면서 ) Wow, only five of you like\ncarrots. Vegetables are good for your\nhealth. S2, do\nyou like tomatoes?\nS2 : I... tomato... like.\nT:I see. You like tomatoes.\nS2 : Yes.\nT:G o o d . Today, we’re going to learn how to describe\nwhat someone looks like. Listen and repeat after me.\nSs : Yes.\nT:I have a big nose.\nSs : I have a big nose.\n…(중략)…\nT:N o w , it’s time for a game. You have to listen\ncarefully and do as I say. Your action should\nmatch the sentence. For example, I might say the\nsentence (코를 만지며) “Touch your nose.” Then...\n(학생들을 바라보며 반응을 기다린다.)\nSs :코를 만져요.\nT:G o o d job! Are you ready to play the game?\nSs : Yes.\nT:A l l right. Stand up, class. Now, I’ll say a sentence.\n“Touch your mouth.”\nSs : (학생들이 입을 만진다.)\nT:T o u c h your eyes.\nSs : (학생들이 눈을 만진다.)\n…(하략)…\n[A]\n1) 교사의 발화 중 ‘display question’에 해당하는 1문장을 찾아\n쓰시오. [1점]\n2) 다음을 참고하여 교사A가 [A]에서 활용한 교수법을 쓰시오.\n[1점]\nThe method was developed by James Asher. The\nobjective of this method is to teach oral proficiency at a\nbeginning level. Another goal is to reduce the stress or\nanxiety that students might feel while learning foreign\nlanguages and encourage them to participate in their\nstudy beyond a beginning level of proficiency.",
+      "method": "pypdf",
+      "char_count": 1942
+    },
+    {
+      "page": 4,
+      "text": "초등학교 교육과정 A (9면 중 4 면)\n3) 다음은 수업 후 교사A와 교사B가 나눈 대화이다. 괄호 안의\n㉠에 공통으로 들어갈 말을 2022 개정 영어과 교육과정에 제시된\n용어로 쓰시오. [1점]\n교사 A: 다음 주에 비언어적 표현과 관련된 문화 수업을 준비\n하고 있는데 어디까지 다루어야 할지 모르겠어요.\n교사 B: 일단 영어과 교육과정을 바탕으로 내용을 정해야\n할 것 같아요. 2022 개정 영어과 교육과정의 내용\n체계에서 ‘지식･이해’를 살펴보면 언어와 ( ㉠ )\n(으)로 구분하여 학습 내용을 제시하고 있어요.\n교사 A: 네, 본 적이 있어요. 언어 범주에는 의사소통 기능과\n예시문 등이 포함되어 있는 건 알고 있는데, ( ㉠ )\n범주에는 어떤 내용이 포함되어 있나요?\n교사 B: 영어 사용의 문제 해결에 필요한 구체적인 상황을\n범주화한 주제 및 문화적 내용을 다루고 있어요.\n예를 들어, 3～4학년군에서는 다양한 문화권에 속한\n사람들의 비언어적 의사소통 방식을 다루고 있어요.\n교사 A: 교육과정 문서에 제가 놓쳤던 많은 내용이 있네요.\n다음 수업 때 다양한 문화권의 비언어적 표현과\n관련한 의사소통 방식에 대해서 다루어야겠어요.\n5. 다음은 예비 교사가 참관한 5학년 영어 수업의 일부이다. 물음에\n답하시오. [4점]\n교사 A의 수업\nT:A l r i g h t , class! Before doing a game, let’s review the key\nvocabulary. (‘화가’ 그림을 보여 주며) What is this? S1?\nS1 : Um, painter/feɪntər/.\nT:N i c e try, but it is painter/peɪntər/. Can you try again?\nS1 : Painter/feɪntər/.\nT:O k , one more time, everyone. Put your hand in front of\nyour mouth and say it! You can feel a bigger air flow\nwhen you pronounce /p/ than /f/.\nSs : (학생들이 따라 하며 소리를 낸다.)\n…(중략)…\nT:N o w , let’s play a bingo game using the pictures of jobs.\nAll of your cards have different pictures without\nwords. I’m going to say the name of a job. If you have\nit, you can put a picture sticker on it. Then, say where\nit is. Do you understand? Let’s get started.\n…(하략)…\n교사 B의 수업\nT:T o d a y we’re going to read a storybook about jobs.\nLet’s start. The title says, (글자를 가리키며) “What Do\nYou Want to Be?” Can you read this with me?\nSs : What Do You Want to Be.\nT:G r e a t ! What do you see in this picture here?\nS1 : I see a girl.\nT:Y e s ! She is thinking about dreams. Let’s read this part\ntogether. I’ll read first, (글자를 가리키며) “I want to\nbe a nurse.”\nSs : I want to be a nurse.\nT:W h y do you think she wants to be a nurse?\nS2 :아픈 사람을 도와주려고요.\nT:G o o d . She wants to look after ill people. Ok. Now, S3,\nwhat do YOU want to be?\nS3 : Me? Pianist. I like to pray/preɪ/ the piano.\nT:( 낱말을 칠판에 적으며) Do you mean /preɪ/ or /pleɪ/?\nS3 : Um... oh, I mean I like to play the piano.\nT:P e r f e c t ! (그림을 보며) Let’s read this one together.\n(글자를 가리키며) “I want to be a teacher.”\nSs : I want to be a teacher.\nT:G r e a t job, anyone who wants to be a teacher?\nSs : (손을 들며) I want to be a teacher like you.\n…(하략)…\n교사 C의 수업\nT:N o w , we’re going to write a sentence by using “My\nfriend wants to be a(n)...”. Before writing some\nsentences about future jobs, I’ll show you an example.\n(예시 글에서 ‘scientist’를 가리키며) We learned this\nword yesterday. Anyone who knows this word? S1?\nS1 : Yes, it is ‘과학자’ in Korean.\nT:V e r y good! It is a scientist.\nS2 : Teacher, can I say “She want to be a doctor?” Wait...\num... oh, she wants to be a doctor! Right?\nT:G r e a t !\n…(중략)…\nT:A l l of you did a great job with your writing task! Here\nis your last activity to check your vocabulary. (활동지를\n들어서 보여 주며) There are two types of vocabulary\nworksheets with different colors. The yellow one is\neasier than the blue one. You can choose the yellow one\nif you need to practice with easy words, or you can\nchoose the blue one if you want to practice with more\ndifficult words.\n…(하략)…",
+      "method": "pypdf",
+      "char_count": 3099
+    },
+    {
+      "page": 5,
+      "text": "초등학교 교육과정 A (9면 중 5 면)\n1) 다음은 예비 교사가 세 교사의 수업을 참관한 후에 기록한 관찰\n일지의 일부이다. 밑줄 친 ⓐ～ⓔ 중에서 수업 내용과 일치하지\n않는 2가지를 찾아 그 기호와 이유를 각각 쓰시오. [2점]\n수업 관찰 일지\n• 참관 대상 : 교사 A의 수업\n- 빙고 게임 전에 주요 어휘를 복습했다.\n-ⓐ 조음 위치를 활용하여 파열음을 지도하였다.\n-ⓑ 듣기･말하기 활동으로 그림 카드를 활용한 빙고 게임을\n하도록 설명했다.\n• 참관 대상 : 교사 B의 수업\n- 활동 중 교사와 학생 간의 유의미한 상호작용이 있었다.\n-ⓒ 학생이 우리말로 표현했을 때 교사가 영어로 말해 주었다.\n- 시각적 자료를 활용하여 읽기 지도를 하였다.\n• 참관 대상 : 교사 C의 수업\n- 친구의 장래 희망을 주제로 수업을 진행했다.\n-ⓓ 학생이 자신의 문법 오류를 스스로 수정하였다.\n-ⓔ 학생의 흥미에 따라 학습지를 구분하여 제시하였다.\n∙\n∙\n2) 다음은 교사B가 수업에 활용한 읽기 지도 방법에 대한 설명\n이다. 다음의 () 안에 들어갈 용어를 첫 단어가 ‘s’로 시작\n하는 2단어의 영어로 쓰시오. [1점]\n() is a type of reading instruction that can\nbe used with young learners in the stages between guided\nand independent reading. It is a technique that emphasizes\ncollaboration and scaffolded interaction while practicing\nthe target phrases in a meaningful context. A large screen\nis usually used so that everyone can see the illustrations\nand the words in the text. While the teacher is pointing\nto each word in the text, the teacher and the students read\nthe text aloud together.\n3) 교사 B는 학생의 발음 오류를 지도하기 위해 최소대립쌍을\n활용하였다. 다음은 최소대립쌍이 성립하기 위한 조건이다.\n다음의 () 안에 들어갈 내용을 쓰시오. [1점]\n-분절음의 수가 같아야 한다.\n-한 곳의 분절음만 달라야 한다.\n-( )\n음 악\n6. (가)는 2022 개정 음악과 교육과정에 따른 4학년 음악 수업을\n위한 지도 교사와 예비 교사들의 대화이다. (나)는 2015 개정\n음악과 교육과정에 따른 6학년 음악 수업 내용의 일부이고, (다)는\n6학년 감상 수업을 준비하는 교사들의 대화 일부이다. 물음에\n답하시오. [5점]\n(가)\n지도 교사 :‘ 가을’을 주제로 하는 음악과 프로젝트 수업을\n어떻게 구성하면 좋을지 이야기해 봅시다.\n예비 교사A: 가을을 표현한 노래를 불러 보고, 기악 합주\n활동을 구성하면 어떨까요? 비발디의 “사계”\n중 ‘가을’을 듣고 음악적 특징에 대해 이야기를\n하는 것도 좋겠습니다.\n예비 교사 B: 가을을 상상하며 떠오르는 느낌을 음악으로 나타\n내는 활동을 함께 구성해 보지요. 예를 들어,\n㉠은행잎이 떨어지는 모습을 상상하면서 떠오\n르는 생각이나 느낌을 정해진 형식 없이 바로\n목소리나 악기 등으로 나타내는 활동은 어떨까요?\n지도 교사 : 여러분들이 이야기한 내용을 바탕으로 프로젝트\n수업을 구성한다면, 학생들에게 다양한 음악\n경험을 제공할 수 있겠네요.\n(나)\n◦주요 활동\n∙ 6\n8 박자의 리듬꼴을 익혀 제재곡 부르기\n∙㉡성부 구성을 알고 노래 부르기\n∙바른 주법으로 멜로디언 반주하기\n◦활동 자료",
+      "method": "pypdf",
+      "char_count": 1799
+    },
+    {
+      "page": 6,
+      "text": "초등학교 교육과정 A (9면 중 6 면)\n(다)\n교사 A: 저는 우리나라의 종묘 제례악을 감상하는 수업을\n준비하고 있습니다. 악곡에 대한 학생들의 이해를\n높이기 위한 방법을 이야기해 봅시다.\n교사 B: 종묘 제례악은 종묘에서 제사를 드릴 때 연주하는\n의식 음악입니다. 종묘 제례악은 악기 연주(樂), 노래\n(歌), 춤(舞)으로 구성되어 있으므로, 사진과 영상\n자료를 활용하여 지도하면 좋을 것 같습니다.\n교사 C: 종묘 제례악과 문묘 제례악 같은 제례악은 시작 부분이\n여타 국악곡과 다른 특징이 있으므로, 시작 부분을\n주의 깊게 듣도록 지도해야 할 것 같습니다.\n교사 A: 그러면, 이번에 감상할 ㉢종묘 제례악 중 ‘보태평’의\n시작 부분을 자세하게 설명해 주어야겠습니다.\n…(중략)…\n교사 B: 종묘 제례악에 편성된 여러 가지 타악기의 특징을\n이해하는 것도 필요할 것 같습니다.\n교사 C: 종묘 제례악에는 ㉣선율을 연주할 수 있는 타악기가\n포함되므로, 이러한 타악기에 대하여 알아보는 활동을\n하면 좋을 것 같습니다.\n1) (가)의 밑줄 친 ㉠은 2022 개정 음악과 교육과정 창작 영역의\n‘과정･기능’ 중 어떤 내용 요소에 근거한 것인지 쓰시오. [1점]\n2) (나)의 ① 밑줄 친 ㉡의 측면에서 ⓐ와 ⓑ의 차이점을 비교\n하여 설명하고, ② ⓒ에서 중점적으로 지도할 수 있는 음악\n요소를 2015 개정 음악과 교육과정 ‘음악 요소와 개념 체계표’\n에서 1가지 쓰시오. [2점]\n①\n②\n3) ① 다음의 <악보>를 참고하여 악기를 중심으로 (다)의 밑줄 친\n㉢을 설명하고, ② 밑줄 친 ㉣에 해당하는 악기를 1가지 쓰시오.\n[2점]\n<악 보>\n①\n②\n사 회\n7. (가)는 4학년 ‘지역문제의 해결’을 주제로 준비한 모의 수업에\n대해 예비 교사와 지도 교수가 나눈 대화이고, (나)는 예비 교사가\n작성한 교수･학습 과정안이다. 물음에 답하시오. [5점]\n(가)\n지도 교수 : 이 주제는 5～6학년군 ‘정치’ 및 ‘법’ 영역의 선수\n학습에 해당하고, 정치에 대한 기초 인식을 형성하게\n합니다. 4학년 학생들에게 정치의 의미를 국가의 행위로\n한정할 필요는 없습니다. 그보다는 ( ㉠ ) 관계가 존재\n하는 모든 사회 집단에서 갈등과 문제가 발생하며, 이를\n해결하는 과정이 정치임을 이해하도록 지도하는 것이 중요\n합니다. 성취기준도 분석해 보았나요?\n예비 교사 : 해당 성취기준은 지역사회에서 발생하는 문제의\n해결 과정을 배우는 데 중점을 둡니다. 사회과 교육과정에\n제시된 성취기준을 ㉡지역사회의 특성과 실정에 적합한\n내용으로 재구성하기 위해 교수 ･학습 과정안에 우리\n지역의 상황을 구체적으로 제시해 보았습니다.\n지도 교수 : 내용 재구성이 잘 이루어진 것 같습니다 .\n다만, 우리 지역의 문제를 선택할 때에는 주의할 점이\n있습니다. 듀이(J. Dewey)에 따르면, 지식은 학습자가\n실제로 해 보거나 학습자와 관련된 것일 때 의미가\n있습니다. 문제 상황에서 시작된 사고의 과정을 경험\n하는 것이 바로 학습인 것이지요. 그래서 도입 단계에\n적합한 문제를 제공해야 합니다.\n그 밖에 중점을 둔 부분은 무엇인가요?\n예비 교사 : 학생들의 고차 사고력 형성이 사회과 수업의 중요한\n목적이라고 생각합니다. 울레버(R. Woolever)와 스콧\n(K. Scott)은 다양한 종류의 고차 사고력을 제안하는데,\n이번 수업에서는 어느 것에 집중해야 할까요?\n지도 교수 : 이 수업에서는 과학적인 지식 형성을 강조하는\n‘탐구력’이나 진위 여부에 초점을 둔 ‘비판적 사고력’보다는\n여러 대안 중 현재 직면한 문제에 대한 적절한 해결책을\n선택하는 ( ㉢ )에 중점을 두었으면 합니다. 각 방안을\n평가할 수 있어야 최종 결정을 내릴 수 있기 때문입니다.\n다만, 학생들이 사고를 반성하는 과정, 즉 자신의\n사고에 대해 다시 사고해 보는 메타 인지의 과정도\n기초적인 수준에서 반영해 보기를 권합니다. 특히,\n[활동 1]～[활동 3]을 한 후에 학생들에게 메타 인지를\n활용할\n기회가 부여되면 좋을 것 같습니다.\n[A]\n[B]\n(나)\n학습 문제 우리 지역의 문제를 해결해 봅시다.\n단계 교수･학습 활동\n도입 ∙㉣본시 학습에 적합한 문제 제시하기\n쓰레기 처리가 제대로 되지 않아 심한 악취와 해충이\n발생한 우리 지역의 환경 문제를 사례로 제시한다.\n∙문제를 확인하고 문제 상황에 공감하기\n전개 ∙[활동 1] 문제가 발생한 까닭 예상하기\n･쓰레기를 분리배출하지 않는 주민이 많을 것이다.\n･쓰레기 배출량에 비해 수거 횟수가 적은 것 같다.",
+      "method": "pypdf",
+      "char_count": 2181
+    },
+    {
+      "page": 7,
+      "text": "초등학교 교육과정 A (9면 중 7 면)\n∙[활동 2] 해결 방안과 관련된 정보 정리하기\n- 현장을 살펴보고, 주민들의 의견을 듣는다.\n- 쓰레기 배출량과 수거 횟수 및 양을 조사한다.\n∙[활동 3] 우리 지역 문제의 해결 방안 제시하기\n<방법 1> 친구들과 쓰레기 분리배출 캠페인을 벌인다.\n<방법 2> 구청에 쓰레기 수거 횟수 증가를 건의한다.\n- 각 해결 방안을 평가하고 순위를 매긴다.\n정리 ∙활동의 정리 및 해결 방안 결정하기\n1) 다음을 참고하여 (가)의 괄호 안의 ㉠에 해당하는 용어를\n쓰시오. [1점]\n이는 정치학의 주요 개념으로 개인이나 집단이 타인의\n행위에 영향을 주고, 그것을 변경･수정시킬 수 있는 힘이다.\n다른 말로, 자기의 의사를 관철시킬 수 있는 일체의 가능성\n이나 타인의 행동을 통제할 수 있는 능력을 말한다.\n2) ① (가)의 밑줄 친 ㉡의 목적을 학습자의 가치･태도 함양\n측면에서 1가지 쓰고, ②( 가)의 [A]를 반영하여 (나)의 밑줄 친\n㉣의 성격을 쓰시오. [2점]\n①\n②\n3) ①( 가)의 괄호 안의 ㉢에 해당하는 고차 사고력을 쓰고 ,\n②( 가)의 [B]를 참고하여 메타 인지 형성을 위해 (나)의 정리\n단계에 사용할 발문을 1가지 쓰시오. [2점]\n①\n②\n8. (가)는 5학년 ‘국토와 자연환경’ 주제에 관한 수석 교사와\n교사의 대화이고, (나)는 교사의 교재 연구 자료이다. 물음에\n답하시오. [4점]\n(가)\n교사 : 다음 주에는 디지털 영상 지도와 지형도, 지형 단면도\n등을 활용해 우리나라의 지형에 관한 수업을 하려고\n합니다.\n수석 교사 : 오늘날 인터넷과 ( ㉠ )이/가 발달하면서 ,\n스마트 기기를 활용해 지도와 함께 지형을 입체적으로\n조망할 수 있습니다. 여러 분야에서 유용하게 쓰이는\n( ㉠ )은/는 컴퓨터에 각종 지리 자료를 수집･\n저장\n하고, 목적에 따라 가공･분석･활용할 수 있도록 만든\n종합 시스템을 말하지요. 수업을 통해 학생들이 다양한\n지도 활용 방법을 익히게 될 것이라 기대합니다. 수업\n에서 중점을 두는 부분은 무엇인가요?\n교사 : 지리 탐구 활동에 중점을 두려고 합니다. 저는 학생들이\n자료를 활용해 지형의 특징을 탐구하여, 하천의 흐름을\n파악하도록 지도하려 합니다.\n수석 교사 : 네, 좋습니다. 지리 탐구 단계를 어떻게 설정\n하였나요?\n교사 : ㉡ ‘지형적 특징 탐색’ → ‘주요 하천의 흐름 파악’ →\n㉢ ‘지형적 특징과 주요 하천의 관계 도출’의 순으로\n진행하려 합니다. ‘지형적 특징 탐색’, ‘주요 하천의 흐름\n파악’에서는 자료를 제시하여 학생들이 탐구하도록 할\n예정입니다. 마지막 단계에서는 탐구한 지형적 특성에\n따라 주요 하천이 어느 바다로 흘러갈지 추측하고 확인\n하도록 할 것입니다.\n수석 교사 : 네, 좋습니다. 이전 차시의 전통적 지역 구분과\n관련지어 생각하게 해도 좋겠습니다. 예로부터 지형\n등의 자연환경은 지역을 구분하는 기준이었습니다 .\n예를 들어 ( ㉣ )은/는 영동 지역과 영서 지역을\n구분하는 기준이 되었습니다. 이렇게 구분된 지명은\n오늘날에도 일기예보 등 일상생활에서 여전히 사용되고\n있습니다.\n(나)\n<자료 1> ‘지형적 특징 탐색’ 단계 자료\n<자료 2> ‘주요 하천의 흐름 파악’ 단계 자료\n하천의 흐름은 산지 분포\n등의 지형적 특징과 관련이\n깊다. 산줄기는 하늘에서\n내린 강수가 나뉘는 경계가\n된다. 산줄기에 따라 나뉜\n물이 모여 하천을 이루며\n유로를 따라 흐른다.\n1) (가)의 괄호 안의 ㉠에 공통으로 들어갈 용어를 쓰시오. [1점]\n2) (나)에 근거하여 (가)의 ① 밑줄 친 ㉡을 쓰고, ② 밑줄 친\n㉢을 쓰시오. [2점]\n①\n②\n3) (가)의 괄호 안의 ㉣에 들어갈 지형의 명칭을 쓰시오. [1점]",
+      "method": "pypdf",
+      "char_count": 1802
+    },
+    {
+      "page": 8,
+      "text": "초등학교 교육과정 A (9면 중 8 면)\n도 덕\n9. (가)는 5학년 1단원 4차시 ‘바르고 곧은 마음을 길러요’를 지도\n하기 위해 예비 교사와 지도 교수가 나눈 대화이고, (나)는 예비\n교사가 이 수업에 활용할 도덕과 수업 과정･절차이다. 물음에\n답하시오. [4점]\n(가)\n예비 교사 : 이 차시에서는 학생들이 자신의 행동을 솔직하게\n반성하는 활동을 해 보게 하고, 일상에서 정직한 생활을\n실천하는 성향과 의지를 기르게 하고자 합니다 . 수업\n준비에 도움이 되는 이론이 있을까요?\n지도 교수 : 선의지와 실천 이성을 중시한 칸트(I. Kant)를\n들 수 있습니다. 그는 유아기, 아동기, 학생기에 따라 서로\n다른 교육적 접근을 제시했습니다. 칸트는 도덕 교육으로\n특히 ( ㉠ )과/와 도야를 강조했습니다. ( ㉠ )은/는\n인간의 동물적인 본성을 인간성으로 바꾸는 교육적 작용을\n말합니다. 또한 그는 바람직한 행위 양식의 습득과 규칙\n준수의 ( ㉡ )도 중요하게 여겼습니다.\n예비 교사 : 이성의 발달과 관련하여 살펴볼 현대 도덕 이론이\n있을까요?\n지도 교수 : 도덕 판단의 발달을 중시한 콜버그(L. Kohlberg)\n의 이론을 살펴볼 수 있습니다. 그의 도덕성 발달 단계의\n일반적 특징으로는 도덕적 문제를 추론하는 ㉢사고 방식의\n질적 차이를 들 수 있습니다.\n예비 교사 : 도덕성 발달을 위해서는 정서와 감정도 고려해야\n겠지요?\n지도 교수 : 네, 정서의 고양도 간과해서는 안 됩니다. 학생들이\n실천 의지를 갖도록 하기 위해서는 가치 규범을 정서적 차원\n에서 받아들이고 사랑할 수 있는 경험을 제공할 필요가\n있습니다.\n예비 교사 : 그렇군요. 저는 이러한 내용을 고려하여 (나)의\n수업 과정･\n절차를 사용하려 합니다. ( ㉣ ) 단계에서는\n정직한 생활을 실천하려는 마음을 다지고 정직의 가치를\n좋아하며 존중하게 하고자 합니다.\n(나)\n학습 문제 인식 및 동기 유발\n⬇\n가치 사례의 제시 및 성찰\n⬇\n( ㉣ )\n⬇\n도덕적 정서 및 의지의 강화\n⬇\n정리 및 확대 적용과 실천 생활화\n1) (가)의 괄호 안의 ㉠에 공통으로 들어갈 용어를 쓰시오. [1점]\n2) (가)의 ① 괄호 안의 ㉡에 들어갈 내용을 쓰고, ② 밑줄 친\n㉢의 특징을 1가지 쓰시오. [2점]\n①\n②\n3) (가)와 (나)의 괄호 안의 ㉣에 공통으로 들어갈 내용을 쓰시오.\n[1점]\n바른 생활\n10. 다음은 1학년 2학기 ‘하루’ 단원의 지도에 대해 교사 A와 교사\nB가 나눈 대화이다. 괄호 안의 ㉠에 들어갈 내용을 2022 개정\n바른 생활과 교육과정에 제시된 용어로 쓰시오. [1점]\n교사 A: ‘하루’ 단원의 학습 목표는 ‘건강하고 활기차게 하루를\n살아가며 지금을 소중히 여긴다.’입니다. 이번 단원의\n평가에서는 무엇에 중점을 둘 계획인가요?\n교사 B: 이번 단원에서는 학생이 자신의 학습 성장을 점검\n하는 데 주안점을 둘 생각입니다. 학생이 주 평가자가\n되어 배운 것을 스스로 확인하고 , 학습 주도성을\n지속적으로 높이는 평가를 실시하려 합니다.\n교사 A: 그렇다면, 선생님은 ( ㉠ )을/를 선택하셨군요.\n교사 B: 네, 학생들에게 개인적으로 의미 있는 배움, ‘하루’와\n관련한 배움 등이 무엇인지 스스로 평가하게 할 계획\n입니다.",
+      "method": "pypdf",
+      "char_count": 1570
+    },
+    {
+      "page": 9,
+      "text": "초등학교 교육과정 A (9면 중 9 면)\n<수고하셨습니다.>\n(이하 여백)\n실 과\n11. (가)는 예비 교사가 실과 수업 후 작성한 수업 성찰 일지의\n일부이고, (나)는 예비 교사가 대학의 소프트웨어 관련 수업에서\n제출한 과제 결과물이다. 물음에 답하시오. [4점]\n(가)\n이번 수업 실습에서는 6학년 실과 교과의 식생활과 소프트\n웨어 관련 공개 수업을 준비했다.\n첫 번째 공개 수업인 식생활 관련 차시를 준비하기 위하여\n실과 교육과정의 내용 체계를 살펴보았는데 ‘균형 잡힌 식생활’,\n‘식재료의 특성과 음식의 맛’ 등의 내용 요소가 있었다. 5학년\n교과서에서 식생활 관련 내용을 살펴보니 ‘균형 잡힌 식사’,\n‘올바른 식습관 형성’, ㉠ ‘건강한 간식’ 등으로 구성되어 있었으며\n6학년 식생활 교육 내용과 관련이 있었다. 6학년 교과서는\n‘김밥 만들기’와 ‘밥버거 만들기’ 등 다양한 조리 실습 중심\n으로 교육 내용이 구성되어 있었다. 조리 실습 수업을 위해 조리\n실습 계획서를 구안하여 수업의 도입 단계에서 활용하였다.\n학생들이 조리 실습 시 유의 사항을 자세하게 알 수 있어 모둠\n별로 실습을 진행하는 데 많은 도움이 되었다고 하였다. 그리고\n조리 실습을 통해 ㉡식사를 스스로 해결할 수 있는 능력을\n갖게 되었다고 자랑스러워하는 학생도 있었다.\n두 번째 공개 수업인 소프트웨어 관련 수업을 위하여 교육\n과정의 학습 요소에 제시된 ‘프로그램 설계와 제작’을 학습\n할 수 있도록 계획하였다. 입력과 출력을 연결한 순차, 선택,\n반복 요소를 수업하기 위해 대학에서 학습하고 과제 결과물로\n제출했던 (나)와 같은 프로그램을 살펴보았다.\n…(하략)…\n(나)\n[A] 지도 교수가 제시한 과제\n다음 기능을 수행하는 놀이공원의 놀이 기구 탑승 프로그램을\n블록 기반 프로그래밍 도구를 사용하여 작성하시오.\n<놀이 기구 탑승 프로그램의 기능>\n∙입력된 신장값이 120 이상인 사람만 놀이 기구에 탑승을\n허가한다.\n∙입력된 신장값이 120 이상이면 ‘탈 수 있습니다 .’라고\n알려 준다.\n∙입력된 신장값이 120보다 작으면 ‘아직은 탈 수 없습니다.’\n라고 알려 준다.\n∙탑승 가능 인원 20명이 채워지면 출발 준비를 알려 준다.\n∙500명 단위로 개별 신장값을 입력할 수 있다.\n(신장값 단위:c m )\n[B] 예비 교사가 작성한 프로그램\n1) 성장기 아동에게 (가)의 밑줄 친 ㉠이 중요한 이유를 영양소\n측면과 식사량 측면에서 1가지씩 쓰시오. [1점]\n∙\n∙\n2) (가)의 밑줄 친 ㉡에 해당하는 실과 교과 역량을 2015 개정\n실과 교육과정에 근거하여 1가지 쓰시오. [1점]\n3) (나)의 ① ⓐ에 들어갈 명령어를 쓰고, ②[ A ]의 <놀이 기구\n탑승 프로그램의 기능> 중 예비 교사가 [B] 프로그램에서 구현\n하지 못한 기능을 쓰시오. [2점]\n①\n②",
+      "method": "pypdf",
+      "char_count": 1371
+    }
+  ]
+}

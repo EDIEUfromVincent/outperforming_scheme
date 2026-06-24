@@ -1,0 +1,358 @@
+{
+  "total_review_required": 389,
+  "by_priority": {
+    "high": 1,
+    "medium": 47,
+    "low": 341
+  },
+  "by_subject": {
+    "과학": 40,
+    "수학": 57,
+    "통합교과": 46,
+    "사회": 59,
+    "체육": 35,
+    "국어": 40,
+    "도덕": 13,
+    "실과": 39,
+    "미술": 12,
+    "영어": 34,
+    "음악": 14
+  },
+  "by_change_type": {
+    "new_or_unmatched": 221,
+    "removed_or_unmatched": 163,
+    "semantic_match": 5
+  },
+  "top_30": [
+    {
+      "review_priority": "high",
+      "priority_score": 18,
+      "subject": "과학",
+      "grade_band": "5-6",
+      "change_type": "new_or_unmatched",
+      "code_2015": null,
+      "code_2022": "6과15-04",
+      "related_exam_count": 1,
+      "review_reason": "교과가중치 5; 학년군가중치 3; 변화유형가중치 4; 임용형 키워드 전기, 회로, 탐구, 실천, 생활; 관련 기출 1개; 자동 추정 대응"
+    },
+    {
+      "review_priority": "medium",
+      "priority_score": 16,
+      "subject": "수학",
+      "grade_band": "1-2",
+      "change_type": "removed_or_unmatched",
+      "code_2015": "2수05-03",
+      "code_2022": null,
+      "related_exam_count": 1,
+      "review_reason": "교과가중치 5; 학년군가중치 2; 변화유형가중치 4; 임용형 키워드 분수, 평가, 생활, 표현; 관련 기출 1개; 자동 추정 대응"
+    },
+    {
+      "review_priority": "medium",
+      "priority_score": 15,
+      "subject": "과학",
+      "grade_band": "5-6",
+      "change_type": "new_or_unmatched",
+      "code_2015": null,
+      "code_2022": "6과08-03",
+      "related_exam_count": 0,
+      "review_reason": "교과가중치 5; 학년군가중치 3; 변화유형가중치 4; 임용형 키워드 탐구, 실천, 생활; 자동 추정 대응"
+    },
+    {
+      "review_priority": "medium",
+      "priority_score": 15,
+      "subject": "과학",
+      "grade_band": "5-6",
+      "change_type": "new_or_unmatched",
+      "code_2015": null,
+      "code_2022": "6과15-01",
+      "related_exam_count": 1,
+      "review_reason": "교과가중치 5; 학년군가중치 3; 변화유형가중치 4; 임용형 키워드 전기, 회로; 관련 기출 1개; 자동 추정 대응"
+    },
+    {
+      "review_priority": "medium",
+      "priority_score": 15,
+      "subject": "통합교과",
+      "grade_band": "1-2",
+      "change_type": "removed_or_unmatched",
+      "code_2015": "2바06-02",
+      "code_2022": null,
+      "related_exam_count": 0,
+      "review_reason": "교과가중치 4; 학년군가중치 2; 변화유형가중치 4; 임용형 키워드 토의, 평가, 과정, 실천, 지역; 자동 추정 대응"
+    },
+    {
+      "review_priority": "medium",
+      "priority_score": 15,
+      "subject": "통합교과",
+      "grade_band": "1-2",
+      "change_type": "removed_or_unmatched",
+      "code_2015": "2즐06-04",
+      "code_2022": null,
+      "related_exam_count": 0,
+      "review_reason": "교과가중치 4; 학년군가중치 2; 변화유형가중치 4; 임용형 키워드 소리, 평가, 감상, 표현, 경쟁; 자동 추정 대응"
+    },
+    {
+      "review_priority": "medium",
+      "priority_score": 15,
+      "subject": "통합교과",
+      "grade_band": "1-2",
+      "change_type": "removed_or_unmatched",
+      "code_2015": "2즐07-04",
+      "code_2022": null,
+      "related_exam_count": 1,
+      "review_reason": "교과가중치 4; 학년군가중치 2; 변화유형가중치 4; 임용형 키워드 과정, 생활, 표현, 경쟁; 관련 기출 1개; 자동 추정 대응"
+    },
+    {
+      "review_priority": "medium",
+      "priority_score": 14,
+      "subject": "과학",
+      "grade_band": "3-4",
+      "change_type": "new_or_unmatched",
+      "code_2015": null,
+      "code_2022": "4과08-01",
+      "related_exam_count": 1,
+      "review_reason": "교과가중치 5; 학년군가중치 2; 변화유형가중치 4; 임용형 키워드 토의, 생활; 관련 기출 1개; 자동 추정 대응"
+    },
+    {
+      "review_priority": "medium",
+      "priority_score": 14,
+      "subject": "과학",
+      "grade_band": "3-4",
+      "change_type": "new_or_unmatched",
+      "code_2015": null,
+      "code_2022": "4과09-03",
+      "related_exam_count": 0,
+      "review_reason": "교과가중치 5; 학년군가중치 2; 변화유형가중치 4; 임용형 키워드 전기, 탐구, 생활; 자동 추정 대응"
+    },
+    {
+      "review_priority": "medium",
+      "priority_score": 14,
+      "subject": "과학",
+      "grade_band": "5-6",
+      "change_type": "removed_or_unmatched",
+      "code_2015": "6과13-04",
+      "code_2022": null,
+      "related_exam_count": 0,
+      "review_reason": "교과가중치 5; 학년군가중치 3; 변화유형가중치 4; 임용형 키워드 전기, 평가; 자동 추정 대응"
+    },
+    {
+      "review_priority": "medium",
+      "priority_score": 14,
+      "subject": "과학",
+      "grade_band": "5-6",
+      "change_type": "new_or_unmatched",
+      "code_2015": null,
+      "code_2022": "6과03-03",
+      "related_exam_count": 0,
+      "review_reason": "교과가중치 5; 학년군가중치 3; 변화유형가중치 4; 임용형 키워드 탐구, 생활; 자동 추정 대응"
+    },
+    {
+      "review_priority": "medium",
+      "priority_score": 14,
+      "subject": "과학",
+      "grade_band": "5-6",
+      "change_type": "new_or_unmatched",
+      "code_2015": null,
+      "code_2022": "6과07-04",
+      "related_exam_count": 0,
+      "review_reason": "교과가중치 5; 학년군가중치 3; 변화유형가중치 4; 임용형 키워드 탐구, 생활; 자동 추정 대응"
+    },
+    {
+      "review_priority": "medium",
+      "priority_score": 14,
+      "subject": "과학",
+      "grade_band": "5-6",
+      "change_type": "new_or_unmatched",
+      "code_2015": null,
+      "code_2022": "6과14-04",
+      "related_exam_count": 0,
+      "review_reason": "교과가중치 5; 학년군가중치 3; 변화유형가중치 4; 임용형 키워드 과정, 탐구; 자동 추정 대응"
+    },
+    {
+      "review_priority": "medium",
+      "priority_score": 14,
+      "subject": "사회",
+      "grade_band": "5-6",
+      "change_type": "new_or_unmatched",
+      "code_2015": null,
+      "code_2022": "6사10-02",
+      "related_exam_count": 0,
+      "review_reason": "교과가중치 4; 학년군가중치 3; 변화유형가중치 4; 임용형 키워드 읽기, 평가, 표현; 자동 추정 대응"
+    },
+    {
+      "review_priority": "medium",
+      "priority_score": 14,
+      "subject": "체육",
+      "grade_band": "5-6",
+      "change_type": "removed_or_unmatched",
+      "code_2015": "6체05-06",
+      "code_2022": null,
+      "related_exam_count": 0,
+      "review_reason": "교과가중치 2; 학년군가중치 3; 변화유형가중치 4; 임용형 키워드 평가, 과정, 실천, 생활, 지역; 자동 추정 대응"
+    },
+    {
+      "review_priority": "medium",
+      "priority_score": 13,
+      "subject": "과학",
+      "grade_band": "3-4",
+      "change_type": "removed_or_unmatched",
+      "code_2015": "4과07-04",
+      "code_2022": null,
+      "related_exam_count": 0,
+      "review_reason": "교과가중치 5; 학년군가중치 2; 변화유형가중치 4; 임용형 키워드 평가, 탐구; 자동 추정 대응"
+    },
+    {
+      "review_priority": "medium",
+      "priority_score": 13,
+      "subject": "과학",
+      "grade_band": "3-4",
+      "change_type": "new_or_unmatched",
+      "code_2015": null,
+      "code_2022": "4과02-03",
+      "related_exam_count": 0,
+      "review_reason": "교과가중치 5; 학년군가중치 2; 변화유형가중치 4; 임용형 키워드 탐구, 생활; 자동 추정 대응"
+    },
+    {
+      "review_priority": "medium",
+      "priority_score": 13,
+      "subject": "과학",
+      "grade_band": "3-4",
+      "change_type": "new_or_unmatched",
+      "code_2015": null,
+      "code_2022": "4과03-03",
+      "related_exam_count": 0,
+      "review_reason": "교과가중치 5; 학년군가중치 2; 변화유형가중치 4; 임용형 키워드 탐구, 생활; 자동 추정 대응"
+    },
+    {
+      "review_priority": "medium",
+      "priority_score": 13,
+      "subject": "과학",
+      "grade_band": "3-4",
+      "change_type": "new_or_unmatched",
+      "code_2015": null,
+      "code_2022": "4과04-03",
+      "related_exam_count": 0,
+      "review_reason": "교과가중치 5; 학년군가중치 2; 변화유형가중치 4; 임용형 키워드 과정, 탐구; 자동 추정 대응"
+    },
+    {
+      "review_priority": "medium",
+      "priority_score": 13,
+      "subject": "과학",
+      "grade_band": "5-6",
+      "change_type": "removed_or_unmatched",
+      "code_2015": "6과03-04",
+      "code_2022": null,
+      "related_exam_count": 0,
+      "review_reason": "교과가중치 5; 학년군가중치 3; 변화유형가중치 4; 임용형 키워드 평가; 자동 추정 대응"
+    },
+    {
+      "review_priority": "medium",
+      "priority_score": 13,
+      "subject": "과학",
+      "grade_band": "5-6",
+      "change_type": "removed_or_unmatched",
+      "code_2015": "6과16-04",
+      "code_2022": null,
+      "related_exam_count": 0,
+      "review_reason": "교과가중치 5; 학년군가중치 3; 변화유형가중치 4; 임용형 키워드 과정; 자동 추정 대응"
+    },
+    {
+      "review_priority": "medium",
+      "priority_score": 13,
+      "subject": "과학",
+      "grade_band": "5-6",
+      "change_type": "new_or_unmatched",
+      "code_2015": null,
+      "code_2022": "6과02-03",
+      "related_exam_count": 0,
+      "review_reason": "교과가중치 5; 학년군가중치 3; 변화유형가중치 4; 임용형 키워드 탐구; 자동 추정 대응"
+    },
+    {
+      "review_priority": "medium",
+      "priority_score": 13,
+      "subject": "과학",
+      "grade_band": "5-6",
+      "change_type": "new_or_unmatched",
+      "code_2015": null,
+      "code_2022": "6과06-01",
+      "related_exam_count": 0,
+      "review_reason": "교과가중치 5; 학년군가중치 3; 변화유형가중치 4; 임용형 키워드 생활; 자동 추정 대응"
+    },
+    {
+      "review_priority": "medium",
+      "priority_score": 13,
+      "subject": "과학",
+      "grade_band": "5-6",
+      "change_type": "new_or_unmatched",
+      "code_2015": null,
+      "code_2022": "6과11-03",
+      "related_exam_count": 0,
+      "review_reason": "교과가중치 5; 학년군가중치 3; 변화유형가중치 4; 임용형 키워드 탐구; 자동 추정 대응"
+    },
+    {
+      "review_priority": "medium",
+      "priority_score": 13,
+      "subject": "국어",
+      "grade_band": "1-2",
+      "change_type": "removed_or_unmatched",
+      "code_2015": "2국03-05",
+      "code_2022": null,
+      "related_exam_count": 0,
+      "review_reason": "교과가중치 5; 학년군가중치 2; 변화유형가중치 4; 임용형 키워드 쓰기, 표현; 자동 추정 대응"
+    },
+    {
+      "review_priority": "medium",
+      "priority_score": 13,
+      "subject": "국어",
+      "grade_band": "1-2",
+      "change_type": "removed_or_unmatched",
+      "code_2015": "2국04-04",
+      "code_2022": null,
+      "related_exam_count": 0,
+      "review_reason": "교과가중치 5; 학년군가중치 2; 변화유형가중치 4; 임용형 키워드 소리, 절차; 자동 추정 대응"
+    },
+    {
+      "review_priority": "medium",
+      "priority_score": 13,
+      "subject": "국어",
+      "grade_band": "3-4",
+      "change_type": "new_or_unmatched",
+      "code_2015": null,
+      "code_2022": "4국02-03",
+      "related_exam_count": 0,
+      "review_reason": "교과가중치 5; 학년군가중치 2; 변화유형가중치 4; 임용형 키워드 읽기, 과정; 자동 추정 대응"
+    },
+    {
+      "review_priority": "medium",
+      "priority_score": 13,
+      "subject": "국어",
+      "grade_band": "3-4",
+      "change_type": "new_or_unmatched",
+      "code_2015": null,
+      "code_2022": "4국05-04",
+      "related_exam_count": 0,
+      "review_reason": "교과가중치 5; 학년군가중치 2; 변화유형가중치 4; 임용형 키워드 감상, 표현; 자동 추정 대응"
+    },
+    {
+      "review_priority": "medium",
+      "priority_score": 13,
+      "subject": "국어",
+      "grade_band": "5-6",
+      "change_type": "new_or_unmatched",
+      "code_2015": null,
+      "code_2022": "6국04-03",
+      "related_exam_count": 0,
+      "review_reason": "교과가중치 5; 학년군가중치 3; 변화유형가중치 4; 임용형 키워드 표현; 자동 추정 대응"
+    },
+    {
+      "review_priority": "medium",
+      "priority_score": 13,
+      "subject": "국어",
+      "grade_band": "5-6",
+      "change_type": "new_or_unmatched",
+      "code_2015": null,
+      "code_2022": "6국04-05",
+      "related_exam_count": 0,
+      "review_reason": "교과가중치 5; 학년군가중치 3; 변화유형가중치 4; 임용형 키워드 표현; 자동 추정 대응"
+    }
+  ]
+}

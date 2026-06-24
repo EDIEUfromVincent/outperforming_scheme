@@ -1,0 +1,402 @@
+{
+  "id": "2022-A",
+  "year": 2022,
+  "form": "A",
+  "source": "2022학년도_교육과정A.pdf",
+  "page_count": 9,
+  "extraction_methods": [
+    "pypdf"
+  ],
+  "warnings": [],
+  "questions": [
+    {
+      "id": "2022-A-Q01",
+      "number": 1,
+      "subject": "국어",
+      "score": 4,
+      "pages": [
+        1
+      ],
+      "curriculum_mentions": [
+        "2015"
+      ],
+      "achievement_codes": [],
+      "visual_references": [],
+      "needs_visual_context": false,
+      "text": "1. (가)는 5학년 토론 수업을 준비하기 위한 두 교사의 대화이고,\n(나)는 김 교사가 (다)의 토론을 위해 칠판에 적은 토론 절차이며,\n(다)는 김 교사의 수업 중에 학생들이 수행한 토론의 일부이다.\n물음에 답하시오. [4점]\n(가)\n김교 사:‘ 토론 방법과 규칙을 알고 주제를 정해 토론할 수\n있다.’를 학습 목표로 토론 수업을 진행하려는데 가장 유의\n해야 할 점은 무엇일까요?\n수석 교사: 학생이 토론의 절차와 규칙을 알고 이를 지키며\n토론하게 하는 데 가장 유의해야 한다고 생각해요. 저도\n처음에는 토론 절차를 기억하기 어려웠는데, ( ㉠ )이/가\n있는 쪽이 먼저 발언한다는 것을 이해하고 나니 기억하기\n쉬웠어요. 가령, 정책 논제 토론에서는 현 상태의 변화를\n주장하는 찬성 측이 먼저 주장을 제시해야 반대 측이 반박\n할 수 있잖아요. 그래서 고전적 토론, 반대 신문식 토론\n등 많은 토론 형식에서 찬성 측이 먼저 입론하게 하는\n것이더라고요.\n김교 사: 작년에 토론을 지도하는데 자기가 할 말만 생각\n하느라 상대편에서 말한 것을 놓치고 엉뚱한 이야기를\n하는 학생이 많았어요.\n수석 교사: 맞아요. 그래서 토론에서도 한 사람의 참여자가\n의사소통 상황의 매순간 화자 역할과 청자 역할을 동시에\n수행하며, 참여자 간에 의미를 공유하고 협상함으로써\n역동적으로 의미를 구성해 나가는 ( ㉡ ) 기능을 잘\n발휘해야 해요. 그래야만 토론이 일방적인 말하기와 듣기가\n아닌 양방향의 의사소통이 될 수 있을 테니까요.\n김교 사: 학생들이 토론하다가 자신의 입장이 어느 쪽이었\n는지를 혼동하거나 토론 중간에 입장을 바꿔 토론의\n흐름이 끊기는 경우도 많았어요. 이를 예방할 수 있는\n방법이 있을까요?\n수석 교사: 저는 논제를 요건에 맞게 잘 표현해 주니\n도움이 되었어요. 정책 논제의 경우, 현 상태를 변화\n시키고자 하는 의도를 포함해야 해요. 또한 평서문\n형태로 하나의 주장만 담아야 하죠.\n그리고 찬성과\n반대 중 어느 한 편에 유리하게 작용할 수 있는 감정적\n표현은 담기지 않아야 해요. 이렇게 하면 논제를 중심\n으로 찬반 입장이 분명히 갈리고 논제가 어느 한 편에\n유리하게 작용하는 정도도 줄일 수 있어요. 그래서\n학생들이 자기 입장을 헷갈리지 않게 되고 중간에\n입장을 바꾸는 일도 덜하게 되더라고요.\n[A]\n(나)\n찬성 측1 입론→반대 측2 질문→반대 측1 입론→찬성 측1 질문→\n찬성 측2 입론→반대 측1 질문→반대 측2 입론→찬성 측2 질문→\n( ⓐ ) 반박→( ⓑ ) 반박→( ⓒ ) 반박→( ⓓ ) 반박\n(다)\n사회자:( ㉢ )을/를 논제로 2:2 반대 신문식 토론을 시작\n하겠습니다. (칠판을 가리키며) 토론 절차는 칠판에서\n확인할 수 있습니다. 그럼 찬성 측 1 토론자부터 입론해\n주세요.\n찬성 측1: 저희는 사형 제도가 반드시 폐지되어야 한다고\n주장합니다. 그 까닭은 두 가지입니다. 첫째, 헌법 제10조에\n따르면 국가는 개인의 기본적 인권을 보장할 의무가\n있습니다. 둘째, 무고한 사람을 오판하여 사형 집행할\n가능성이 있습니다.\n사회자: 반대 측 2 토론자 질문해 주세요.\n반대 측2: 가해자만큼 피해자의 인권도 중요하다고 생각하지\n않나요?\n…(하략)…\n1) (가)의 ㉠에 들어갈 말을 쓰시오. [1점]\n2) 2015 개정 국어과 교육과정의 듣기･말하기 영역 ‘내용 체계’에\n제시된 ‘기능’ 중 (가)의 ㉡에 들어갈 말을 쓰시오. [1점]\n3) ① (나)의 ⓐ～ⓓ에 들어갈 말을 순서대로 쓰고, ②( 다)의 ㉢에\n들어갈 말을 [A]를 반영하여 한 문장으로 쓰시오. [2점]\n①\n②\n2022학년도 공립 초등학교 교사 임용후보자 선정경쟁시험 (1차)\n초등학교 교육과정 A\n수험번호 : ( ) 성명 : ( )\n2 교시 11문항 41점시 험 시 간 70분",
+      "subquestions": [
+        {
+          "number": 1,
+          "score": 1,
+          "text": "1) (가)의 ㉠에 들어갈 말을 쓰시오. [1점]"
+        },
+        {
+          "number": 2,
+          "score": 1,
+          "text": "2) 2015 개정 국어과 교육과정의 듣기･말하기 영역 ‘내용 체계’에\n제시된 ‘기능’ 중 (가)의 ㉡에 들어갈 말을 쓰시오. [1점]"
+        },
+        {
+          "number": 3,
+          "score": 2,
+          "text": "3) ① (나)의 ⓐ～ⓓ에 들어갈 말을 순서대로 쓰고, ②( 다)의 ㉢에\n들어갈 말을 [A]를 반영하여 한 문장으로 쓰시오. [2점]\n①\n②\n2022학년도 공립 초등학교 교사 임용후보자 선정경쟁시험 (1차)\n초등학교 교육과정 A\n수험번호 : ( ) 성명 : ( )\n2 교시 11문항 41점시 험 시 간 70분"
+        }
+      ]
+    },
+    {
+      "id": "2022-A-Q02",
+      "number": 2,
+      "subject": "국어",
+      "score": 4,
+      "pages": [
+        2
+      ],
+      "curriculum_mentions": [],
+      "achievement_codes": [],
+      "visual_references": [],
+      "needs_visual_context": false,
+      "text": "2. (가)는 4학년 문학 수업을 한 후에 두 교사가 나눈 대화이고,\n(나)는 문학 수업에서 활용한 작품이다. 물음에 답하시오. [4점]\n(가)\n김교 사: 지난 국어 시간에 이야기의 흐름 파악하기 수업을\n했어요. 먼저 이야기를 읽고 주요 인물을 찾는 활동을\n했어요. 학생들이 동화에 등장하는 인물을 친숙하게\n생각하더라고요.\n이교 사: 네, 학생들은 ( ㉠ )이/가 반영된 인물들을 친숙\n하게 받아들이는 것 같아요. 이 시기의 학생들은 사물이\n말하는 것을 자연스럽게 여기는 발달 특성이 있어요 .\n그래서 인물이 비현실적으로 형상화되어 있어도 쉽게 찾을\n수 있어요. 이야기 흐름 파악하기 학습 활동은 어땠나요?\n김교 사: 학생들이 이야기의 흐름을 ‘처음-가운데-끝’, ‘발단\n-전개-절정-결말’과 같은 ( ㉡ )에 따라 정리하는 것을\n어려워했어요. 선생님은 어떻게 지도하시나요?\n이교 사: 학생들이 ( ㉡ )을/를 고려하여 사건을 파악\n하도록 하려면, ㉢이야기 전체에 영향을 주는 갈등을 활용\n하면 좋아요. 갈등은 주로 주인공과 적대자 간의 대립 상황\n으로 나타나지요. 학생들에게 갈등을 본격적으로 지도\n하기는 어려우니까, 교사가 이야기의 갈등을 찾아서 사건\n간의 인과 관계를 이해하도록 안내해 줄 수 있어요.\n김교 사: 그렇군요. 갈등을 활용해서 이야기의 흐름을 정리\n할 수 있겠네요.\n이교 사: 네, 맞아요. 그리고 갈등이 해소되는 과정에서\n㉣ 등장인물의 성격이나 가치관이 변하는 경우, 그 변화를\n확인하는 것도 중요해요. 예를 들면 ｢소가 된 게으름뱅이｣의\n결말에서 게으름뱅이가 자신의 잘못을 뉘우치고 부지런한\n사람으로 바뀌는 것을 확인할 수 있어요.\n(나)\n소가 된 게으름뱅이\n옛날 어느 마을에 게으른 사람이 살았어요. 모두 눈코 뜰 새\n없이 바쁜 농사철에도 게으름뱅이는 온종일 방에서 뒹굴뒹굴\n놀기만 했지요. 일하라는 아내의 잔소리가 듣기 싫어서 게으름\n뱅이는 집을 나가기로 마음먹었어요.\n며칠 뒤, 집을 나온 게으름뱅이는 어느 초가집 앞을 지나게\n되었어요. 그런데 노인이 마루에 앉아 쇠머리처럼 생긴 탈을\n만들고 있었어요.\n“영감님, 그걸 어디에다 쓰려고 만드십니까?”\n“허허허, 이 탈은 일하기 싫어하는 사람이 쓰면 아주 좋은\n일이 생기는 탈이라네.”\n신기하게 여긴 게으름뱅이는 쇠머리 탈을 얼굴에 써 보았어요.\n그러자 노인이 기다렸다는 듯 게으름뱅이의 등에 쇠가죽을 척\n씌웠지요. 그런데 어찌 된 일인지 쇠머리 탈은 얼굴에 착 달라\n붙어 떨어지지 않았어요. 눈 깜짝할 새에 소가 된 게으름뱅이는\n소리를 지르며 버둥거렸어요. 이윽고 노인은 소가 된 게으름뱅이를\n끌고 장터로 가서 농부에게 팔았어요.\n“이 소는 무를 먹으면 곧 죽어 버리니 무밭에는 절대로 못\n가게 하시오.”\n소가 된 게으름뱅이는 농부네 집으로 오자마자 하루 종일\n힘들게 일했지요. 저녁때가 되자 너무너무 힘들고 배가 고팠어요.\n하지만 농부가 가져다준 뻣뻣한 쇠죽은 먹을 수가 없었지요.\n[뒷부분 줄거리] 소가 된 게으름뱅이는 놀기만 했던 지난날을 후회\n한다. 그는 소로 사느니 죽는 게 낫겠다는 생각을 한다. 이튿날 소가\n된 게으름뱅이는 무밭으로 뛰어 들어가 무를 먹는다. 그러자 쇠머리 탈이\n벗겨지며 사람으로 변한다. 집으로 돌아온 게으름뱅이는 부지런히 일하며\n행복하게 살아간다.\n1) (가)의 ㉠과 <보기>의 ⓐ에 공통으로 들어갈 말을 쓰시오. [1점]\n<보 기>\n동화는 대체로 어린이들이 주변의 사물을 살아있는 생명\n체로 여기는 ( ⓐ )에 바탕을 둔다. 이러한 사고가 반영된\n동화는 환상성과 허구성이 강하고 사물이 의인화되는 경우가\n많다. 예를 들어 동화에서는 장승이 움직이고, 바느질 가위가\n스스로 행동하며, 해와 바람이 말을 하기도 한다.\n2) ① (가)의 ㉡에 공통으로 들어갈 말을 쓰고, ②( 나)에서 (가)의\n㉢에 해당하는 것을 쓰시오. [2점]\n①\n②\n3) (가)의 ㉣에 해당하는 인물의 성격 유형을 쓰시오. [1점]",
+      "subquestions": [
+        {
+          "number": 1,
+          "score": 1,
+          "text": "1) (가)의 ㉠과 <보기>의 ⓐ에 공통으로 들어갈 말을 쓰시오. [1점]\n<보 기>\n동화는 대체로 어린이들이 주변의 사물을 살아있는 생명\n체로 여기는 ( ⓐ )에 바탕을 둔다. 이러한 사고가 반영된\n동화는 환상성과 허구성이 강하고 사물이 의인화되는 경우가\n많다. 예를 들어 동화에서는 장승이 움직이고, 바느질 가위가\n스스로 행동하며, 해와 바람이 말을 하기도 한다."
+        },
+        {
+          "number": 2,
+          "score": 2,
+          "text": "2) ① (가)의 ㉡에 공통으로 들어갈 말을 쓰고, ②( 나)에서 (가)의\n㉢에 해당하는 것을 쓰시오. [2점]\n①\n②"
+        },
+        {
+          "number": 3,
+          "score": 1,
+          "text": "3) (가)의 ㉣에 해당하는 인물의 성격 유형을 쓰시오. [1점]"
+        }
+      ]
+    },
+    {
+      "id": "2022-A-Q03",
+      "number": 3,
+      "subject": "국어",
+      "score": 3,
+      "pages": [
+        2,
+        3
+      ],
+      "curriculum_mentions": [],
+      "achievement_codes": [],
+      "visual_references": [],
+      "needs_visual_context": false,
+      "text": "3. (가)는 3학년 ‘낱말의 의미 관계’ 수업을 준비하는 과정에서\n교사가 작성한 메모이고, (나)는 수업을 하기 위해 구상한 교수･\n학습 과정안의 일부이다. 물음에 답하시오. [3점]\n(가)\n유의어\n∙학습자 오개념: 비슷한 말 = 같은 말\n∙지도 방법: 의미 차이 확인하기(교체 검증)\n∙밥 먹을 틈이 없다.\n∙문 틈으로 바람이 들어온다.\n∙우정에 틈이 생겼다.\n‘틈’ 대신 ‘겨를’을 넣어 의미 차이 확인하기\n∙밥 먹을 겨를이 없다.\n∙문 *겨를로 바람이 들어온다.\n∙우정에 *겨를이 생겼다.\n‘틈’과 ‘겨를’은 공간, 추상, 시간 표현 중 ( ㉠ ),\n( ㉡ ) 표현에서는 교체가 불가능하다.\n반의어\n∙학습자 오개념: 낱말에 ‘안’, ‘아니’를 넣으면\n반대말이 됨.\n∙지도 방법: 반의어 유형을 고려하여 제시하기\n(상보 반의어, ㉢ 등급 반의어, 관계 반의어)\n…(하략)…\n(나)\n단계 수업 활동\n도입 ◦학습 목표 확인하기\n- 낱말의 의미 관계를 파악할 수 있다.\n전개\n…(중략)…\n◦반대말 찾기\n주다\n빠름\n참\n스승\n출석\n위\n받다\n결석\n아래\n거짓\n느림\n제자\n[A]\n◦낱말의 의미 관계 정리하기\n▪‘기쁘다’를 쓰고, 비슷한 말과 반대말을 쓴다.\n그리고 낱말의 의미 관계를 쓴다.\n▪옆으로 한 칸 옮겨, ‘즐겁다’를 기준으로 비슷한\n말과 반대말을 쓰고, 낱말의 의미 관계를 쓴다.\n▪‘슬프다’와 ‘괴롭다’ 사이의 의미 관계를 쓴다.\n▪옆으로 한 칸 옮겨, ‘신나다’를 기준으로 비슷한\n말과 반대말을 쓴다.\n[B]\n1) (가)의 ㉠, ㉡에 들어갈 말을 쓰시오. [1점]\n2) ① (가)의 ㉢에 해당하는 낱말의 쌍을 (나)의 [A]에서 찾아\n쓰고, ②( 나)의 [B]에서 활용한 ‘낱말의 의미 관계 정리 방법’을\n쓰시오. [2점]\n①\n②",
+      "subquestions": [
+        {
+          "number": 1,
+          "score": 1,
+          "text": "1) (가)의 ㉠, ㉡에 들어갈 말을 쓰시오. [1점]"
+        },
+        {
+          "number": 2,
+          "score": 2,
+          "text": "2) ① (가)의 ㉢에 해당하는 낱말의 쌍을 (나)의 [A]에서 찾아\n쓰고, ②( 나)의 [B]에서 활용한 ‘낱말의 의미 관계 정리 방법’을\n쓰시오. [2점]\n①\n②"
+        }
+      ]
+    },
+    {
+      "id": "2022-A-Q04",
+      "number": 4,
+      "subject": "영어",
+      "score": 3,
+      "pages": [
+        3,
+        4
+      ],
+      "curriculum_mentions": [],
+      "achievement_codes": [],
+      "visual_references": [],
+      "needs_visual_context": false,
+      "text": "4. 다음은 최 교사의 4학년 영어 읽기 수업의 일부이다. 물음에\n답하시오. [3점]\n읽\n기\n중\nT:B e f o r e we start reading a story, let us think. When\nyou see unfamiliar words while reading a book, what\ndo you do?\nS1 :친구나 선생님에게 물어요.\nS2 :번역기를 사용해요.\nT:T h e y are all good ideas. Today, I’ll tell you another\nway. Open your book to page 21. (책을 펼쳐 보이며)\nI’ll read the story. “Hello! My name is Dan Short. I\nam blind.” Does anyone know what the word ‘blind’\nmeans?\nSs :잘 모르겠어요.\nT:T h a t’s OK. Let’s see together. What do you see in the\npicture?\nS3 :주인공이 지팡이를 가지고 있어요.\nS4 :개가 길을 안내해 주고 있어요.\nT:T h a t ’ s right. Do you think he can see things?\nSs : No.\nT:R i g h t . Then, what’s the meaning of the word ‘blind’?\nSs :눈이 안 보인다는 뜻이에요.\nT : Excellent. Yes, he is blind. This time, you’re going to\nread the book on your own. Try to guess the\nmeaning\nof unfamiliar words while reading. Understood?\nSs : Yes.\nT:G r e a t . Please remember what you did in guessing the\nmeaning of ‘blind\n’.\n…(하략)…\n읽\n기\n후\nT : Did you enjoy reading the story?\nSs : Yes, I did.\nT : You understand all the story. It’s time to retell the\nstory. ㉠ Get into pairs and tell the story in your\nwords to your partner before presenting it to the\nclass. I’ll give you 5 minutes for the pair work.\nSs : (활동을 한다.)\nT : OK, who wants to start? (손을 든 학생들을 둘러보며)\nS5, will you tell us the story?\nS5: Dan Short is blind. But the special dog help ... the\nspecial dog help he can go to school.\nT : Very good. S6, do you have anything to add?\nS6: He can go to the shopping mall. He can go to airport.\nT : Great. Who will be the next to tell us about the\nspecial dog?\n…(하략)…\n1) ① ‘읽기 중’에서 학생들이 어휘의 의미를 추측할 수 있도록\n최 교사가 활용한 전략을 쓰고, ②‘ 읽기 후’에서 ㉠의 기대 효과를\n학습자의 정의적 요인과 관련하여 쓰시오. [2점]\n①\n②\n2) 다음은 ‘읽기 후’에서 적용한 언어 습득 이론을 설명한 것이다.\n() 에 공통으로 들어갈 용어를 첫 단어가 ‘p’로 시작하는\n2단어의 영어로 쓰시오. [1점]\nLearners can comprehend input without having to look\nclosely at the grammar. However, if they are required to\nproduce the target language, their attention tends to\nchange its direction to linguistic features. It is in this\nsense that () contribute(s) to L2 development.\nL2 learners’ linguistic processing leading to ()\ngenerates important language learning opportunities by\nallowing learners to test their linguistic hypotheses and\nrefine their interlanguage. The post-reading activity\nguided students into focusing on linguistic structures in\norder to deliver their intended meanings. Also, it appears\nthat, for S5, the activity likely offered an opportunity to\nnotice linguistic gaps in her interlanguage, which is\nanother beneficial aspect of () .",
+      "subquestions": [
+        {
+          "number": 1,
+          "score": 2,
+          "text": "1) ① ‘읽기 중’에서 학생들이 어휘의 의미를 추측할 수 있도록\n최 교사가 활용한 전략을 쓰고, ②‘ 읽기 후’에서 ㉠의 기대 효과를\n학습자의 정의적 요인과 관련하여 쓰시오. [2점]\n①\n②"
+        },
+        {
+          "number": 2,
+          "score": 1,
+          "text": "2) 다음은 ‘읽기 후’에서 적용한 언어 습득 이론을 설명한 것이다.\n() 에 공통으로 들어갈 용어를 첫 단어가 ‘p’로 시작하는\n2단어의 영어로 쓰시오. [1점]\nLearners can comprehend input without having to look\nclosely at the grammar. However, if they are required to\nproduce the target language, their attention tends to\nchange its direction to linguistic features. It is in this\nsense that () contribute(s) to L2 development.\nL2 learners’ linguistic processing leading to ()\ngenerates important language learning opportunities by\nallowing learners to test their linguistic hypotheses and\nrefine their interlanguage. The post-reading activity\nguided students into focusing on linguistic structures in\norder to deliver their intended meanings. Also, it appears\nthat, for S5, the activity likely offered an opportunity to\nnotice linguistic gaps in her interlanguage, which is\nanother beneficial aspect of () ."
+        }
+      ]
+    },
+    {
+      "id": "2022-A-Q05",
+      "number": 5,
+      "subject": "영어",
+      "score": 4,
+      "pages": [
+        4,
+        5
+      ],
+      "curriculum_mentions": [],
+      "achievement_codes": [],
+      "visual_references": [],
+      "needs_visual_context": false,
+      "text": "5. (가)는 박 교사의 5학년 영어 수업의 일부이고, (나)는 박 교사가\n수업을 마친 후에 작성한 성찰 일지의 일부이다. 물음에 답하시오.\n[4점]\n(가)\nT:( 손 인형을 소개하며) Before doing an activity, I’d like to\nintroduce our friend, Froggie. Everyone, say hello to\nFroggie!\nSs : Hello, Froggie!\nT : Froggie, we are talking about jobs today. What do you\nwant to be? (Froggie 목소리 흉내를 내며) I want to be a\nsinger. (노래하는 시늉을 하며) I like singing.\nT:S o u n d s great! Everyone, ask him what he wants to be.\n3-2-1, go!\nSs : What do you want to be?\nT : (Froggie 목소리 흉내를 내며) I want to be a singer. (노래\n하는 시늉을 하며) I like singing. (S1을 가리키며) What do\nyou want to be?\nS1 : I want to be a painter. I like painting.\nT:( F r o g g i e 흉내를 내며) Well done! (S2를 가리키며) What\ndo you want to be?\nS2 : I want a dancer.\nT:O h , I see, you want to be a dancer. Can you tell me why?\nS2 : I am like dancing. I can dance very well.\nT : Really? I like dancing, too!\n…(중략)…\nT:N o w , we’re going to do a line-up activity. You’ll ask and\nanswer questions about dream jobs using “What do you\nwant to be?”, “I want to be a(n)....” Here is how to play\nthe activity.\nSs : (활동 절차에 대한 자료 화면을 본다.)\nT:F i r s t , line up in two rows and face each other. Then, ask\nand answer the question. What is the question?\nSs : What do you want to be?\nT:E x c e l l e n t ! When I say “Move” in the middle of your\nconversation, students in the first row will move one step\nto the right. Then, do the same thing with a new partner\nin the second row. Got it? Please let me know whether\nyou understand it by showing your Yes/No cards.\nSs : (일부 학생이 No 카드를 들어 올린다.)\nT:O K , I will show you how to play step by step.\n…(중략)…\nSs : (학생들이 두 줄로 선다.)\nT:L e t ’ s start!\nS3 : What do you want to be?\nS4 : I want to be a cooker. I like cooking. What you want to\nbe?\nS3 :㉠ I want to be a police officer. I want to help people.\nT:M o v e !\nSs : (학생들이 한 칸씩 옆으로 이동하여 활동을 이어 간다.)\n…(하략)…\n(나)\nI used a puppetry to provide language frames to my\nstudents. Providing language frames is one of the\ninstructional techniques, called () , to use clear\nillustrations and examples for learners. For instance, I had\na conversation with Froggie to show the communicative\ntask that the students would be asked to engage in later in\nthe class. Thus, they could realize the expected outcomes\nof the activity as well as the expressions needed for the\ntask.\n…(중략)…\nFinally, I observed that one of the students made ㉡ a\ndevelopmental error by overgeneralizing a morphological\nrule. Next class, I need to check his utterances again to\nsee whether he will make the same error.\n1) (나)의 () 안에 들어갈 용어를 ‘m’으로 시작하는 1단어의\n영어로 쓰시오. [1점]\n2) (나)의 ㉡에 해당하는 학습자의 발화 1문장을 (가)에서 찾아\n쓰시오. [1점]\n3) 말하기 연습 활동 유형은 교사의 개입 정도에 따라 3가지로\n구분할 수 있다. ①3 가지 중 박 교사가 Line-up 활동에서\n적용한 연습 활동 유형의 명칭을 쓰고 , ② 박 교사가 ①을\n어떻게 적용하고 있는지 ㉠을 예로 들어 설명하시오. [2점]\n①\n②",
+      "subquestions": [
+        {
+          "number": 1,
+          "score": 1,
+          "text": "1) (나)의 () 안에 들어갈 용어를 ‘m’으로 시작하는 1단어의\n영어로 쓰시오. [1점]"
+        },
+        {
+          "number": 2,
+          "score": 1,
+          "text": "2) (나)의 ㉡에 해당하는 학습자의 발화 1문장을 (가)에서 찾아\n쓰시오. [1점]"
+        },
+        {
+          "number": 3,
+          "score": 2,
+          "text": "3) 말하기 연습 활동 유형은 교사의 개입 정도에 따라 3가지로\n구분할 수 있다. ①3 가지 중 박 교사가 Line-up 활동에서\n적용한 연습 활동 유형의 명칭을 쓰고 , ② 박 교사가 ①을\n어떻게 적용하고 있는지 ㉠을 예로 들어 설명하시오. [2점]\n①\n②"
+        }
+      ]
+    },
+    {
+      "id": "2022-A-Q06",
+      "number": 6,
+      "subject": "음악",
+      "score": 5,
+      "pages": [
+        5,
+        6
+      ],
+      "curriculum_mentions": [
+        "2015"
+      ],
+      "achievement_codes": [],
+      "visual_references": [
+        "<제재곡 A>",
+        "<제재곡 B>",
+        "<제재곡>"
+      ],
+      "needs_visual_context": true,
+      "text": "6. (가)와 (나)는 2015 개정 음악과 교육과정 5～6학년군 수업을\n위해 최 교사가 재구성한 제재곡의 일부와 활동 내용이다. 물음에\n답하시오. [5점]\n(가)\n<제재곡 A>\n潢\n-\n汰\n汰\n汰汰\n汰\n潢\n-\n汰\n汰\n潢\n-\n無\n-\n-\n潢\n林\n仲\n-\n無\n林\n㉠\n㳞\n無\n-\n-\n林\n淋\n-\n㳞\n仲汰\n-\n-\n潢\n△ 無\n<제재곡 B>\n汰淋\n汰淋\n-\n汰 淋\n汰\n㳞 㳞\n汰\n潢\n無\n潢\n汰 淋\n㉡\n潢\n無 潕\n林淋\n仲 㳞\n△ 淋\n㳞\n<활동 내용>\n∙장구 장단을 치며 악곡의 장단감을 익힌다.\n∙입김 세기에 주의하며 바른 자세와 주법으로 단소를 연주한다.\n(나)\n<제재곡>\n<활동 내용>\n∙리코더와 멜로디언의 바른 주법을 익힌다.\n∙2성부일 때, 위의 성부는 리코더로 아래의 성부는 멜로디언\n으로 연주하며 소리의 어울림을 감지한다.\n1) 2015 개정 음악과 교육과정 내용 체계의 ‘기능’ 중 (가)와\n(나)의 활동 내용에 해당하는 것을 쓰시오. [1점]\n2) (가)의 ①< 제재곡 A>와 <제재곡 B>의 기본 장단을 비교\n하여 <제재곡 B>에만 나오는 장구 타법의 구음을 2가지 쓰고,\n② ㉠과 ㉡을 연주할 때 단소의 운지와 입김의 세기 정도를\n각각 비교하여 쓰시오. [2점]\n①\n②\n3) (나)의 ① ㉢의 뜻을 쓰고, ②< 활동 내용>에 근거하여 ㉣에\n해당하는 멜로디언의 건반을 <보기>에서 찾아 순서대로 쓰시오.\n[2점]\n<보 기>\n①\n②",
+      "subquestions": [
+        {
+          "number": 1,
+          "score": 1,
+          "text": "1) 2015 개정 음악과 교육과정 내용 체계의 ‘기능’ 중 (가)와\n(나)의 활동 내용에 해당하는 것을 쓰시오. [1점]"
+        },
+        {
+          "number": 2,
+          "score": 2,
+          "text": "2) (가)의 ①< 제재곡 A>와 <제재곡 B>의 기본 장단을 비교\n하여 <제재곡 B>에만 나오는 장구 타법의 구음을 2가지 쓰고,\n② ㉠과 ㉡을 연주할 때 단소의 운지와 입김의 세기 정도를\n각각 비교하여 쓰시오. [2점]\n①\n②"
+        },
+        {
+          "number": 3,
+          "score": 2,
+          "text": "3) (나)의 ① ㉢의 뜻을 쓰고, ②< 활동 내용>에 근거하여 ㉣에\n해당하는 멜로디언의 건반을 <보기>에서 찾아 순서대로 쓰시오.\n[2점]\n<보 기>\n①\n②"
+        }
+      ]
+    },
+    {
+      "id": "2022-A-Q07",
+      "number": 7,
+      "subject": "사회",
+      "score": 5,
+      "pages": [
+        6,
+        7
+      ],
+      "curriculum_mentions": [],
+      "achievement_codes": [],
+      "visual_references": [],
+      "needs_visual_context": false,
+      "text": "7. (가)는 김 교사가 작성한 교수･학습 과정안이고, (나)는 수업\n협의회 내용의 일부이다. 물음에 답하시오. [5점]\n(가)\n단원 세계의 다양한 삶의 모습\n차시명 기후에 따른 사람들의 생활 모습을 살펴봅시다\n학습 목표 열대기후에 따른 사람들의 생활 모습을 탐색할 수\n있다.\n단계 교수･학습 활동\n도입 ◦동기 유발 및 학습 목표 확인\n전개\n◦활동 1: 열대기후의 분포 알아보기\n-백지도에 나타내기\n◦활동 2: 열대기후 지역의 특성 알아보기\n-기온과 강수량의 특징, 사람들의 생활 모습 조사\n하기\n◦활동 3: 기후와 사람들의 생활 모습 간의 관계\n파악하기\n-토론하며 나의 입장 정리하기\n정리 ◦내용 정리 및 차시 예고\n(나)\n수석 교사: 환경과 인간의 관계를 보는 관점은 ㉠환경결정론,\n㉡환경가능론, 생태학적 관점 등이 있습니다. 선생님은\n오늘 수업을 어떤 관점에서 진행하셨나요?\n김교 사: 저는 환경과 인간이 서로 영향을 주고받는다는\n생태학적 관점으로 진행했습니다. 그런데 오늘 수업에서\n지도만 사용하니 학생들이 기후 분포를 정확히 이해하지\n못하는 것 같습니다. 기후의 전체적인 분포를 가르치기에\n적절한 지리교구가 있을까요?\n수석 교사: 세계 기후의 분포를 설명하려면, 기후에 영향을\n주는 요인에 대해 알아야 합니다 . 기후 요인에는\n( ㉢ ), 수륙분포, 해발고도 등이 있습니다. 지구본은\n( ㉢ )이/가 높아짐에 따라 기온이 낮아지는 현상을\n설명할 수 있는 적절한 교구입니다. 이를 사용하면, 쾨펜\n(W. Köppen)의 5가지 기후 구분 중 기온을 기준으로 한\n㉣ 4가지 기후의 분포를 학생들이 이해하기 쉽게 설명할\n수 있습니다. 이외에 지리정보시스템(GIS)을 기반으로\n한 디지털 지도를 사용할 수도 있습니다.\n김교 사: 기후를 다룰 때는 지도와 지구본, 디지털 지도를\n모두 활용해야겠네요.\n수석 교사: 네. 여러 가지 지리교구들을 적절하게 사용하면,\n위치와 같은 공간정보나 지형, 기후, 인구, 산업과 같이\n지역의 특성을 나타내는 ( ㉤ ) 등 다양한 지리 정보를\n얻을 수 있습니다. 끝으로 오늘 수업과 관련해 추가적으로\n학생들과 알아보고 싶은 내용이 있습니까?\n김교 사: 열대기후 지역의 커피나 카카오 등의 교역과 관련\n있는 ( ㉥ )을/를 생각하고 있습니다. ( ㉥ )은/는\n경제적으로 소외된 지역의 생산자와 노동자에게 더 나은\n거래 조건을 제공하여 불평등한 세계무역과 빈곤 문제를\n해결하려는 목적으로 출발한 교역을 말합니다.\n수석 교사: 좋은 생각입니다.\n1) 기후와 인간 간의 관계를 (나)의 ① ㉠과 ② ㉡의 관점에서\n서술하시오. [2점]\n①\n②\n2) (나)의 ㉢을 기준으로 ㉣을 순서대로 서술하시오. (단, ㉢을\n포함하여 쓸 것) [1점]\n3) ① (나)의 ㉤에 들어갈 용어와 , ②( 나)의 ㉥에 공통으로\n들어갈 용어를 쓰시오. [2점]\n①\n②",
+      "subquestions": [
+        {
+          "number": 1,
+          "score": 2,
+          "text": "1) 기후와 인간 간의 관계를 (나)의 ① ㉠과 ② ㉡의 관점에서\n서술하시오. [2점]\n①\n②"
+        },
+        {
+          "number": 2,
+          "score": 1,
+          "text": "2) (나)의 ㉢을 기준으로 ㉣을 순서대로 서술하시오. (단, ㉢을\n포함하여 쓸 것) [1점]"
+        },
+        {
+          "number": 3,
+          "score": 2,
+          "text": "3) ① (나)의 ㉤에 들어갈 용어와 , ②( 나)의 ㉥에 공통으로\n들어갈 용어를 쓰시오. [2점]\n①\n②"
+        }
+      ]
+    },
+    {
+      "id": "2022-A-Q08",
+      "number": 8,
+      "subject": "사회",
+      "score": 4,
+      "pages": [
+        7
+      ],
+      "curriculum_mentions": [],
+      "achievement_codes": [],
+      "visual_references": [],
+      "needs_visual_context": false,
+      "text": "8. (가)는 예비 교사가 작성한 교수･학습 과정안이고, (나)는 예비\n교사와 지도 교사가 나눈 대화이다. 물음에 답하시오. [4점]\n(가)\n차시명 갑신정변에 참여한 사람들의 주장을 알아봅시다\n수업 방법 사료 학습\n단계 교수･학습 활동\n도입\n◦전 차시에서 배운 내용을 확인한다.\n- 흥선대원군 집권 이후부터 갑신정변 발발 직전의\n사건들을 정리한다.\n◦학습 목표를 확인한다.\n- 갑신정변에 참여한 사람들의 주장을 이해할 수\n있다.\n전개\n◦제시된 사료를 확인한다.\n<갑신정변 개혁안>\n∙문벌을 폐지하고 백성들이 평등한 권리를 갖는\n제도를 마련하며 능력에 따라 관리를 임명한다.\n∙부정한 관리를 처벌하고 백성들이 빚진 쌀을\n면제한다.\n…(하략)…\n전개\n◦ ㉠\n- 누가, 언제 작성하였는가?\n- 사료가 위조되지 않았는가?\n- 사료에 제시된 용어가 당대에 사용된\n용어인가?\n[A]\n◦사료를 분석･해석한다.\n-이들은 어떤 정책들을 제시하였는가?\n-이들은 왜 이런 정책들을 발표하였는가?\n-조선을 가장 많이 변화시킬 수 있는 정책은\n무엇이었는가?\n-이들이 제시한 정책들은 우리나라 최초의 근대적\n조약에 어떤 영향을 미쳤는가?\n◦결론을 확인한다.\n-갑신정변에 참여한 사람들은 새로운 국가를 만들\n려는 개혁을 시도하였다.\n정리 ◦학습한 내용을 정리한다.\n(나)\n예비 교사: 흥선대원군 집권기부터 갑신정변이 일어나기\n전까지 있었던 사건들을 ㉡시간의 흐름에 따라 체계적\n으로 배열한 표로 학생들에게 제시하려고 합니다.\n지도 교사: 좋은 생각입니다. 특정 사건들을 연도와 함께 제\n시함으로써 사건들의 선후 관계나 인과 관계를 한눈에\n파악할 수 있겠네요. 그런데 ㉢ “이들이 제시한 정책들은\n우리나라 최초의 근대적 조약에 어떤 영향을 미쳤는가?”\n는 이 사료를 분석･해석하는 데 맞지 않은 질문입니다.\n예비 교사: 아, 그렇군요. 수정하겠습니다. 갑신정변에 참여한\n사람들의 주장을 잘 이해하기 위해 수업에서 좀 더 유의\n해야 할 점이 있을까요?\n지도 교사: 역사적 ( ㉣ )을/를 잘 해야 합니다. 공감이나\n동일시와 달리, 역사적 ( ㉣ )은/는 갑신정변이 일어난\n상황에 대한 맥락적 이해와 참여한 사람들의 행위 의도나\n동기, 관점을 파악하는 것입니다.\n1) (가)의 [A]에 근거하여 ㉠에 들어갈 활동을 쓰시오. [1점]\n2) ‘우리나라 최초의 근대적 조약’의 명칭을 포함하여 (나)의 ㉢의\n이유를 서술하시오. [1점]\n3) ① (나)의 ㉡에 해당하는 용어와, ②( 나)의 ㉣에 공통으로\n들어갈 용어를 쓰시오. [2점]\n①\n②",
+      "subquestions": [
+        {
+          "number": 1,
+          "score": 1,
+          "text": "1) (가)의 [A]에 근거하여 ㉠에 들어갈 활동을 쓰시오. [1점]"
+        },
+        {
+          "number": 2,
+          "score": 1,
+          "text": "2) ‘우리나라 최초의 근대적 조약’의 명칭을 포함하여 (나)의 ㉢의\n이유를 서술하시오. [1점]"
+        },
+        {
+          "number": 3,
+          "score": 2,
+          "text": "3) ① (나)의 ㉡에 해당하는 용어와, ②( 나)의 ㉣에 공통으로\n들어갈 용어를 쓰시오. [2점]\n①\n②"
+        }
+      ]
+    },
+    {
+      "id": "2022-A-Q09",
+      "number": 9,
+      "subject": "도덕",
+      "score": 4,
+      "pages": [
+        8
+      ],
+      "curriculum_mentions": [],
+      "achievement_codes": [],
+      "visual_references": [],
+      "needs_visual_context": false,
+      "text": "9. (가)는 4학년 ‘공손하고 다정하게’ 단원을 지도하기 위하여 예비\n교사가 작성한 차시별 수업 계획이고, (나)는 예비 교사와 지도\n교수가 나눈 대화이다. 물음에 답하시오. [4점]\n(가)\n차시 주제 주요 교수 ･학습 활동\n1 예절은 중요해요 ◦예절의 의미와 중요성을 알기\n◦대상과 상황에 따른 예절을 알기\n2 일상생활에서\n예절을 지켜요\n◦대상과 상황에 알맞은 행동을 직접\n실행하면서 몸에 익히기\n3\n예절 바른\n생활을 위해\n지혜롭게\n생각해요\n◦예절과 관련한 가치 문제를 확인하기\n◦자기 입장을 설정하고 사실적 타당성을\n탐색하기\n◦잠정적 가치를 결정하고 가치 원리를\n검사하기\n4 예절을 지키면\n모두가 행복해요\n◦예절 바른 마음을 존중하고 기꺼이\n실천하려는 열정을 갖기\n(나)\n예비 교사: 이 단원은 예절의 중요성을 이해하고 대상과\n상황에 따른 예절이 다름을 탐구하여 이를 습관화하는\n데 지도의 중점이 있습니다. 각 차시별 주제의 성격을\n고려하여 주요 교수･\n학습 활동을 구상했습니다.\n지도 교수: 차시별 주제와 주요 교수･학습 활동이 서로 관련\n되어 있고, 전체적으로 보아 이 단원의 내용 체제에 따라\n활동을 짜임새 있게 구상했습니다. 세부적으로 살펴보면,\n2차시에서는 도덕 행동에 지도의 중점을 두고 있는데 ,\n구체적으로 어떤 수업 방식을 적용할 계획인가요?\n예비 교사: 도덕과의 ‘6수업 과정･절차’ 중 행동적 접근에\n적합한 수업 방식이 2가지 있는데, 그중 ( ㉠ ) 중심의\n수업 과정･절차를 적용하려고 합니다. ‘실천 체험형’과\n달리, ( ㉠ )형은 도덕적 행동을 직접적인 훈련을 통해\n익히고, 가상의 상황을 설정하여 올바른 행동을 실제로\n해보면서 익히는 특징을 지니고 있기 때문입니다.\n지도 교수:3 차시에서는 가치 분석 수업 모형을 적용하고\n있네요. 특히 ‘가치 원리를 검사하기’는 예절과 관련한\n문제 사태에서 가치 판단의 합리성과 보편화 가능성을\n검토하는 데 도움을 제공하는 활동입니다. ㉡역할 교환\n검사, ㉢보편적 결과 검사 등이 이에 해당하는데, 실제\n수업에서 잘 구현하길 바랍니다.\n예비 교사: 그런데 4차시에서 예절을 도덕적 마음과 관련해서\n지도하려고 하는데, 이를 뒷받침할 수 있는 이론을 동양\n윤리에서 찾을 수 있습니까?\n지도 교수: 맹자(孟子)의 심성론(心性論)이 대표적입니다. 그\n심성론에 따르면, 인간의 본성은 인의예지(仁義禮智)이며,\n이 본성은 ‘측은지심(惻隱之心)’, ‘수오지심(羞惡之心)’,\n‘( ㉣ )’, ‘시비지심(是非之心)’이라는 도덕적 마음으로\n드러납니다. 그래서 인간 누구에게나 도덕적 마음을 기르는\n공부가 중요합니다.\n1) (나)의 ㉠에 공통으로 들어갈 용어를 쓰시오. [1점]\n2) 다음 밑줄 친 내용을 적용하여 (나)의 ① ㉡과 ② ㉢에 해당\n하는 교사의 발문 전략을 서술하시오. [2점]\n[문제 상황] 전교 어린이회 회장인 범수는 회의 시각이 다가\n오는데도 참석하지 않는 윤지를 걱정하였다. 범수는 다급한\n마음에 조용히 아침 독서 활동 중인 윤지 반의 교실 문을\n노크 없이 벌컥 열고 큰 목소리로 윤지를 불렀다. 윤지 반\n친구들은 모두 깜짝 놀라며 눈살을 찌푸렸다.\n[잠정적 가치 결정] 윤지 반 친구들에게 예절을 지키지\n않더라도 윤지를 회의에 참석할 수 있도록 하는 것은 옳다.\n①\n②\n3) (나)의 ㉣에 들어갈 용어를 한글로 쓰시오. [1점]",
+      "subquestions": [
+        {
+          "number": 1,
+          "score": 1,
+          "text": "1) (나)의 ㉠에 공통으로 들어갈 용어를 쓰시오. [1점]"
+        },
+        {
+          "number": 2,
+          "score": 2,
+          "text": "2) 다음 밑줄 친 내용을 적용하여 (나)의 ① ㉡과 ② ㉢에 해당\n하는 교사의 발문 전략을 서술하시오. [2점]\n[문제 상황] 전교 어린이회 회장인 범수는 회의 시각이 다가\n오는데도 참석하지 않는 윤지를 걱정하였다. 범수는 다급한\n마음에 조용히 아침 독서 활동 중인 윤지 반의 교실 문을\n노크 없이 벌컥 열고 큰 목소리로 윤지를 불렀다. 윤지 반\n친구들은 모두 깜짝 놀라며 눈살을 찌푸렸다.\n[잠정적 가치 결정] 윤지 반 친구들에게 예절을 지키지\n않더라도 윤지를 회의에 참석할 수 있도록 하는 것은 옳다.\n①\n②"
+        },
+        {
+          "number": 3,
+          "score": 1,
+          "text": "3) (나)의 ㉣에 들어갈 용어를 한글로 쓰시오. [1점]"
+        }
+      ]
+    },
+    {
+      "id": "2022-A-Q10",
+      "number": 10,
+      "subject": "바른 생활",
+      "score": 1,
+      "pages": [
+        8,
+        9
+      ],
+      "curriculum_mentions": [
+        "2015"
+      ],
+      "achievement_codes": [],
+      "visual_references": [],
+      "needs_visual_context": false,
+      "text": "10. (가)는 󰡔봄 2-1󰡕 ‘알쏭달쏭 나’ 단원의 ‘마음 신호등’ 차시에\n대한 교수･학습 자료이고, (나)는 김 교사와 박 교사의 대화이다.\n박 교사가 기르고자 하는 바른 생활과 교과 역량을 2015 개정\n바른 생활과 교육과정에 제시된 용어로 쓰시오. [1점]\n(가)\n(나)\n김교 사: 이 차시는 내용 체계상 ‘나’라는 소주제, 그리고 ‘몸과\n마음을 건강하게 유지한다.’라는 성취 기준에 해당하는\n것으로 알고 있습니다.\n박교 사: 네. 그래서 저는 (가)의 교수･학습 자료를 통해 말과\n행동으로 표현하기 전에 지켜야 할 마음의 약속에 초점을\n두어 지도하고자 합니다. 이 차시의 활동 목적이 일상\n생활을 하는 데 필요한 기본 생활 습관을 형성함으로써\n변화하는 사회에 유연하게 적응하며 살아갈 수 있는\n능력과 관련을 맺고 있기 때문입니다.",
+      "subquestions": []
+    },
+    {
+      "id": "2022-A-Q11",
+      "number": 11,
+      "subject": "실과",
+      "score": 4,
+      "pages": [
+        9
+      ],
+      "curriculum_mentions": [
+        "2015"
+      ],
+      "achievement_codes": [],
+      "visual_references": [],
+      "needs_visual_context": false,
+      "text": "11. (가)는 ‘생활 속 동･식물’ 단원의 공개 수업 계획 협의회의\n일부이고, (나)는 ‘발명과 문제 해결’ 소단원에서 발명 기법에\n관한 교수･학습 활동의 일부이다. 물음에 답하시오. [4점]\n(가)\n지도 교사: 실과 공개 수업 계획 협의회를 시작하겠습니다.\n‘생활 속 동･식물’ 단원의 ‘반려동물’과 ‘경제동물’ 중에서\n관심 있는 수업 주제에 대해 자유롭게 의견 주시기 바랍니다.\n예비 교사A: 우리 반 학생들이 반려동물에 관심이 많고 ,\n최근 유기견 문제가 사회적 이슈가 되고 있어 반려동물\n돌보기를 주제로 수업을 계획하고자 합니다.\n예비 교사B: 대부분의 학생들이 고기반찬을 좋아하므로 경제\n동물과 식품 관련 내용을 중심으로 수업을 하고 싶습니다.\n지도 교사: 모두 좋은 주제를 선정했군요 . 반려동물 수업\n주제와 관련된 제도에 대해 알아본 게 있나요?\n예비 교사A: 네, 반려동물 돌보기 수업과 관련된 제도를\n알아보았습니다. ㉠이 제도는 반려동물을 잃어버렸을 때\n쉽게 찾을 수 있도록 도와주고 유기 동물이 늘어나는 것을\n막기 위해 시행하고 있습니다.\n지도 교사: 반려동물 돌보기와 관련해서 아주 중요한 제도인\n것 같습니다. 경제동물 수업 주제와 관련된 제도도 있나요?\n예비 교사B: 네, 경제동물 기르기 수업과 관련해서는 동물\n복지 인증 제도가 있습니다. 이 제도는 농장에서 기르는\n경제동물에게 본래의 습성을 유지할 수 있는 환경을 제공\n하고 스트레스와 고통을 줄여 주는 사육 방법을 인증하는\n것입니다. ‘가정생활과 식품 안전’ 단원의 식품 품질 인증\n표지에도 동물 복지 인증 표지가 제시되어 있습니다.\n지도 교사: 학생들은 관행적인 축산에 의해 생산된 축산물과\n동물 복지 인증 제도로 생산된 축산물에 대한 배경을\n이해할 필요가 있겠군요. 그리고 미래 소비자인 학생들은\n㉡이러한 배경 이해에 기초하여 식품 소비 문제를 해결\n하기 위한 대안을 탐색한 후, 가치 판단에 따라 결정된\n의사를 실행할 수 있는 능력이 필요하겠지요.\n…(하략)…\n(나)\n교사 : 생활 속 물건에 적용된 발명 기법을 찾아보면 발명\n아이디어를 더 쉽게 찾을 수 있습니다. 그러면 모둠별로\n발명 사례를 찾아보고 물건에 적용된 발명 기법을 조사\n하는 활동을 해봅시다.\n학생들 : 네, 알겠습니다.\n…(중략)…\n모둠명 조사한 발명 사례 적용된 발명 기법\n□1 장영실\n∙프린터, 복사기, 스캐너\n기능이 결합된 가정용\n복합기\n∙㉢하나의 물건에 다른\n물건이나 기능을 더하여\n새로운 물건을 만드는\n‘더하기 기법’이다.\n□2 정약용 ∙벨크로(velcro) 테이프\n∙가시 철조망 ∙( ㉣ )\n□3 다빈치 ∙트레드밀(treadmill)\n∙거꾸로 세운 화장품 용기∙( ㉤ )\n교사 : 지금부터 모둠별로 조사한 결과를 발표해 봅시다.\n1모둠부터 발표해 주세요.\n학생 A : 장영실 모둠에서 발표하겠습니다. 우리 모둠에서는\n가정용 복합기 사례를 조사했습니다. 이 발명 사례에는\n하나의 물건에 다른 물건이나 기능을 더하여 새로운\n물건을 만드는 ‘더하기 기법’이 적용되었습니다.\n교사 : 발명 사례와 기법을 잘 조사하여 발표했네요. 다음으로\n2모둠에서 발표해 주세요.\n…(하략)…\n1) (가)의 ㉠에 해당하는 제도를 쓰시오. [1점]\n2) (가)의 ㉡에 해당하는 실과 교과 역량을 2015 개정 실과 교육\n과정에 제시된 용어로 쓰시오. [1점]\n3) (나)의 ㉢과 같이 ① ㉣과 ② ㉤에 들어갈 발명 기법의 의미와\n명칭을 서술하시오. [2점]\n①\n②",
+      "subquestions": [
+        {
+          "number": 1,
+          "score": 1,
+          "text": "1) (가)의 ㉠에 해당하는 제도를 쓰시오. [1점]"
+        },
+        {
+          "number": 2,
+          "score": 1,
+          "text": "2) (가)의 ㉡에 해당하는 실과 교과 역량을 2015 개정 실과 교육\n과정에 제시된 용어로 쓰시오. [1점]"
+        },
+        {
+          "number": 3,
+          "score": 2,
+          "text": "3) (나)의 ㉢과 같이 ① ㉣과 ② ㉤에 들어갈 발명 기법의 의미와\n명칭을 서술하시오. [2점]\n①\n②"
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "text": "초등학교 교육과정 A (9면 중 1 면)\n국 어\n1. (가)는 5학년 토론 수업을 준비하기 위한 두 교사의 대화이고,\n(나)는 김 교사가 (다)의 토론을 위해 칠판에 적은 토론 절차이며,\n(다)는 김 교사의 수업 중에 학생들이 수행한 토론의 일부이다.\n물음에 답하시오. [4점]\n(가)\n김교 사:‘ 토론 방법과 규칙을 알고 주제를 정해 토론할 수\n있다.’를 학습 목표로 토론 수업을 진행하려는데 가장 유의\n해야 할 점은 무엇일까요?\n수석 교사: 학생이 토론의 절차와 규칙을 알고 이를 지키며\n토론하게 하는 데 가장 유의해야 한다고 생각해요. 저도\n처음에는 토론 절차를 기억하기 어려웠는데, ( ㉠ )이/가\n있는 쪽이 먼저 발언한다는 것을 이해하고 나니 기억하기\n쉬웠어요. 가령, 정책 논제 토론에서는 현 상태의 변화를\n주장하는 찬성 측이 먼저 주장을 제시해야 반대 측이 반박\n할 수 있잖아요. 그래서 고전적 토론, 반대 신문식 토론\n등 많은 토론 형식에서 찬성 측이 먼저 입론하게 하는\n것이더라고요.\n김교 사: 작년에 토론을 지도하는데 자기가 할 말만 생각\n하느라 상대편에서 말한 것을 놓치고 엉뚱한 이야기를\n하는 학생이 많았어요.\n수석 교사: 맞아요. 그래서 토론에서도 한 사람의 참여자가\n의사소통 상황의 매순간 화자 역할과 청자 역할을 동시에\n수행하며, 참여자 간에 의미를 공유하고 협상함으로써\n역동적으로 의미를 구성해 나가는 ( ㉡ ) 기능을 잘\n발휘해야 해요. 그래야만 토론이 일방적인 말하기와 듣기가\n아닌 양방향의 의사소통이 될 수 있을 테니까요.\n김교 사: 학생들이 토론하다가 자신의 입장이 어느 쪽이었\n는지를 혼동하거나 토론 중간에 입장을 바꿔 토론의\n흐름이 끊기는 경우도 많았어요. 이를 예방할 수 있는\n방법이 있을까요?\n수석 교사: 저는 논제를 요건에 맞게 잘 표현해 주니\n도움이 되었어요. 정책 논제의 경우, 현 상태를 변화\n시키고자 하는 의도를 포함해야 해요. 또한 평서문\n형태로 하나의 주장만 담아야 하죠.\n그리고 찬성과\n반대 중 어느 한 편에 유리하게 작용할 수 있는 감정적\n표현은 담기지 않아야 해요. 이렇게 하면 논제를 중심\n으로 찬반 입장이 분명히 갈리고 논제가 어느 한 편에\n유리하게 작용하는 정도도 줄일 수 있어요. 그래서\n학생들이 자기 입장을 헷갈리지 않게 되고 중간에\n입장을 바꾸는 일도 덜하게 되더라고요.\n[A]\n(나)\n찬성 측1 입론→반대 측2 질문→반대 측1 입론→찬성 측1 질문→\n찬성 측2 입론→반대 측1 질문→반대 측2 입론→찬성 측2 질문→\n( ⓐ ) 반박→( ⓑ ) 반박→( ⓒ ) 반박→( ⓓ ) 반박\n(다)\n사회자:( ㉢ )을/를 논제로 2:2 반대 신문식 토론을 시작\n하겠습니다. (칠판을 가리키며) 토론 절차는 칠판에서\n확인할 수 있습니다. 그럼 찬성 측 1 토론자부터 입론해\n주세요.\n찬성 측1: 저희는 사형 제도가 반드시 폐지되어야 한다고\n주장합니다. 그 까닭은 두 가지입니다. 첫째, 헌법 제10조에\n따르면 국가는 개인의 기본적 인권을 보장할 의무가\n있습니다. 둘째, 무고한 사람을 오판하여 사형 집행할\n가능성이 있습니다.\n사회자: 반대 측 2 토론자 질문해 주세요.\n반대 측2: 가해자만큼 피해자의 인권도 중요하다고 생각하지\n않나요?\n…(하략)…\n1) (가)의 ㉠에 들어갈 말을 쓰시오. [1점]\n2) 2015 개정 국어과 교육과정의 듣기･말하기 영역 ‘내용 체계’에\n제시된 ‘기능’ 중 (가)의 ㉡에 들어갈 말을 쓰시오. [1점]\n3) ① (나)의 ⓐ～ⓓ에 들어갈 말을 순서대로 쓰고, ②( 다)의 ㉢에\n들어갈 말을 [A]를 반영하여 한 문장으로 쓰시오. [2점]\n①\n②\n2022학년도 공립 초등학교 교사 임용후보자 선정경쟁시험 (1차)\n초등학교 교육과정 A\n수험번호 : ( ) 성명 : ( )\n2 교시 11문항 41점시 험 시 간 70분",
+      "method": "pypdf",
+      "char_count": 1850
+    },
+    {
+      "page": 2,
+      "text": "초등학교 교육과정 A (9면 중 2 면)\n2. (가)는 4학년 문학 수업을 한 후에 두 교사가 나눈 대화이고,\n(나)는 문학 수업에서 활용한 작품이다. 물음에 답하시오. [4점]\n(가)\n김교 사: 지난 국어 시간에 이야기의 흐름 파악하기 수업을\n했어요. 먼저 이야기를 읽고 주요 인물을 찾는 활동을\n했어요. 학생들이 동화에 등장하는 인물을 친숙하게\n생각하더라고요.\n이교 사: 네, 학생들은 ( ㉠ )이/가 반영된 인물들을 친숙\n하게 받아들이는 것 같아요. 이 시기의 학생들은 사물이\n말하는 것을 자연스럽게 여기는 발달 특성이 있어요 .\n그래서 인물이 비현실적으로 형상화되어 있어도 쉽게 찾을\n수 있어요. 이야기 흐름 파악하기 학습 활동은 어땠나요?\n김교 사: 학생들이 이야기의 흐름을 ‘처음-가운데-끝’, ‘발단\n-전개-절정-결말’과 같은 ( ㉡ )에 따라 정리하는 것을\n어려워했어요. 선생님은 어떻게 지도하시나요?\n이교 사: 학생들이 ( ㉡ )을/를 고려하여 사건을 파악\n하도록 하려면, ㉢이야기 전체에 영향을 주는 갈등을 활용\n하면 좋아요. 갈등은 주로 주인공과 적대자 간의 대립 상황\n으로 나타나지요. 학생들에게 갈등을 본격적으로 지도\n하기는 어려우니까, 교사가 이야기의 갈등을 찾아서 사건\n간의 인과 관계를 이해하도록 안내해 줄 수 있어요.\n김교 사: 그렇군요. 갈등을 활용해서 이야기의 흐름을 정리\n할 수 있겠네요.\n이교 사: 네, 맞아요. 그리고 갈등이 해소되는 과정에서\n㉣ 등장인물의 성격이나 가치관이 변하는 경우, 그 변화를\n확인하는 것도 중요해요. 예를 들면 ｢소가 된 게으름뱅이｣의\n결말에서 게으름뱅이가 자신의 잘못을 뉘우치고 부지런한\n사람으로 바뀌는 것을 확인할 수 있어요.\n(나)\n소가 된 게으름뱅이\n옛날 어느 마을에 게으른 사람이 살았어요. 모두 눈코 뜰 새\n없이 바쁜 농사철에도 게으름뱅이는 온종일 방에서 뒹굴뒹굴\n놀기만 했지요. 일하라는 아내의 잔소리가 듣기 싫어서 게으름\n뱅이는 집을 나가기로 마음먹었어요.\n며칠 뒤, 집을 나온 게으름뱅이는 어느 초가집 앞을 지나게\n되었어요. 그런데 노인이 마루에 앉아 쇠머리처럼 생긴 탈을\n만들고 있었어요.\n“영감님, 그걸 어디에다 쓰려고 만드십니까?”\n“허허허, 이 탈은 일하기 싫어하는 사람이 쓰면 아주 좋은\n일이 생기는 탈이라네.”\n신기하게 여긴 게으름뱅이는 쇠머리 탈을 얼굴에 써 보았어요.\n그러자 노인이 기다렸다는 듯 게으름뱅이의 등에 쇠가죽을 척\n씌웠지요. 그런데 어찌 된 일인지 쇠머리 탈은 얼굴에 착 달라\n붙어 떨어지지 않았어요. 눈 깜짝할 새에 소가 된 게으름뱅이는\n소리를 지르며 버둥거렸어요. 이윽고 노인은 소가 된 게으름뱅이를\n끌고 장터로 가서 농부에게 팔았어요.\n“이 소는 무를 먹으면 곧 죽어 버리니 무밭에는 절대로 못\n가게 하시오.”\n소가 된 게으름뱅이는 농부네 집으로 오자마자 하루 종일\n힘들게 일했지요. 저녁때가 되자 너무너무 힘들고 배가 고팠어요.\n하지만 농부가 가져다준 뻣뻣한 쇠죽은 먹을 수가 없었지요.\n[뒷부분 줄거리] 소가 된 게으름뱅이는 놀기만 했던 지난날을 후회\n한다. 그는 소로 사느니 죽는 게 낫겠다는 생각을 한다. 이튿날 소가\n된 게으름뱅이는 무밭으로 뛰어 들어가 무를 먹는다. 그러자 쇠머리 탈이\n벗겨지며 사람으로 변한다. 집으로 돌아온 게으름뱅이는 부지런히 일하며\n행복하게 살아간다.\n1) (가)의 ㉠과 <보기>의 ⓐ에 공통으로 들어갈 말을 쓰시오. [1점]\n<보 기>\n동화는 대체로 어린이들이 주변의 사물을 살아있는 생명\n체로 여기는 ( ⓐ )에 바탕을 둔다. 이러한 사고가 반영된\n동화는 환상성과 허구성이 강하고 사물이 의인화되는 경우가\n많다. 예를 들어 동화에서는 장승이 움직이고, 바느질 가위가\n스스로 행동하며, 해와 바람이 말을 하기도 한다.\n2) ① (가)의 ㉡에 공통으로 들어갈 말을 쓰고, ②( 나)에서 (가)의\n㉢에 해당하는 것을 쓰시오. [2점]\n①\n②\n3) (가)의 ㉣에 해당하는 인물의 성격 유형을 쓰시오. [1점]\n3. (가)는 3학년 ‘낱말의 의미 관계’ 수업을 준비하는 과정에서\n교사가 작성한 메모이고, (나)는 수업을 하기 위해 구상한 교수･\n학습 과정안의 일부이다. 물음에 답하시오. [3점]\n(가)\n유의어\n∙학습자 오개념: 비슷한 말 = 같은 말\n∙지도 방법: 의미 차이 확인하기(교체 검증)\n∙밥 먹을 틈이 없다.\n∙문 틈으로 바람이 들어온다.\n∙우정에 틈이 생겼다.\n‘틈’ 대신 ‘겨를’을 넣어 의미 차이 확인하기\n∙밥 먹을 겨를이 없다.\n∙문 *겨를로 바람이 들어온다.\n∙우정에 *겨를이 생겼다.\n‘틈’과 ‘겨를’은 공간, 추상, 시간 표현 중 ( ㉠ ),\n( ㉡ ) 표현에서는 교체가 불가능하다.\n반의어\n∙학습자 오개념: 낱말에 ‘안’, ‘아니’를 넣으면\n반대말이 됨.\n∙지도 방법: 반의어 유형을 고려하여 제시하기\n(상보 반의어, ㉢ 등급 반의어, 관계 반의어)\n…(하략)…",
+      "method": "pypdf",
+      "char_count": 2368
+    },
+    {
+      "page": 3,
+      "text": "초등학교 교육과정 A (9면 중 3 면)\n(나)\n단계 수업 활동\n도입 ◦학습 목표 확인하기\n- 낱말의 의미 관계를 파악할 수 있다.\n전개\n…(중략)…\n◦반대말 찾기\n주다\n빠름\n참\n스승\n출석\n위\n받다\n결석\n아래\n거짓\n느림\n제자\n[A]\n◦낱말의 의미 관계 정리하기\n▪‘기쁘다’를 쓰고, 비슷한 말과 반대말을 쓴다.\n그리고 낱말의 의미 관계를 쓴다.\n▪옆으로 한 칸 옮겨, ‘즐겁다’를 기준으로 비슷한\n말과 반대말을 쓰고, 낱말의 의미 관계를 쓴다.\n▪‘슬프다’와 ‘괴롭다’ 사이의 의미 관계를 쓴다.\n▪옆으로 한 칸 옮겨, ‘신나다’를 기준으로 비슷한\n말과 반대말을 쓴다.\n[B]\n1) (가)의 ㉠, ㉡에 들어갈 말을 쓰시오. [1점]\n2) ① (가)의 ㉢에 해당하는 낱말의 쌍을 (나)의 [A]에서 찾아\n쓰고, ②( 나)의 [B]에서 활용한 ‘낱말의 의미 관계 정리 방법’을\n쓰시오. [2점]\n①\n②\n영 어\n4. 다음은 최 교사의 4학년 영어 읽기 수업의 일부이다. 물음에\n답하시오. [3점]\n읽\n기\n중\nT:B e f o r e we start reading a story, let us think. When\nyou see unfamiliar words while reading a book, what\ndo you do?\nS1 :친구나 선생님에게 물어요.\nS2 :번역기를 사용해요.\nT:T h e y are all good ideas. Today, I’ll tell you another\nway. Open your book to page 21. (책을 펼쳐 보이며)\nI’ll read the story. “Hello! My name is Dan Short. I\nam blind.” Does anyone know what the word ‘blind’\nmeans?\nSs :잘 모르겠어요.\nT:T h a t’s OK. Let’s see together. What do you see in the\npicture?\nS3 :주인공이 지팡이를 가지고 있어요.\nS4 :개가 길을 안내해 주고 있어요.\nT:T h a t ’ s right. Do you think he can see things?\nSs : No.\nT:R i g h t . Then, what’s the meaning of the word ‘blind’?\nSs :눈이 안 보인다는 뜻이에요.\nT : Excellent. Yes, he is blind. This time, you’re going to\nread the book on your own. Try to guess the\nmeaning\nof unfamiliar words while reading. Understood?\nSs : Yes.\nT:G r e a t . Please remember what you did in guessing the\nmeaning of ‘blind\n’.\n…(하략)…\n읽\n기\n후\nT : Did you enjoy reading the story?\nSs : Yes, I did.\nT : You understand all the story. It’s time to retell the\nstory. ㉠ Get into pairs and tell the story in your\nwords to your partner before presenting it to the\nclass. I’ll give you 5 minutes for the pair work.\nSs : (활동을 한다.)\nT : OK, who wants to start? (손을 든 학생들을 둘러보며)\nS5, will you tell us the story?\nS5: Dan Short is blind. But the special dog help ... the\nspecial dog help he can go to school.\nT : Very good. S6, do you have anything to add?\nS6: He can go to the shopping mall. He can go to airport.\nT : Great. Who will be the next to tell us about the\nspecial dog?\n…(하략)…",
+      "method": "pypdf",
+      "char_count": 2032
+    },
+    {
+      "page": 4,
+      "text": "초등학교 교육과정 A (9면 중 4 면)\n1) ① ‘읽기 중’에서 학생들이 어휘의 의미를 추측할 수 있도록\n최 교사가 활용한 전략을 쓰고, ②‘ 읽기 후’에서 ㉠의 기대 효과를\n학습자의 정의적 요인과 관련하여 쓰시오. [2점]\n①\n②\n2) 다음은 ‘읽기 후’에서 적용한 언어 습득 이론을 설명한 것이다.\n() 에 공통으로 들어갈 용어를 첫 단어가 ‘p’로 시작하는\n2단어의 영어로 쓰시오. [1점]\nLearners can comprehend input without having to look\nclosely at the grammar. However, if they are required to\nproduce the target language, their attention tends to\nchange its direction to linguistic features. It is in this\nsense that () contribute(s) to L2 development.\nL2 learners’ linguistic processing leading to ()\ngenerates important language learning opportunities by\nallowing learners to test their linguistic hypotheses and\nrefine their interlanguage. The post-reading activity\nguided students into focusing on linguistic structures in\norder to deliver their intended meanings. Also, it appears\nthat, for S5, the activity likely offered an opportunity to\nnotice linguistic gaps in her interlanguage, which is\nanother beneficial aspect of () .\n5. (가)는 박 교사의 5학년 영어 수업의 일부이고, (나)는 박 교사가\n수업을 마친 후에 작성한 성찰 일지의 일부이다. 물음에 답하시오.\n[4점]\n(가)\nT:( 손 인형을 소개하며) Before doing an activity, I’d like to\nintroduce our friend, Froggie. Everyone, say hello to\nFroggie!\nSs : Hello, Froggie!\nT : Froggie, we are talking about jobs today. What do you\nwant to be? (Froggie 목소리 흉내를 내며) I want to be a\nsinger. (노래하는 시늉을 하며) I like singing.\nT:S o u n d s great! Everyone, ask him what he wants to be.\n3-2-1, go!\nSs : What do you want to be?\nT : (Froggie 목소리 흉내를 내며) I want to be a singer. (노래\n하는 시늉을 하며) I like singing. (S1을 가리키며) What do\nyou want to be?\nS1 : I want to be a painter. I like painting.\nT:( F r o g g i e 흉내를 내며) Well done! (S2를 가리키며) What\ndo you want to be?\nS2 : I want a dancer.\nT:O h , I see, you want to be a dancer. Can you tell me why?\nS2 : I am like dancing. I can dance very well.\nT : Really? I like dancing, too!\n…(중략)…\nT:N o w , we’re going to do a line-up activity. You’ll ask and\nanswer questions about dream jobs using “What do you\nwant to be?”, “I want to be a(n)....” Here is how to play\nthe activity.\nSs : (활동 절차에 대한 자료 화면을 본다.)\nT:F i r s t , line up in two rows and face each other. Then, ask\nand answer the question. What is the question?\nSs : What do you want to be?\nT:E x c e l l e n t ! When I say “Move” in the middle of your\nconversation, students in the first row will move one step\nto the right. Then, do the same thing with a new partner\nin the second row. Got it? Please let me know whether\nyou understand it by showing your Yes/No cards.\nSs : (일부 학생이 No 카드를 들어 올린다.)\nT:O K , I will show you how to play step by step.\n…(중략)…\nSs : (학생들이 두 줄로 선다.)\nT:L e t ’ s start!\nS3 : What do you want to be?\nS4 : I want to be a cooker. I like cooking. What you want to\nbe?\nS3 :㉠ I want to be a police officer. I want to help people.\nT:M o v e !\nSs : (학생들이 한 칸씩 옆으로 이동하여 활동을 이어 간다.)\n…(하략)…",
+      "method": "pypdf",
+      "char_count": 2818
+    },
+    {
+      "page": 5,
+      "text": "초등학교 교육과정 A (9면 중 5 면)\n(나)\nI used a puppetry to provide language frames to my\nstudents. Providing language frames is one of the\ninstructional techniques, called () , to use clear\nillustrations and examples for learners. For instance, I had\na conversation with Froggie to show the communicative\ntask that the students would be asked to engage in later in\nthe class. Thus, they could realize the expected outcomes\nof the activity as well as the expressions needed for the\ntask.\n…(중략)…\nFinally, I observed that one of the students made ㉡ a\ndevelopmental error by overgeneralizing a morphological\nrule. Next class, I need to check his utterances again to\nsee whether he will make the same error.\n1) (나)의 () 안에 들어갈 용어를 ‘m’으로 시작하는 1단어의\n영어로 쓰시오. [1점]\n2) (나)의 ㉡에 해당하는 학습자의 발화 1문장을 (가)에서 찾아\n쓰시오. [1점]\n3) 말하기 연습 활동 유형은 교사의 개입 정도에 따라 3가지로\n구분할 수 있다. ①3 가지 중 박 교사가 Line-up 활동에서\n적용한 연습 활동 유형의 명칭을 쓰고 , ② 박 교사가 ①을\n어떻게 적용하고 있는지 ㉠을 예로 들어 설명하시오. [2점]\n①\n②\n음 악\n6. (가)와 (나)는 2015 개정 음악과 교육과정 5～6학년군 수업을\n위해 최 교사가 재구성한 제재곡의 일부와 활동 내용이다. 물음에\n답하시오. [5점]\n(가)\n<제재곡 A>\n潢\n-\n汰\n汰\n汰汰\n汰\n潢\n-\n汰\n汰\n潢\n-\n無\n-\n-\n潢\n林\n仲\n-\n無\n林\n㉠\n㳞\n無\n-\n-\n林\n淋\n-\n㳞\n仲汰\n-\n-\n潢\n△ 無\n<제재곡 B>\n汰淋\n汰淋\n-\n汰 淋\n汰\n㳞 㳞\n汰\n潢\n無\n潢\n汰 淋\n㉡\n潢\n無 潕\n林淋\n仲 㳞\n△ 淋\n㳞\n<활동 내용>\n∙장구 장단을 치며 악곡의 장단감을 익힌다.\n∙입김 세기에 주의하며 바른 자세와 주법으로 단소를 연주한다.",
+      "method": "pypdf",
+      "char_count": 1241
+    },
+    {
+      "page": 6,
+      "text": "초등학교 교육과정 A (9면 중 6 면)\n(나)\n<제재곡>\n<활동 내용>\n∙리코더와 멜로디언의 바른 주법을 익힌다.\n∙2성부일 때, 위의 성부는 리코더로 아래의 성부는 멜로디언\n으로 연주하며 소리의 어울림을 감지한다.\n1) 2015 개정 음악과 교육과정 내용 체계의 ‘기능’ 중 (가)와\n(나)의 활동 내용에 해당하는 것을 쓰시오. [1점]\n2) (가)의 ①< 제재곡 A>와 <제재곡 B>의 기본 장단을 비교\n하여 <제재곡 B>에만 나오는 장구 타법의 구음을 2가지 쓰고,\n② ㉠과 ㉡을 연주할 때 단소의 운지와 입김의 세기 정도를\n각각 비교하여 쓰시오. [2점]\n①\n②\n3) (나)의 ① ㉢의 뜻을 쓰고, ②< 활동 내용>에 근거하여 ㉣에\n해당하는 멜로디언의 건반을 <보기>에서 찾아 순서대로 쓰시오.\n[2점]\n<보 기>\n①\n②\n사 회\n7. (가)는 김 교사가 작성한 교수･학습 과정안이고, (나)는 수업\n협의회 내용의 일부이다. 물음에 답하시오. [5점]\n(가)\n단원 세계의 다양한 삶의 모습\n차시명 기후에 따른 사람들의 생활 모습을 살펴봅시다\n학습 목표 열대기후에 따른 사람들의 생활 모습을 탐색할 수\n있다.\n단계 교수･학습 활동\n도입 ◦동기 유발 및 학습 목표 확인\n전개\n◦활동 1: 열대기후의 분포 알아보기\n-백지도에 나타내기\n◦활동 2: 열대기후 지역의 특성 알아보기\n-기온과 강수량의 특징, 사람들의 생활 모습 조사\n하기\n◦활동 3: 기후와 사람들의 생활 모습 간의 관계\n파악하기\n-토론하며 나의 입장 정리하기\n정리 ◦내용 정리 및 차시 예고\n(나)\n수석 교사: 환경과 인간의 관계를 보는 관점은 ㉠환경결정론,\n㉡환경가능론, 생태학적 관점 등이 있습니다. 선생님은\n오늘 수업을 어떤 관점에서 진행하셨나요?\n김교 사: 저는 환경과 인간이 서로 영향을 주고받는다는\n생태학적 관점으로 진행했습니다. 그런데 오늘 수업에서\n지도만 사용하니 학생들이 기후 분포를 정확히 이해하지\n못하는 것 같습니다. 기후의 전체적인 분포를 가르치기에\n적절한 지리교구가 있을까요?\n수석 교사: 세계 기후의 분포를 설명하려면, 기후에 영향을\n주는 요인에 대해 알아야 합니다 . 기후 요인에는\n( ㉢ ), 수륙분포, 해발고도 등이 있습니다. 지구본은\n( ㉢ )이/가 높아짐에 따라 기온이 낮아지는 현상을\n설명할 수 있는 적절한 교구입니다. 이를 사용하면, 쾨펜\n(W. Köppen)의 5가지 기후 구분 중 기온을 기준으로 한\n㉣ 4가지 기후의 분포를 학생들이 이해하기 쉽게 설명할\n수 있습니다. 이외에 지리정보시스템(GIS)을 기반으로\n한 디지털 지도를 사용할 수도 있습니다.\n김교 사: 기후를 다룰 때는 지도와 지구본, 디지털 지도를\n모두 활용해야겠네요.",
+      "method": "pypdf",
+      "char_count": 1308
+    },
+    {
+      "page": 7,
+      "text": "초등학교 교육과정 A (9면 중 7 면)\n수석 교사: 네. 여러 가지 지리교구들을 적절하게 사용하면,\n위치와 같은 공간정보나 지형, 기후, 인구, 산업과 같이\n지역의 특성을 나타내는 ( ㉤ ) 등 다양한 지리 정보를\n얻을 수 있습니다. 끝으로 오늘 수업과 관련해 추가적으로\n학생들과 알아보고 싶은 내용이 있습니까?\n김교 사: 열대기후 지역의 커피나 카카오 등의 교역과 관련\n있는 ( ㉥ )을/를 생각하고 있습니다. ( ㉥ )은/는\n경제적으로 소외된 지역의 생산자와 노동자에게 더 나은\n거래 조건을 제공하여 불평등한 세계무역과 빈곤 문제를\n해결하려는 목적으로 출발한 교역을 말합니다.\n수석 교사: 좋은 생각입니다.\n1) 기후와 인간 간의 관계를 (나)의 ① ㉠과 ② ㉡의 관점에서\n서술하시오. [2점]\n①\n②\n2) (나)의 ㉢을 기준으로 ㉣을 순서대로 서술하시오. (단, ㉢을\n포함하여 쓸 것) [1점]\n3) ① (나)의 ㉤에 들어갈 용어와 , ②( 나)의 ㉥에 공통으로\n들어갈 용어를 쓰시오. [2점]\n①\n②\n8. (가)는 예비 교사가 작성한 교수･학습 과정안이고, (나)는 예비\n교사와 지도 교사가 나눈 대화이다. 물음에 답하시오. [4점]\n(가)\n차시명 갑신정변에 참여한 사람들의 주장을 알아봅시다\n수업 방법 사료 학습\n단계 교수･학습 활동\n도입\n◦전 차시에서 배운 내용을 확인한다.\n- 흥선대원군 집권 이후부터 갑신정변 발발 직전의\n사건들을 정리한다.\n◦학습 목표를 확인한다.\n- 갑신정변에 참여한 사람들의 주장을 이해할 수\n있다.\n전개\n◦제시된 사료를 확인한다.\n<갑신정변 개혁안>\n∙문벌을 폐지하고 백성들이 평등한 권리를 갖는\n제도를 마련하며 능력에 따라 관리를 임명한다.\n∙부정한 관리를 처벌하고 백성들이 빚진 쌀을\n면제한다.\n…(하략)…\n전개\n◦ ㉠\n- 누가, 언제 작성하였는가?\n- 사료가 위조되지 않았는가?\n- 사료에 제시된 용어가 당대에 사용된\n용어인가?\n[A]\n◦사료를 분석･해석한다.\n-이들은 어떤 정책들을 제시하였는가?\n-이들은 왜 이런 정책들을 발표하였는가?\n-조선을 가장 많이 변화시킬 수 있는 정책은\n무엇이었는가?\n-이들이 제시한 정책들은 우리나라 최초의 근대적\n조약에 어떤 영향을 미쳤는가?\n◦결론을 확인한다.\n-갑신정변에 참여한 사람들은 새로운 국가를 만들\n려는 개혁을 시도하였다.\n정리 ◦학습한 내용을 정리한다.\n(나)\n예비 교사: 흥선대원군 집권기부터 갑신정변이 일어나기\n전까지 있었던 사건들을 ㉡시간의 흐름에 따라 체계적\n으로 배열한 표로 학생들에게 제시하려고 합니다.\n지도 교사: 좋은 생각입니다. 특정 사건들을 연도와 함께 제\n시함으로써 사건들의 선후 관계나 인과 관계를 한눈에\n파악할 수 있겠네요. 그런데 ㉢ “이들이 제시한 정책들은\n우리나라 최초의 근대적 조약에 어떤 영향을 미쳤는가?”\n는 이 사료를 분석･해석하는 데 맞지 않은 질문입니다.\n예비 교사: 아, 그렇군요. 수정하겠습니다. 갑신정변에 참여한\n사람들의 주장을 잘 이해하기 위해 수업에서 좀 더 유의\n해야 할 점이 있을까요?\n지도 교사: 역사적 ( ㉣ )을/를 잘 해야 합니다. 공감이나\n동일시와 달리, 역사적 ( ㉣ )은/는 갑신정변이 일어난\n상황에 대한 맥락적 이해와 참여한 사람들의 행위 의도나\n동기, 관점을 파악하는 것입니다.\n1) (가)의 [A]에 근거하여 ㉠에 들어갈 활동을 쓰시오. [1점]\n2) ‘우리나라 최초의 근대적 조약’의 명칭을 포함하여 (나)의 ㉢의\n이유를 서술하시오. [1점]\n3) ① (나)의 ㉡에 해당하는 용어와, ②( 나)의 ㉣에 공통으로\n들어갈 용어를 쓰시오. [2점]\n①\n②",
+      "method": "pypdf",
+      "char_count": 1743
+    },
+    {
+      "page": 8,
+      "text": "초등학교 교육과정 A (9면 중 8 면)\n도 덕\n9. (가)는 4학년 ‘공손하고 다정하게’ 단원을 지도하기 위하여 예비\n교사가 작성한 차시별 수업 계획이고, (나)는 예비 교사와 지도\n교수가 나눈 대화이다. 물음에 답하시오. [4점]\n(가)\n차시 주제 주요 교수 ･학습 활동\n1 예절은 중요해요 ◦예절의 의미와 중요성을 알기\n◦대상과 상황에 따른 예절을 알기\n2 일상생활에서\n예절을 지켜요\n◦대상과 상황에 알맞은 행동을 직접\n실행하면서 몸에 익히기\n3\n예절 바른\n생활을 위해\n지혜롭게\n생각해요\n◦예절과 관련한 가치 문제를 확인하기\n◦자기 입장을 설정하고 사실적 타당성을\n탐색하기\n◦잠정적 가치를 결정하고 가치 원리를\n검사하기\n4 예절을 지키면\n모두가 행복해요\n◦예절 바른 마음을 존중하고 기꺼이\n실천하려는 열정을 갖기\n(나)\n예비 교사: 이 단원은 예절의 중요성을 이해하고 대상과\n상황에 따른 예절이 다름을 탐구하여 이를 습관화하는\n데 지도의 중점이 있습니다. 각 차시별 주제의 성격을\n고려하여 주요 교수･\n학습 활동을 구상했습니다.\n지도 교수: 차시별 주제와 주요 교수･학습 활동이 서로 관련\n되어 있고, 전체적으로 보아 이 단원의 내용 체제에 따라\n활동을 짜임새 있게 구상했습니다. 세부적으로 살펴보면,\n2차시에서는 도덕 행동에 지도의 중점을 두고 있는데 ,\n구체적으로 어떤 수업 방식을 적용할 계획인가요?\n예비 교사: 도덕과의 ‘6수업 과정･절차’ 중 행동적 접근에\n적합한 수업 방식이 2가지 있는데, 그중 ( ㉠ ) 중심의\n수업 과정･절차를 적용하려고 합니다. ‘실천 체험형’과\n달리, ( ㉠ )형은 도덕적 행동을 직접적인 훈련을 통해\n익히고, 가상의 상황을 설정하여 올바른 행동을 실제로\n해보면서 익히는 특징을 지니고 있기 때문입니다.\n지도 교수:3 차시에서는 가치 분석 수업 모형을 적용하고\n있네요. 특히 ‘가치 원리를 검사하기’는 예절과 관련한\n문제 사태에서 가치 판단의 합리성과 보편화 가능성을\n검토하는 데 도움을 제공하는 활동입니다. ㉡역할 교환\n검사, ㉢보편적 결과 검사 등이 이에 해당하는데, 실제\n수업에서 잘 구현하길 바랍니다.\n예비 교사: 그런데 4차시에서 예절을 도덕적 마음과 관련해서\n지도하려고 하는데, 이를 뒷받침할 수 있는 이론을 동양\n윤리에서 찾을 수 있습니까?\n지도 교수: 맹자(孟子)의 심성론(心性論)이 대표적입니다. 그\n심성론에 따르면, 인간의 본성은 인의예지(仁義禮智)이며,\n이 본성은 ‘측은지심(惻隱之心)’, ‘수오지심(羞惡之心)’,\n‘( ㉣ )’, ‘시비지심(是非之心)’이라는 도덕적 마음으로\n드러납니다. 그래서 인간 누구에게나 도덕적 마음을 기르는\n공부가 중요합니다.\n1) (나)의 ㉠에 공통으로 들어갈 용어를 쓰시오. [1점]\n2) 다음 밑줄 친 내용을 적용하여 (나)의 ① ㉡과 ② ㉢에 해당\n하는 교사의 발문 전략을 서술하시오. [2점]\n[문제 상황] 전교 어린이회 회장인 범수는 회의 시각이 다가\n오는데도 참석하지 않는 윤지를 걱정하였다. 범수는 다급한\n마음에 조용히 아침 독서 활동 중인 윤지 반의 교실 문을\n노크 없이 벌컥 열고 큰 목소리로 윤지를 불렀다. 윤지 반\n친구들은 모두 깜짝 놀라며 눈살을 찌푸렸다.\n[잠정적 가치 결정] 윤지 반 친구들에게 예절을 지키지\n않더라도 윤지를 회의에 참석할 수 있도록 하는 것은 옳다.\n①\n②\n3) (나)의 ㉣에 들어갈 용어를 한글로 쓰시오. [1점]\n바른 생활\n10. (가)는 󰡔봄 2-1󰡕 ‘알쏭달쏭 나’ 단원의 ‘마음 신호등’ 차시에\n대한 교수･학습 자료이고, (나)는 김 교사와 박 교사의 대화이다.\n박 교사가 기르고자 하는 바른 생활과 교과 역량을 2015 개정\n바른 생활과 교육과정에 제시된 용어로 쓰시오. [1점]\n(가)",
+      "method": "pypdf",
+      "char_count": 1807
+    },
+    {
+      "page": 9,
+      "text": "초등학교 교육과정 A (9면 중 9 면)\n<수고하셨습니다.>\n(이하 여백)\n(나)\n김교 사: 이 차시는 내용 체계상 ‘나’라는 소주제, 그리고 ‘몸과\n마음을 건강하게 유지한다.’라는 성취 기준에 해당하는\n것으로 알고 있습니다.\n박교 사: 네. 그래서 저는 (가)의 교수･학습 자료를 통해 말과\n행동으로 표현하기 전에 지켜야 할 마음의 약속에 초점을\n두어 지도하고자 합니다. 이 차시의 활동 목적이 일상\n생활을 하는 데 필요한 기본 생활 습관을 형성함으로써\n변화하는 사회에 유연하게 적응하며 살아갈 수 있는\n능력과 관련을 맺고 있기 때문입니다.\n실 과\n11. (가)는 ‘생활 속 동･식물’ 단원의 공개 수업 계획 협의회의\n일부이고, (나)는 ‘발명과 문제 해결’ 소단원에서 발명 기법에\n관한 교수･학습 활동의 일부이다. 물음에 답하시오. [4점]\n(가)\n지도 교사: 실과 공개 수업 계획 협의회를 시작하겠습니다.\n‘생활 속 동･식물’ 단원의 ‘반려동물’과 ‘경제동물’ 중에서\n관심 있는 수업 주제에 대해 자유롭게 의견 주시기 바랍니다.\n예비 교사A: 우리 반 학생들이 반려동물에 관심이 많고 ,\n최근 유기견 문제가 사회적 이슈가 되고 있어 반려동물\n돌보기를 주제로 수업을 계획하고자 합니다.\n예비 교사B: 대부분의 학생들이 고기반찬을 좋아하므로 경제\n동물과 식품 관련 내용을 중심으로 수업을 하고 싶습니다.\n지도 교사: 모두 좋은 주제를 선정했군요 . 반려동물 수업\n주제와 관련된 제도에 대해 알아본 게 있나요?\n예비 교사A: 네, 반려동물 돌보기 수업과 관련된 제도를\n알아보았습니다. ㉠이 제도는 반려동물을 잃어버렸을 때\n쉽게 찾을 수 있도록 도와주고 유기 동물이 늘어나는 것을\n막기 위해 시행하고 있습니다.\n지도 교사: 반려동물 돌보기와 관련해서 아주 중요한 제도인\n것 같습니다. 경제동물 수업 주제와 관련된 제도도 있나요?\n예비 교사B: 네, 경제동물 기르기 수업과 관련해서는 동물\n복지 인증 제도가 있습니다. 이 제도는 농장에서 기르는\n경제동물에게 본래의 습성을 유지할 수 있는 환경을 제공\n하고 스트레스와 고통을 줄여 주는 사육 방법을 인증하는\n것입니다. ‘가정생활과 식품 안전’ 단원의 식품 품질 인증\n표지에도 동물 복지 인증 표지가 제시되어 있습니다.\n지도 교사: 학생들은 관행적인 축산에 의해 생산된 축산물과\n동물 복지 인증 제도로 생산된 축산물에 대한 배경을\n이해할 필요가 있겠군요. 그리고 미래 소비자인 학생들은\n㉡이러한 배경 이해에 기초하여 식품 소비 문제를 해결\n하기 위한 대안을 탐색한 후, 가치 판단에 따라 결정된\n의사를 실행할 수 있는 능력이 필요하겠지요.\n…(하략)…\n(나)\n교사 : 생활 속 물건에 적용된 발명 기법을 찾아보면 발명\n아이디어를 더 쉽게 찾을 수 있습니다. 그러면 모둠별로\n발명 사례를 찾아보고 물건에 적용된 발명 기법을 조사\n하는 활동을 해봅시다.\n학생들 : 네, 알겠습니다.\n…(중략)…\n모둠명 조사한 발명 사례 적용된 발명 기법\n□1 장영실\n∙프린터, 복사기, 스캐너\n기능이 결합된 가정용\n복합기\n∙㉢하나의 물건에 다른\n물건이나 기능을 더하여\n새로운 물건을 만드는\n‘더하기 기법’이다.\n□2 정약용 ∙벨크로(velcro) 테이프\n∙가시 철조망 ∙( ㉣ )\n□3 다빈치 ∙트레드밀(treadmill)\n∙거꾸로 세운 화장품 용기∙( ㉤ )\n교사 : 지금부터 모둠별로 조사한 결과를 발표해 봅시다.\n1모둠부터 발표해 주세요.\n학생 A : 장영실 모둠에서 발표하겠습니다. 우리 모둠에서는\n가정용 복합기 사례를 조사했습니다. 이 발명 사례에는\n하나의 물건에 다른 물건이나 기능을 더하여 새로운\n물건을 만드는 ‘더하기 기법’이 적용되었습니다.\n교사 : 발명 사례와 기법을 잘 조사하여 발표했네요. 다음으로\n2모둠에서 발표해 주세요.\n…(하략)…\n1) (가)의 ㉠에 해당하는 제도를 쓰시오. [1점]\n2) (가)의 ㉡에 해당하는 실과 교과 역량을 2015 개정 실과 교육\n과정에 제시된 용어로 쓰시오. [1점]\n3) (나)의 ㉢과 같이 ① ㉣과 ② ㉤에 들어갈 발명 기법의 의미와\n명칭을 서술하시오. [2점]\n①\n②",
+      "method": "pypdf",
+      "char_count": 1988
+    }
+  ]
+}

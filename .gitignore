@@ -1,0 +1,30 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.db
+*.log
+
+# Local/generated knowledge assets
+faiss_db/
+faiss_curriculum/
+ocr_cache/
+ocr/
+uploaded_files/
+pdfs/
+*.pdf
+*.zip
+
+# Notebooks can contain copied API keys from experiments.
+*.ipynb
+
+# Generated reports and temporary harness output
+*_report.json
+validation_report.json
+streamlit_ui_report.json
+project3_report.json
+teacher_exam_intelligence_harness.pdf
+untitled folder/

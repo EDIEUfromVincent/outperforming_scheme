@@ -1,0 +1,268 @@
+{
+  "id": "2015-B",
+  "year": 2015,
+  "form": "B",
+  "source": "2015학년도_교육과정B.pdf",
+  "page_count": 8,
+  "extraction_methods": [
+    "tesseract"
+  ],
+  "warnings": [
+    "대문항 번호 점검 필요: 발견=[1, 2, 3, 4], 예상=1~11",
+    "2015 OCR 보정 파서 적용: 기존 4문항 → 11문항"
+  ],
+  "questions": [
+    {
+      "id": "2015-B-Q01",
+      "number": 1,
+      "subject": "총론·창의적 체험활동",
+      "score": null,
+      "pages": [
+        1
+      ],
+      "curriculum_mentions": [],
+      "achievement_codes": [],
+      "visual_references": [],
+      "needs_visual_context": false,
+      "text": "1. (3(> 초 등 학 교 의 백 교 사 는 초 임 교 사 들 을 대 상 으 로 2015 학 년도\n학교 교 육 과정 운영 계 획 과 관련된 멘토링 프 로 그 램 을 진 행 하 였다.\nFt 그 일 환 으로 개 최 된 간담회 내용 중 일 부 이다. 물 음 에\n답 하 시오. [34]",
+      "subquestions": [],
+      "parser_note": "2015 OCR fuzzy boundary recovery"
+    },
+    {
+      "id": "2015-B-Q02",
+      "number": 2,
+      "subject": "바른 생활",
+      "score": null,
+      "pages": [
+        1
+      ],
+      "curriculum_mentions": [
+        "2009"
+      ],
+      "achievement_codes": [],
+      "visual_references": [],
+      "needs_visual_context": false,
+      "text": "2. ( 가 ) 는 박 교 사 가 지 도 하려는 단 원 의 차 시 명과 활동 주 제 를\n나타낸 것이고, ( 나 ) 는 이를 위해 준비한 자 료 이다. (가), ( 나 ) 를\n참 고 하 여 2009 개정 바 른 생 활 과 교 육 과 정 애 제시된 Gel] 해당\n하는 WSS 쓰 시 오 . [1 점 ]\n홍 초 임 교사: 백 선 생 넘 께서 우리 학교 상 황 에 맞는 (가)\n자 율 적 이고 특색 있는 교 육 과정 운영 계 획 을 세워 보라고 | | 소 주 제 | 차명 활동 주제\n말 씀 하 셨 잖아요? 징 말 그렇게 해 노 괜 찮 을 까요? | 이웃 | 가게 | 3 차 시 ` 화 났 어 요 ' oh\n백 교사: 그럼요. 2009 개정 교 육 과정 총 론 에 의하면, “국가 |\nES] 공 통 성 과 지역, 학교, 개인 수 준 의 ( ) 음 / 를 (나)\n동시에 주 구 하는 anid oO] 우리나라 교 육 과 징 의 성격 지우개: 책 상 아 , 네 얼 굴 어 왜 이렇게 더 럽 니 ?\n중 하 나 입니다. 너무 걱 징 하지 마시고 운영 계 획 을 세워 책 Ab: 민 주 가 내 얼 굴 에 크 레 파 스 로 낙 서 했어.\n보시죠 도 화 지 가 있을 텐데 a 네 얻 굴에 그렇게 한 거지?\n홍 초 임 교사: 알겠습니다. 최근 제가 우리 학교 학 생 들 을 그런데 지 우 개 야 . 너는 왜 모 붕 이 가 잘 렸 니 ?\n살 펴 보 니 공 꾸 는 잘 하 지만 약 간 은 개인적인 성 향 이 있는 지우개: 준 호 가 아무 이 유 도 없이 Wd 버렸어. 연 필 아 , 너는\n것 같아요. 그래서 말인데요, 2009 개정 교 육 과정 총 론 에 연 필 심이 어니 갔니?\n기 존 의 재 량 황 동 과 HSS 통 합 하여 배 려 와 나 눔 으 연 필 : 우 영 이가 장 난 삼아 꾸 러 뜨 렸 지 뭐야. 우 리 는 언제쯤\n( 42 ) 을 / 를 위한 ' 창 의적 체 험 동 ' 음 신 설 한 다 .\" 는 주 인 에게 사 랑 받을 수 있을까?\n교 육 과정 구 성 의 방 칩 도 있는 만큼, 창의적 체 험 활 동 움\n강 조 하여 계 획 을 세우면 어떨까요? .\n정 초 임 교사: 좋은 생 각 이네요. 얼마 전 학 생 들 의 희망 활 동 을\n조사해 본 결과, 외국어 회 화 나 과학 AE 선 호 하는 학생\n들이 꽤 많더군요. 이 접을 감 안 해 서 창의적 체 험 활 동의 도덕\n네 개 영역 중 특히 ( 12 ) 을 / 를 강 조 하면 어떨까요? 그",
+      "subquestions": [],
+      "parser_note": "2015 OCR fuzzy boundary recovery"
+    },
+    {
+      "id": "2015-B-Q03",
+      "number": 3,
+      "subject": "도덕",
+      "score": null,
+      "pages": [
+        1,
+        2
+      ],
+      "curriculum_mentions": [
+        "2009"
+      ],
+      "achievement_codes": [],
+      "visual_references": [],
+      "needs_visual_context": false,
+      "text": "3. (WE 도 덕 과 3 학 년 2 단 원 4 차 시 중 2 차 시 의 수업 계 획 안 이고,\n1) 을과 Pel, 들어갈 말 을 쓰 시 오 . [2 점 ] ( 나 ) 는 수업 계 획 에 관한 대 화 이 다. 물 음 에 답 하 시 오 . [4 점 ]\n단계 주요 활동 내용\n2 도입 ㅇ 동기 유 발 하기\noct ae 목표 제 시 하기\nㅇ 문제 사태 제 시 하기\n2) 다 음 은 2009 개정 창의적 체 험 활동 교 육 과 정 에 제시된 1: 으 접 심 시 간에 친 구 들 과 운 동 장 에서 달리기 연 습 을\n목표 중 하나이다. 이 목 표 와 간담회 내 용 을 참 고 하여 Tol] 하고 있는 아 람 이 에 게 민 서 가 “ 꽃 돼 지 가 잘 del.”\n들어갈 영역 Wale 쓰 시 오 . [1 접 ] 라고 했나. 그 말 을 들 들은 아 람 이는 속상한 마 음 에\n다양한 활 동 에 참 여 하여 자 신 의 잠재 Ys 창 의 적 으로 전개 달 리 기 를 범 추고 저 않아 을 음 을 터 트 렸 나. 이를\n계 발 ㆍ 신 장 하고, 자 아 실 현 의 기 초 를 낚 는 나. 될 본 민 서 는 어찌할 줄 몰라 당황해 하고 있다.\nol 도덕적 분 화 인 하기\n. ㅇ 꾼 제 해결 방 법 에 대해 토 론 하 기\no [&] 자 신의 입 장 선 택 하 고 징 당 화 하 기\nㅇ 자기 반성 및 성찰, 실천 의지 다지기\n정리 ㅇ 정리 및 차시 예 고 하 기\n초등학교 TASB (8 면 중\nla)\n(나)\n예 비 교사 : 이 수 업 은 개정 도 덕 과 교 육 과 징 에 제시된\n/ 개 의 내용 영역 영 역 에 해 당 하고, ' 친 구\n사 이 의 우 정 과 oa 주 제 로 하고 있어요. 그런데 전개\n단 계 의 [A] 활 동 은 어떻게 지 도 해야 하나요?\n김 교사: 이 활 동 에는 도덕적 추 론 의 논증 방 식 들:\n410\n40\na,\n방 식 들 을 적용\nBA 있어요. ( G& ) 적 으로 주 론 하는 방식, 즉 논 의 가\n되는 문제 상 황 을 해 결 한 여러 사 례 들 로 부 터 일반적인 해결\n방 법 을 추 론 하는 방 식 이 있습니다. 예 을 들면 ‘ap 간에\n갈 등 이 생겼을 때 대 화 를 통해 해 결 한 사 례 들 이 많 았 음운\n근 거 로 하여, 친구 간의 같 등 해 결 을 위해서는 대 화 가 중요\n하 나 ' 고 Bee 노 출 하 는 방식 이지요.\n예 비 교사: 그렇군요\n김 교사: 이와 달리 ( GH ) 적 으로 추 론 하는 것도 알려줄\n필 요 가 있어요. 이것은 사 고 와 판 단 의 타당한 이유 혹은\n근 거 를 제 시 하면서 상 위 의 도덕 원 리 로부터 구체적인 행위\nPS 추 론 하는 방 식 입니다. 예 을 들면 ' 사 람 들은 서로\n존 중 해 야 한 나 ' 는 상 위 의 Sle] Be] ' 친 구 간에 서로 피 해 를\n주지 말아야 한 나 ' 는 구체적인 행동 BAG 도출해 내는\n방 식 이지요\n1) 내용 요 소 와 행동 ASS 포 함 하 여 SS 제 시 하 시오. [1 점 ]\n2) 03% 구 성 하는 방 식 과 Oo] 들어갈 영 역 명 을 쓰 시 오 , [3 전 ]",
+      "subquestions": [],
+      "parser_note": "2015 OCR fuzzy boundary recovery"
+    },
+    {
+      "id": "2015-B-Q04",
+      "number": 4,
+      "subject": "실과",
+      "score": null,
+      "pages": [
+        2,
+        3
+      ],
+      "curriculum_mentions": [
+        "2009"
+      ],
+      "achievement_codes": [],
+      "visual_references": [],
+      "needs_visual_context": false,
+      "text": "4. ( 가 ) 는 2009 개정 실과 고 육 과 정 에 따른 수 업 에서 한 학 생 이\n작성한 노 트 의 일 부 이고, ( 나 ) 는 실과 수 업 을 앞둔 예 비 교 사 들이\n이 노 트 를 보면서 나눈 대 화 의 일 부 이다. 물 음 에 답 하 시오. [4 점 ]\n(가) 학 생 의 노트\n고구마 샐러드 건강 간 시 상 차리기\nㆍ 고 구마\n- 재료 : 고구마, BE, 사과, 마요네즈\n- 만드는 방법\nㆍ 고 구 마 와 THES 가가 살 는다\nAES 고 구 마 를\nㆍ 살 은 THES 잘게 다 진 다.\nㆍ 사 과 를 TER AD 핫 다 .\nㆍ 손 질 핫 재 료 를 마 요 네 즈 와 버무려 고구마 MAYES\n완 성 핫 다.\nㆍ 간 식상 차리기\nㆍ 고 구마 MES 우 유 로 간 시 상 을 차린다.\nRP RR\n앞 면 이 투명한 필 7| 도구 West OFS 7|\n>\n(1> 뒷 판\n@ 옆 판 ( 좌 ) …\nDAB?)\n@ 밑 판 —-t\n[ 조 립 도]\n100\n- 내\n60\n160\n1\n8\n두께 6\n[ 200 | 80\nT\n8 8\n두께 6 두께 6\n후\n[ 8 200\n- -\n[ 부 품 도]\n품명 | 재질 수량\na | ae 투 명 아 크 릴 판 1\n” 뒷판 섬 유 판마) 1\n>. [SEH | 1\n^ ㅣ 중 간 판 ㅣ 1\n| 1\n@ | wat 1\n초등학교 교 육 과 징 B (8a 중 2 A)\n(나) 예 비 교 사 들의 대화\n예 비 교사 As 다음 Pell 실과 수 업 이 있는데 참고할 자 료 가\n없을까요?\n예 비 교사 13: 일 반 에는 예 비 교 사 가 이미 실과 수 업 을 했네요.\n여기 한 학 쟁의 노 트 가 있어요. 이 노 트 를 보면서 이 야 기 해\n볼까요?\n예 비 교사 A: 그래요. 노트 첫 페 이 지 는 ' 건 강 간식 만 들 기 '\n소 단 원 의 내 용 이네요. 학 생 이 고구마 샐 러 드 와 우 유 로 간 식 상\n~ L710\n을 차 렸 군요. 앞에서 배운 나의 영 양 과 Als 사 의 내 용 을\n적 용 하여 So] 학 생 이 차린 간 식 상 에 영 양 소 와 식 품 군 이\n골고루 들 어 있 는지 스스로 평 가 해 보는 활 하면 좋음\n것 eek. ere 영 양 소 으 Jet ALS 이 해 하고\n예 비 교사 13: als a8 ae l ake\n전 체 를 한 기지: 로 만\nov Yrs Tou\n재 료 로 바 꾸 었네요. 수 업 에서 42009 개정 실과 교 육 과정 중\n제품 만 들 기 ' 소 단 원 의 성 취 기 준 에 제시된 기법\n사 용 강조한 것 같아요. 그런데 트 에 제 작 노 는 있는데\n그 앞 단 계 인 스 케 치 와 구 상 도가 없네요.\n관 련 하여 포 함 된 ' 지 (열량) 영 양 선의\nERE 모두 쓰고, 구성 자 전 거 ' 의 ABE 중 간 식 상\n에서 빠 져 있는 BES 쓰 시 오 . (27\ne a i\n2) Tol 해 당 하는 기 법 을 쓰 시 오 . 14)\n3) a} 관 련 하여 제 작 도 에 해 당 하는 필기 노 구 징 리 함의\n포 양은 나타내는 TAS. 면\n두께, 치 수 는 나타내지 않아도 됨 .) [1 접 ]\n초등학교 교 육 과 정 B (8 면\non",
+      "subquestions": [],
+      "parser_note": "2015 OCR fuzzy boundary recovery"
+    },
+    {
+      "id": "2015-B-Q05",
+      "number": 5,
+      "subject": "체육",
+      "score": null,
+      "pages": [
+        3,
+        4
+      ],
+      "curriculum_mentions": [
+        "2009"
+      ],
+      "achievement_codes": [],
+      "visual_references": [],
+      "needs_visual_context": false,
+      "text": "멘토 교사: 제가 홍 미 로운 지도 방 법 을 한\nBY 징 도 연 습 한 후, SHS 게 임 을 해서\n1 능 1S 2\nHere 3~4 학 년 군 의 활 동 ' 영 역 에서 ㆍ 축 구형 게 임 의\n기능\" 익히기 BSS 지 도 한 초임 교 사 와 멘토 교 사 의 대화\n이다. 물 음 에 답 하 시오. [4 점 ]\n벤토 교사: 선생님, 오늘 PR 게임\" 수 업 은 어떻게 하셨어요?\n초임 교사: 학 생 들 에게 축구 패스\n방 법 을 가르치고 짝 과\n함께 가까운 거 리 에서 BE 해 스 하는 연 습 을 하게 |\n그런데 한 학 생 이 발 끈 으로 BEIT [|\n하게 패 스 하지 못 하 더라고요. 이 학 생 이 받 의 정확한\nsays say) 어떻게 지노\n해야 할까요?\n벤토 교사: 간이 배구 수 업 에서 제가 섰던 법 을 망 씀\nㅇ\n드릴게요. 오버 토스 Babs 배우는 한 학 생 이 공 을\n때 마 다 언더 EAR 받았어요. 그래서 높은 공 을 (BI\n받을 때 ' 머 리 위 ' 라 고 말 해 주었어요. 그랬더니 오브\nEAT 정확하게 esha.\n사용해 볼게요.\n소개해 드릴게요. 축구 슈팅 기 능 을 배우는\n1 접 부터 6 점 까지 접 수 를 꾸 여 한 여러 개의 -\n골 대 에 매달아 좋았어요. 그리고 학 생 들 ㅇ\n~ 주 ~2-\nJa x\nSy fl\ngt of\n나 & 모\n+\nIe\nㅇ 6 NO pio pio\n=\n^\n—\n에\n=\nfo 다이\n$2\nfei 38%\n뚜 2 ye\nro Fo ry\n, 3 등 은 끼리, … 능 수 가\n학 생 은 Spy} 낮은 학 생 들 끼리 점 수 를 8\n| 렇 게 비 교 하여 해당 능 수 에서\nao] 자 신 의 모 등에 기 여 하도록 했어\n교사: 정말 좋은 방 법 이네요. 한 가지 더 궁금한 것이\n있는데요. 기본 운동 기 능 은 갖추고 있으나 게임 전략 Se\n이러한 학 생 들 을 위해 어떻게 수 업 을 운 영 하 면 될까요?\nLu 그 칸 내 ~ 느\n하고, 축구 관련 AAS 읽으며 축 구 에 관한 지 식 을 wesw\n해 보세요. 또 기 장 에서 축구 AE 관 람 하거나,\nde UNS Behl 한 수도 있어요 AN\n상 황 에서 득 점 을 잘 하기 위해 친 구 들 과 ABS 토 론 하는\n하 7\n방 법 도 사용해 보세요.\n초임 교사: 여러 가지 조 언 주셔서 감 사 합니다.\n1) 상 황 에서 Ae 참 고 하여, 가까운 Hels\n발의 부 위 를 포 함 하\n스톤 징 화 하게 하 노 록\n의 쑤 지 오 . 1 ]\n23a)\nJo] 속하는 구 조 의\n을 쓰고 BL 과제 구조 의 ye 주 언 에\n근 거 하여 es 오 . 2]\n3) 2009 개정 체육과 교 육 과 정 의\nTa} 같은 sh + Sy\nte 방 향 에 제시된\n시.",
+      "subquestions": [],
+      "parser_note": "2015 OCR fuzzy boundary recovery"
+    },
+    {
+      "id": "2015-B-Q06",
+      "number": 6,
+      "subject": "체육",
+      "score": null,
+      "pages": [
+        4,
+        5
+      ],
+      "curriculum_mentions": [
+        "2009"
+      ],
+      "achievement_codes": [],
+      "visual_references": [],
+      "needs_visual_context": false,
+      "text": "6. ( 가 ) 는 2009 개정 체육과 교 육 과 정 의 여가 활동 내용 체 계 이고,\n(He 교 수 ㆍ 학습 과 정 안 이다. 물 융 에 답 하 시오. [4 점 ]\n(가)\n영역 3^~~4 학 년 군\nㅇ 가 족 과 여가\noy | 7 의 미 와 복성: |\nae. | - 여가 환 동 의 창의적 계획\n| - 나와 가 족 의 여가 황동 제 험\n(나)\naa | ° 자전거 타 기 의 기본 기 능 을 익히고 안전 수 칙 을 이해할\nan | 수 있 다\n그 60 ( 1 )\n단계 교수 ㆍ 학 습 활동\n도입 ㅇ 농기 유발\n0 준 비 운동\n0 활동 1: 자전거 바 기 의 기본 기능 및 안전 수칙 익히기\n[A]\n- 내 리 박 길 에서는 브 레 이 크 를 급하게 잡지 않는다.\n- 오 르 박 길 에서 상 체 를 숙이고 무게 중 심 을 앞으로 둔다.\n- 주행 중 균 형 을 잃었을 때 핸 늘 을 넘 어 지는 반 대 쪽 으로\n돌린다.\n전개 ㅣ - 야 간에는 반드시 점 등 을 하고 복장, 페 담 등에 밤 광 체 를\n부 착 하여 쉽게 눈 에 띄 도 록 한다.\n- 방 향 을 전 환 하거나 정 지 할 때 수 신 호 를 사 용 한 다.\n0 활동 2: 자전거 타기\n- 운 동 장 에 표시된 선율 따라서 자전거 타기\nㅇ 활동 3: 가 족 과 함께 자전거 여행 계획 세우기\n- 여 행 지 에서 할 수 있는 가족 게임 구 상 하기\no 정 리 하기 및 차시 안내\n정리 ㅣ ㅇ 수행 평가 및 과제물 안내\n- 가족 여가 환 동 체험 학습 보고서 발 표 하기\n1) ( 가 ) 에 제시된 의 내용 RAS 포 함 하여 ( 나 ) 의 Cal) 해 당 하는\n학습 목 표 을 제 시 하시오. [1 접 ]\n(HA 3 an Se 과 징 안에 기는 [A]2] 내용 중 적 절 하지 않은\n3 학 년 1 반 김성수\n체험 장소 경춘 자전거 전용 도로\n도 ㄴㅇ\n엄마, 아빠,\n날짜 |2014 년 11 윌\n함께 한 사람 동생, 나\n0 활동 주제: 가 과 함께 자전거 여행\nㅇ 활동 목적: 자전거 여 행 을 통해 가족 유대감 쌓기\n학 교 에 서 자전거 수 업 을 듣고, 엄마, 아빠, 동 생 과 자 전 거 로\n가족 여 행 을 하 기 로 했다. 어제 우리 가 족 은 서 울 에서 자전거\n전용 노 로 를 따라 양 평 까지 갔나. 나는 자전거 여 행 을 위해 8\n마나 가 족 들 과 한 강 에서 자전거 타기 연 습 을 했나. 그\n자 전 거 를 조금만 타도 숨 이 차고 다 리 가 그 때 마다\n선 생 넘 께서 체육 시 간 에 말 씀 하셨던 체 력 의 Sago] 떠올랐다.\n그래서 나는 자전거 타기 연 습 을 계속 했고, 이제는 오랫동안\n자 전 거 를 타도 HO] 차지 않고 다 리 도 아프지 않다. 지 난 주 에\n학 교 에서 체력 측 정 을 했는데 자전거 타 기 를 처음 배울 때 보 다\n) 이 / 가 많이 향 상 되었고 나의 근 력 과 근 지 구 력 도 좋아\n졌다고 선 생 님 께서 Ay? 주셨다.\n(중략)\n선 쟁 님 께 서 얼마 후에 수행 평 가 가 있다고 하셨다. 그래서\n찍은 우리 가족 자전거 여행 사 진 을 자 료 철 에 모아\n여 행 에 대한 추 억 을 정 리 하였다. 또한 얼마 전부터 모으기\n시작한 자전거 여 행 에 관한 기 사 을 분 류 하여 주 가 하였다.\n처음 몇 슈트\n신문\n그리고 지난 주 말 에 업 마 와 동 생 이랑 합 께 본 ' 자 전 거 로 세계\n여 행 ' 이 라는 영 화 에 내한 소 감 문 도 작 성 하였다. 이빈 자전거\n한 소\n가족 여 행 은 힘 들 기는 했지만, 가 족 들 과 해서 정말 즐거\n웠다.\nN",
+      "subquestions": [],
+      "parser_note": "2015 OCR fuzzy boundary recovery"
+    },
+    {
+      "id": "2015-B-Q07",
+      "number": 7,
+      "subject": "미술",
+      "score": null,
+      "pages": [
+        5,
+        6
+      ],
+      "curriculum_mentions": [
+        "2009"
+      ],
+      "achievement_codes": [],
+      "visual_references": [],
+      "needs_visual_context": false,
+      "text": "oe 4 학 년 “현대 미술 만 나 기 ' 감상 수 업 의 교수 ㆍ 학 습 과 정 인의\n일 부 이다. BSA 답 하 시오. [54]\n단계 교수 ㆍ 학 습 활동\n문제 | ° 학습 문제 인 식 하기\n인식 | - 탐 구할 학습 문 제 를 안 내 한 나.\nㅇ 작 품 의 다양한 표현 방법 탐 색 하기\n( 가 ) 와 (나) 작 품 에 적용된 표현 방 법 을 탐 색 한다\nㅇ 규 칙 성 알 아 보 기\n- ( 가 ) 와 (나) 작 품 의 표현 방 법 을 발 견 한나.\n3 단 계\nㅇ 관련된 미술 용어 이 해 하기\n- 공통적 표현 방 법 에 해 당 되는 미술 용 어 를 이 해 한다.\n4 단 계 | ㅇ ( ! )\n정리 ㅣ ㅇ 서 로 의 작품 감상 및 내용 정 리 하 기\n및 ㅣ - 친 구 들 이 제 작 한 작 품 을 감 상 하며, 학 습 한 내 용 이\n발전 잘 드러나 있는지 살 펴 본 나\n1) 2009 개정 미술과 교 - re 에 제시된 3~/ 학 년\n성 취 기준 가운데, 우 aS\nHAL. [1 점 ]\n기준 ㅣ ㅇ 미술 작 품 에 대한 자 신 의 느 낌 과 생 각 을 설 명 할 수 있다.\n) ( 가 ) 와 (나) 작 품 이 공 통 으로 속한 GS 양 식 을 쓰고\n특 징 을 쓰 시 오 . [24]\n초등학교 교 육 과 정 B (8 면\n3) 이 주업\n@ uta\n년\n0014 에\n20)\n2 oO\non",
+      "subquestions": [],
+      "parser_note": "2015 OCR fuzzy boundary recovery"
+    },
+    {
+      "id": "2015-B-Q08",
+      "number": 8,
+      "subject": "음악",
+      "score": null,
+      "pages": [
+        6,
+        7
+      ],
+      "curriculum_mentions": [
+        "2009"
+      ],
+      "achievement_codes": [],
+      "visual_references": [],
+      "needs_visual_context": false,
+      "text": "8. ( 가 ) 는 2009 개정 음 악 과 교 육 과정 3~4 학 년 군 감상 영 역 의 내용\n체 계 이며, ( 나 ) 는 3~4 학 년 군 감상 수 업 을 위한 제 재 곡 의 일 부 이다.\n물 음 에 답 하 시오. [점]\n(가) 2009 개정 음 악 과 교 육 과정 3~/ 학 년 군 감\n8 역 의 내용 체계\n7 읍 악의 요소 및 개념 이 해 하기\n12 악 곡 의 특 징 을 이 해 하며 감 상 하기\n(나) 제 재 곡\n< 악 보 1>\n:\nyo 그 = =\nbios\n3| [2\nAl Al 징 징 징 | 징 ~\nia] [al [al | 챙 챙 | 챙 |\n< 악 보 3>\nOf | TO} oO!\n02 : OF 0 | :\noF\nO} ofo iO! aon\nO: 1: O oO |:\non ㅇ\non\n1) < 악 보 1> 의 제 재 곡 을 학 생 들 에게 들 려 주면서 a} 연 계 하여\n지 노 할 학습 활 동 으로 적 절 하지 않은 것 2 가 지를 찾아 수 정 하\n시오. [2749]\n0 ㅇ 여 리 게 시 작 되는 부 분 에서 작은 동 작 으로 박자 37]\n2 GOVE Be] opal 맞 주어 빌 구르기\nㅇ [13] 에 들어갈 4 문 섬 표 부 분 에서 손 들어 올리기\n0 3~0 마 디 와 아 디 의 반 북 되는 ELAR ml\nㅇ [CHS] 차 례 가기 가 락 선 을 손 으로 나 타 내 기\n2) < 악 보 2> 와 < 악 보 3> 에 서 한 장 단 의 기 본 박이 몇 박 인 지\n각각 쓰고, 두 정 간 보 에 사 용 된 타악기 연 주 법 의 기보 방 식 을\n각각 쓰 시 오 [2 점 ]\n| 구 분 | < 악 보 2> < 악 보 3>\n기보 방식 é 00000\ne/a eb\ne‘c\n3) < 악 보 1> 과 < 악 보 2> 의 제 재 곡 으로 아래와 같은 학습 MES\n하였을 때, Oo 근 거 하여 두 꼭 에서 공 통 으로 지 도 할 수 있는\n성 취 기준 가 지 를 쓰 시 오 . [1 점 ]\nsot\n악\n띠 >\nnie\non\nㅇ 행사 관련 사 진 이나 동영상 장 면 은\n대해 알 아 보 기\nㅇ 생활 주 변 의 문화 행 사 에서 연 주 되는 사례 찾아서 발 표 하기\nq\nad\nrg\n=\n대\nJo,\n=\n&\n초등학교 교 육 과정 1] (8 면 중 () a)\n즐거운 생활",
+      "subquestions": [],
+      "parser_note": "2015 OCR fuzzy boundary recovery"
+    },
+    {
+      "id": "2015-B-Q09",
+      "number": 9,
+      "subject": "즐거운 생활",
+      "score": null,
+      "pages": [
+        7
+      ],
+      "curriculum_mentions": [
+        "2009"
+      ],
+      "achievement_codes": [],
+      "visual_references": [],
+      "needs_visual_context": false,
+      "text": "9. (PDE 2009 개정 즐거운 생 활 과 교 육 과 정 에 제시된 ' 교 수 ㆍ 학 습\n지 도 ' 의 일 부 이고, ( 나 ) 는 대 주 제 ' 가 을 ' 의 소 주 제 HAS 지 도 하기\n위한 교수 ㆍ 학습 과 정 안 의 일 부 이다. (HS 참 고 하여 Oa\n들어갈 용 어 를 각각 2 음 절로 쓰 시 오 . [2 점 ]\n영어",
+      "subquestions": [],
+      "parser_note": "2015 OCR fuzzy boundary recovery"
+    },
+    {
+      "id": "2015-B-Q10",
+      "number": 10,
+      "subject": "영어",
+      "score": null,
+      "pages": [
+        7
+      ],
+      "curriculum_mentions": [
+        "2009"
+      ],
+      "achievement_codes": [],
+      "visual_references": [],
+      "needs_visual_context": false,
+      "text": "10. 다 음 은 Mr. Hane] 실 행 한 4 학 년 영어 수 업 의 일 부 이다.\n물 음 에 답 하 시오. [3 점 ]\n2-8 황 동 울 준 비 하고 있는 질 문 한나.)\n> Um... What are you doing, Chansu?\ny . SA = .\n(가) ate + Bee 지도 S: Well, I'm draw a picture.\nㅇ ' 증 거 운 생 활 ' 과 의 교 수 ㆍ 학 습 에 서는 …… 다양한 감 각 을\n1- 껴 몰 기 회 를 제 공 한나. 나아가 여 기 에 서는 ( :\n와 / 과 균 형 의 아 름 나 움 과 다양한 놀이 및 표현 PE\nBoise aan 즐 거 움 을 체 험 하 노 흑\nins\nSAG 생 활 ' 의 교 수 ㆍ 학 습 에서는 HES 통해서 높 이 하기,\nT: Oh, 1 566. You're drawing a picture. It looks very nice.\nHmm... Let me see. Are you drawing a cat?\nS: No. It's a dog!\nT: Really? I'm sorrv!\n6 8 ts (잠시 였 에 않아 그 림 을 그리며)\n으악 몸 ㆍ ( As) )( 으 ) 로 나 타 내 기, 모 방 하기, 간단한 Chansu, I'm drawing a picture, too.\n공 연 하기, 느 낌 이나 소 감 을 구 체 적 으로 나누는 감 상 하 기와 S: (Mr. Han2} 그 림 을 보며) Oh, are vou drawing a uger?\n같은 기 초 적 인 표현 기 능 을 수 있도록 지 도 한다. T: Yes, I'm drawing a tiger.\n(이하 생략)\n(나) 교 수 ㆍ 학습 과정안\n학습 목표 | 색 의 어 울 림 을 생 각 하며 색 천을 싼 나 1) 2009 개정 영어과 교 육 과 징 에 제시된 ' 언 어 BAY 교수 ㆍ 학 습\n방법 중 Mr. Hane] 수 업 에 잘 드러난 것 1 가 지를 쓰 시 오 .\n학습 단계 교수 ㆍ 학습 활동 ( 단 ' 오 류 수 장 ' 과 관련된 네 용 은 제 외 할) OA\nㅇ 두 가지 색 이 함께 있을 Go] !- 낌 이 야 기 하기\n탐 색 하기 | ㅇ 여러 가지 색 지을 맞 대 어 보고 추 석 빔 에 어울리는\na 찾기\n. | ㅇ 색 천 짜는 방법 알 아 보 기 2 8 2-2 Mr. Hans} 그의 수 업 을 참 관 한 Ms, Lee7} 수업 후\nBEM | 개의 어 울 립 이 나 타 나 도록 아름다운 색 천 짜기 누는 대 화 이다. Cel] i's’ 시 작 하 는 단 어 를 쓰고,\nMr. Han2} 교수 방 식 이 hy 어 교 사 에게 주는 시 사 접음\n쓰 시 오 . [3 접 ]\nMs. Lee: Mr. Han, I observed that you helped the children\nvery nicely interacting with individual children.\nMr. Han: Right. There were some patterns they had not fully\nmastered yet. So I used the patterns communicatively at\na level that is within their reach. | provided the\n(s ) necessary for the children to communicate\nmore competently.\nMs. Lee: That's great. You moved around the class giving\nthe children chances to interact with vou.\nMr. Han: Yes, I did. I want to expose the children to\nlanguage that is just bevond what they already know.\nI use language of this level naturally when 1\ncommunicate with them.\n초등학교 3239) B (8 면 중 7 A)",
+      "subquestions": [],
+      "parser_note": "2015 OCR fuzzy boundary recovery"
+    },
+    {
+      "id": "2015-B-Q11",
+      "number": 11,
+      "subject": "영어",
+      "score": null,
+      "pages": [
+        8
+      ],
+      "curriculum_mentions": [
+        "2009"
+      ],
+      "achievement_codes": [],
+      "visual_references": [],
+      "needs_visual_context": false,
+      "text": "11. ( 가 ) 는 김 교 사 가 실 행 한 5 학 년 영어 이야기 읽기 수 업 이고,\n( 나 ) 는\n수업 후 작성한 일 지 이다. 물 음 에 답 하 시오. [4 점 ]\n(가)\n읽\n기\n읽\n기\nOn\n기\non\nT: Now,\npicture on page 70. Can you guess what the story\nis about?\nSs: ( 자 신 의 생 각 을 이 야 기 한다.)\nwere going to read a story. Look at the\n‘T: Sounds interesting. Let's watch the video clip and\nlisten to the dialogue.\nSs: ( 화 면 을 보면서 듣는다.)\n1: What's the story about? What's the topic?\n66: 미 녀 와 아 수 가 사 랑 하 게 되는 이 야 기 요 .\nT: Right. It's about love between a beautiful girl and\na wild animal.\n‘T: Let’s read the story aloud all together. I'll read\nfirst. Listen carefully and read after me.\nSs: ( 교 사 를 따라 다 함께 읽 기 를 반 복 한다.)\n‘T: Evervone, read the story aloud by yourself. I'll\ngive you 3 minutes.\nSst (각자 소리 내어 이 야 기 를 읽는다.)\nT: Who will read the story aloud to the class? Any\nvolunteer?\n( 몇 명의 학 생 들 에게 혼자 일 어 서 서 큰 소 리 로 읽음\n기 회 를 준다.)\nT: Excellent! This time, get into pairs. Take a part in\nthe dialogue and read it to your friend. When it’s\nover, switch the roles.\nSst ( 짝 과 역 항운 바 꿔 가며 읽는다.)\nT: Are you done? Then, look at the three questions\non page 72, and answer\n( 학 생 들 과 함께 이 야 기 의 세부 내 용 을 확 인 한 나.)\nT: Have you enjoved reading the story?\nSs: Yes.\nT: Imagine what will happen after the end of the\nstory. Each pair, talk about that with each other\nand make a short story. A very short story.\nSs! ( 짝 과 의 견 을 나누고 함께 새로운 이 야 기 을 반 든다.)\nT: Now, tell your story to the class. Who wants to\ntell the story first?\nSs: (앞에 나와 발 표 한다.)\n초등학교 교 육 과정 [3 (8 면\n(나)\nMon. Sept. 13, 2014\nI emploved reading aloud technique at the while-reading\nstage. It can be effective for learners with low-level\nliteracy skills. First, I read the sentences one by one and\nthe students read after me in chorus. Next, each student\ndid reading aloud individually,\naloud to the class. And then, the whole class got into pairs\nand did\nparticipate\nand several students read\npaired reading. The students appeared to\nactively. However, when the check-up\nquestions were given, many of them failed to answer the\nquestions correctly. To solve this problem I need to use\nthe other reading technique in the next class. At the\npost-reading stage, I tried to help the students develop\nFor this, I asked them to make use of their\nspeaking skill as well, and 160 them to tell a story.\n). In addition, I wanted them to practice\n3) ( 가 ) 에 사 용 된 단 어 를\n17] 전 단 게 에 제시된 ' 듣 기 활 농 ' 은 2009 개정 영어과\n을 반 영 하 는지\n) ( 가 ) 의 ¢\n교 육 과 정 학 년 군 듣기 영 역 의 어떤 성 취 기준\n쓰 시 오 . [1 점 ]\n2) ( 나 ) 의 일 지 에 근 거 하여 김 교 사 가 적용한 기 법 의 단점\n| 가 지를 간 략 하게 기 술 하고, 다음 수 업 에서 활용할 것으로\n예 상 되는 읽기 기 법 을 한글 혹은 영 어 로 쓰 시 오 . [24]\n환 용하여 ( 나 ) 의 한 단 어 의 영 어 로\na\n쓰 시 오 . [179]\n(이하 여백)\n#84)",
+      "subquestions": [],
+      "parser_note": "2015 OCR fuzzy boundary recovery"
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "text": "2015 학 년도\n초등학교 교사 임 용 후보자 선\n등 학교 교 육 과정 8\n수 험 번호 : ( ) 성명\n정 경 쟁 시험\n시험 시간 70 분\n| 총 론 ㆍ 창의적 체 험 활동 ㅣ\n1. (3(> 초 등 학 교 의 백 교 사 는 초 임 교 사 들 을 대 상 으 로 2015 학 년도\n학교 교 육 과정 운영 계 획 과 관련된 멘토링 프 로 그 램 을 진 행 하 였다.\nFt 그 일 환 으로 개 최 된 간담회 내용 중 일 부 이다. 물 음 에\n답 하 시오. [34]\n2. ( 가 ) 는 박 교 사 가 지 도 하려는 단 원 의 차 시 명과 활동 주 제 를\n나타낸 것이고, ( 나 ) 는 이를 위해 준비한 자 료 이다. (가), ( 나 ) 를\n참 고 하 여 2009 개정 바 른 생 활 과 교 육 과 정 애 제시된 Gel] 해당\n하는 WSS 쓰 시 오 . [1 점 ]\n홍 초 임 교사: 백 선 생 넘 께서 우리 학교 상 황 에 맞는 (가)\n자 율 적 이고 특색 있는 교 육 과정 운영 계 획 을 세워 보라고 | | 소 주 제 | 차명 활동 주제\n말 씀 하 셨 잖아요? 징 말 그렇게 해 노 괜 찮 을 까요? | 이웃 | 가게 | 3 차 시 ` 화 났 어 요 ' oh\n백 교사: 그럼요. 2009 개정 교 육 과정 총 론 에 의하면, “국가 |\nES] 공 통 성 과 지역, 학교, 개인 수 준 의 ( ) 음 / 를 (나)\n동시에 주 구 하는 anid oO] 우리나라 교 육 과 징 의 성격 지우개: 책 상 아 , 네 얼 굴 어 왜 이렇게 더 럽 니 ?\n중 하 나 입니다. 너무 걱 징 하지 마시고 운영 계 획 을 세워 책 Ab: 민 주 가 내 얼 굴 에 크 레 파 스 로 낙 서 했어.\n보시죠 도 화 지 가 있을 텐데 a 네 얻 굴에 그렇게 한 거지?\n홍 초 임 교사: 알겠습니다. 최근 제가 우리 학교 학 생 들 을 그런데 지 우 개 야 . 너는 왜 모 붕 이 가 잘 렸 니 ?\n살 펴 보 니 공 꾸 는 잘 하 지만 약 간 은 개인적인 성 향 이 있는 지우개: 준 호 가 아무 이 유 도 없이 Wd 버렸어. 연 필 아 , 너는\n것 같아요. 그래서 말인데요, 2009 개정 교 육 과정 총 론 에 연 필 심이 어니 갔니?\n기 존 의 재 량 황 동 과 HSS 통 합 하여 배 려 와 나 눔 으 연 필 : 우 영 이가 장 난 삼아 꾸 러 뜨 렸 지 뭐야. 우 리 는 언제쯤\n( 42 ) 을 / 를 위한 ' 창 의적 체 험 동 ' 음 신 설 한 다 .\" 는 주 인 에게 사 랑 받을 수 있을까?\n교 육 과정 구 성 의 방 칩 도 있는 만큼, 창의적 체 험 활 동 움\n강 조 하여 계 획 을 세우면 어떨까요? .\n정 초 임 교사: 좋은 생 각 이네요. 얼마 전 학 생 들 의 희망 활 동 을\n조사해 본 결과, 외국어 회 화 나 과학 AE 선 호 하는 학생\n들이 꽤 많더군요. 이 접을 감 안 해 서 창의적 체 험 활 동의 도덕\n네 개 영역 중 특히 ( 12 ) 을 / 를 강 조 하면 어떨까요? 그\n3. (WE 도 덕 과 3 학 년 2 단 원 4 차 시 중 2 차 시 의 수업 계 획 안 이고,\n1) 을과 Pel, 들어갈 말 을 쓰 시 오 . [2 점 ] ( 나 ) 는 수업 계 획 에 관한 대 화 이 다. 물 음 에 답 하 시 오 . [4 점 ]\n단계 주요 활동 내용\n2 도입 ㅇ 동기 유 발 하기\noct ae 목표 제 시 하기\nㅇ 문제 사태 제 시 하기\n2) 다 음 은 2009 개정 창의적 체 험 활동 교 육 과 정 에 제시된 1: 으 접 심 시 간에 친 구 들 과 운 동 장 에서 달리기 연 습 을\n목표 중 하나이다. 이 목 표 와 간담회 내 용 을 참 고 하여 Tol] 하고 있는 아 람 이 에 게 민 서 가 “ 꽃 돼 지 가 잘 del.”\n들어갈 영역 Wale 쓰 시 오 . [1 접 ] 라고 했나. 그 말 을 들 들은 아 람 이는 속상한 마 음 에\n다양한 활 동 에 참 여 하여 자 신 의 잠재 Ys 창 의 적 으로 전개 달 리 기 를 범 추고 저 않아 을 음 을 터 트 렸 나. 이를\n계 발 ㆍ 신 장 하고, 자 아 실 현 의 기 초 를 낚 는 나. 될 본 민 서 는 어찌할 줄 몰라 당황해 하고 있다.\nol 도덕적 분 화 인 하기\n. ㅇ 꾼 제 해결 방 법 에 대해 토 론 하 기\no [&] 자 신의 입 장 선 택 하 고 징 당 화 하 기\nㅇ 자기 반성 및 성찰, 실천 의지 다지기\n정리 ㅇ 정리 및 차시 예 고 하 기\n초등학교 TASB (8 면 중\nla)",
+      "method": "tesseract",
+      "char_count": 2156
+    },
+    {
+      "page": 2,
+      "text": "(나)\n예 비 교사 : 이 수 업 은 개정 도 덕 과 교 육 과 징 에 제시된\n/ 개 의 내용 영역 영 역 에 해 당 하고, ' 친 구\n사 이 의 우 정 과 oa 주 제 로 하고 있어요. 그런데 전개\n단 계 의 [A] 활 동 은 어떻게 지 도 해야 하나요?\n김 교사: 이 활 동 에는 도덕적 추 론 의 논증 방 식 들:\n410\n40\na,\n방 식 들 을 적용\nBA 있어요. ( G& ) 적 으로 주 론 하는 방식, 즉 논 의 가\n되는 문제 상 황 을 해 결 한 여러 사 례 들 로 부 터 일반적인 해결\n방 법 을 추 론 하는 방 식 이 있습니다. 예 을 들면 ‘ap 간에\n갈 등 이 생겼을 때 대 화 를 통해 해 결 한 사 례 들 이 많 았 음운\n근 거 로 하여, 친구 간의 같 등 해 결 을 위해서는 대 화 가 중요\n하 나 ' 고 Bee 노 출 하 는 방식 이지요.\n예 비 교사: 그렇군요\n김 교사: 이와 달리 ( GH ) 적 으로 추 론 하는 것도 알려줄\n필 요 가 있어요. 이것은 사 고 와 판 단 의 타당한 이유 혹은\n근 거 를 제 시 하면서 상 위 의 도덕 원 리 로부터 구체적인 행위\nPS 추 론 하는 방 식 입니다. 예 을 들면 ' 사 람 들은 서로\n존 중 해 야 한 나 ' 는 상 위 의 Sle] Be] ' 친 구 간에 서로 피 해 를\n주지 말아야 한 나 ' 는 구체적인 행동 BAG 도출해 내는\n방 식 이지요\n1) 내용 요 소 와 행동 ASS 포 함 하 여 SS 제 시 하 시오. [1 점 ]\n2) 03% 구 성 하는 방 식 과 Oo] 들어갈 영 역 명 을 쓰 시 오 , [3 전 ]\n4. ( 가 ) 는 2009 개정 실과 고 육 과 정 에 따른 수 업 에서 한 학 생 이\n작성한 노 트 의 일 부 이고, ( 나 ) 는 실과 수 업 을 앞둔 예 비 교 사 들이\n이 노 트 를 보면서 나눈 대 화 의 일 부 이다. 물 음 에 답 하 시오. [4 점 ]\n(가) 학 생 의 노트\n고구마 샐러드 건강 간 시 상 차리기\nㆍ 고 구마\n- 재료 : 고구마, BE, 사과, 마요네즈\n- 만드는 방법\nㆍ 고 구 마 와 THES 가가 살 는다\nAES 고 구 마 를\nㆍ 살 은 THES 잘게 다 진 다.\nㆍ 사 과 를 TER AD 핫 다 .\nㆍ 손 질 핫 재 료 를 마 요 네 즈 와 버무려 고구마 MAYES\n완 성 핫 다.\nㆍ 간 식상 차리기\nㆍ 고 구마 MES 우 유 로 간 시 상 을 차린다.\nRP RR\n앞 면 이 투명한 필 7| 도구 West OFS 7|\n>\n(1> 뒷 판\n@ 옆 판 ( 좌 ) …\nDAB?)\n@ 밑 판 —-t\n[ 조 립 도]\n100\n- 내\n60\n160\n1\n8\n두께 6\n[ 200 | 80\nT\n8 8\n두께 6 두께 6\n후\n[ 8 200\n- -\n[ 부 품 도]\n품명 | 재질 수량\na | ae 투 명 아 크 릴 판 1\n” 뒷판 섬 유 판마) 1\n>. [SEH | 1\n^ ㅣ 중 간 판 ㅣ 1\n| 1\n@ | wat 1\n초등학교 교 육 과 징 B (8a 중 2 A)",
+      "method": "tesseract",
+      "char_count": 1443
+    },
+    {
+      "page": 3,
+      "text": "(나) 예 비 교 사 들의 대화\n예 비 교사 As 다음 Pell 실과 수 업 이 있는데 참고할 자 료 가\n없을까요?\n예 비 교사 13: 일 반 에는 예 비 교 사 가 이미 실과 수 업 을 했네요.\n여기 한 학 쟁의 노 트 가 있어요. 이 노 트 를 보면서 이 야 기 해\n볼까요?\n예 비 교사 A: 그래요. 노트 첫 페 이 지 는 ' 건 강 간식 만 들 기 '\n소 단 원 의 내 용 이네요. 학 생 이 고구마 샐 러 드 와 우 유 로 간 식 상\n~ L710\n을 차 렸 군요. 앞에서 배운 나의 영 양 과 Als 사 의 내 용 을\n적 용 하여 So] 학 생 이 차린 간 식 상 에 영 양 소 와 식 품 군 이\n골고루 들 어 있 는지 스스로 평 가 해 보는 활 하면 좋음\n것 eek. ere 영 양 소 으 Jet ALS 이 해 하고\n예 비 교사 13: als a8 ae l ake\n전 체 를 한 기지: 로 만\nov Yrs Tou\n재 료 로 바 꾸 었네요. 수 업 에서 42009 개정 실과 교 육 과정 중\n제품 만 들 기 ' 소 단 원 의 성 취 기 준 에 제시된 기법\n사 용 강조한 것 같아요. 그런데 트 에 제 작 노 는 있는데\n그 앞 단 계 인 스 케 치 와 구 상 도가 없네요.\n관 련 하여 포 함 된 ' 지 (열량) 영 양 선의\nERE 모두 쓰고, 구성 자 전 거 ' 의 ABE 중 간 식 상\n에서 빠 져 있는 BES 쓰 시 오 . (27\ne a i\n2) Tol 해 당 하는 기 법 을 쓰 시 오 . 14)\n3) a} 관 련 하여 제 작 도 에 해 당 하는 필기 노 구 징 리 함의\n포 양은 나타내는 TAS. 면\n두께, 치 수 는 나타내지 않아도 됨 .) [1 접 ]\n초등학교 교 육 과 정 B (8 면\non\n멘토 교사: 제가 홍 미 로운 지도 방 법 을 한\nBY 징 도 연 습 한 후, SHS 게 임 을 해서\n1 능 1S 2\nHere 3~4 학 년 군 의 활 동 ' 영 역 에서 ㆍ 축 구형 게 임 의\n기능\" 익히기 BSS 지 도 한 초임 교 사 와 멘토 교 사 의 대화\n이다. 물 음 에 답 하 시오. [4 점 ]\n벤토 교사: 선생님, 오늘 PR 게임\" 수 업 은 어떻게 하셨어요?\n초임 교사: 학 생 들 에게 축구 패스\n방 법 을 가르치고 짝 과\n함께 가까운 거 리 에서 BE 해 스 하는 연 습 을 하게 |\n그런데 한 학 생 이 발 끈 으로 BEIT [|\n하게 패 스 하지 못 하 더라고요. 이 학 생 이 받 의 정확한\nsays say) 어떻게 지노\n해야 할까요?\n벤토 교사: 간이 배구 수 업 에서 제가 섰던 법 을 망 씀\nㅇ\n드릴게요. 오버 토스 Babs 배우는 한 학 생 이 공 을\n때 마 다 언더 EAR 받았어요. 그래서 높은 공 을 (BI\n받을 때 ' 머 리 위 ' 라 고 말 해 주었어요. 그랬더니 오브\nEAT 정확하게 esha.\n사용해 볼게요.\n소개해 드릴게요. 축구 슈팅 기 능 을 배우는\n1 접 부터 6 점 까지 접 수 를 꾸 여 한 여러 개의 -\n골 대 에 매달아 좋았어요. 그리고 학 생 들 ㅇ\n~ 주 ~2-\nJa x\nSy fl\ngt of\n나 & 모\n+\nIe\nㅇ 6 NO pio pio\n=\n^\n—\n에\n=\nfo 다이\n$2\nfei 38%\n뚜 2 ye\nro Fo ry\n, 3 등 은 끼리, … 능 수 가\n학 생 은 Spy} 낮은 학 생 들 끼리 점 수 를 8\n| 렇 게 비 교 하여 해당 능 수 에서\nao] 자 신 의 모 등에 기 여 하도록 했어\n교사: 정말 좋은 방 법 이네요. 한 가지 더 궁금한 것이\n있는데요. 기본 운동 기 능 은 갖추고 있으나 게임 전략 Se\n이러한 학 생 들 을 위해 어떻게 수 업 을 운 영 하 면 될까요?\nLu 그 칸 내 ~ 느\n하고, 축구 관련 AAS 읽으며 축 구 에 관한 지 식 을 wesw\n해 보세요. 또 기 장 에서 축구 AE 관 람 하거나,\nde UNS Behl 한 수도 있어요 AN\n상 황 에서 득 점 을 잘 하기 위해 친 구 들 과 ABS 토 론 하는\n하 7\n방 법 도 사용해 보세요.\n초임 교사: 여러 가지 조 언 주셔서 감 사 합니다.\n1) 상 황 에서 Ae 참 고 하여, 가까운 Hels\n발의 부 위 를 포 함 하\n스톤 징 화 하게 하 노 록\n의 쑤 지 오 . 1 ]\n23a)",
+      "method": "tesseract",
+      "char_count": 2044
+    },
+    {
+      "page": 4,
+      "text": "Jo] 속하는 구 조 의\n을 쓰고 BL 과제 구조 의 ye 주 언 에\n근 거 하여 es 오 . 2]\n3) 2009 개정 체육과 교 육 과 정 의\nTa} 같은 sh + Sy\nte 방 향 에 제시된\n시.\n6. ( 가 ) 는 2009 개정 체육과 교 육 과 정 의 여가 활동 내용 체 계 이고,\n(He 교 수 ㆍ 학습 과 정 안 이다. 물 융 에 답 하 시오. [4 점 ]\n(가)\n영역 3^~~4 학 년 군\nㅇ 가 족 과 여가\noy | 7 의 미 와 복성: |\nae. | - 여가 환 동 의 창의적 계획\n| - 나와 가 족 의 여가 황동 제 험\n(나)\naa | ° 자전거 타 기 의 기본 기 능 을 익히고 안전 수 칙 을 이해할\nan | 수 있 다\n그 60 ( 1 )\n단계 교수 ㆍ 학 습 활동\n도입 ㅇ 농기 유발\n0 준 비 운동\n0 활동 1: 자전거 바 기 의 기본 기능 및 안전 수칙 익히기\n[A]\n- 내 리 박 길 에서는 브 레 이 크 를 급하게 잡지 않는다.\n- 오 르 박 길 에서 상 체 를 숙이고 무게 중 심 을 앞으로 둔다.\n- 주행 중 균 형 을 잃었을 때 핸 늘 을 넘 어 지는 반 대 쪽 으로\n돌린다.\n전개 ㅣ - 야 간에는 반드시 점 등 을 하고 복장, 페 담 등에 밤 광 체 를\n부 착 하여 쉽게 눈 에 띄 도 록 한다.\n- 방 향 을 전 환 하거나 정 지 할 때 수 신 호 를 사 용 한 다.\n0 활동 2: 자전거 타기\n- 운 동 장 에 표시된 선율 따라서 자전거 타기\nㅇ 활동 3: 가 족 과 함께 자전거 여행 계획 세우기\n- 여 행 지 에서 할 수 있는 가족 게임 구 상 하기\no 정 리 하기 및 차시 안내\n정리 ㅣ ㅇ 수행 평가 및 과제물 안내\n- 가족 여가 환 동 체험 학습 보고서 발 표 하기\n1) ( 가 ) 에 제시된 의 내용 RAS 포 함 하여 ( 나 ) 의 Cal) 해 당 하는\n학습 목 표 을 제 시 하시오. [1 접 ]\n(HA 3 an Se 과 징 안에 기는 [A]2] 내용 중 적 절 하지 않은\n3 학 년 1 반 김성수\n체험 장소 경춘 자전거 전용 도로\n도 ㄴㅇ\n엄마, 아빠,\n날짜 |2014 년 11 윌\n함께 한 사람 동생, 나\n0 활동 주제: 가 과 함께 자전거 여행\nㅇ 활동 목적: 자전거 여 행 을 통해 가족 유대감 쌓기\n학 교 에 서 자전거 수 업 을 듣고, 엄마, 아빠, 동 생 과 자 전 거 로\n가족 여 행 을 하 기 로 했다. 어제 우리 가 족 은 서 울 에서 자전거\n전용 노 로 를 따라 양 평 까지 갔나. 나는 자전거 여 행 을 위해 8\n마나 가 족 들 과 한 강 에서 자전거 타기 연 습 을 했나. 그\n자 전 거 를 조금만 타도 숨 이 차고 다 리 가 그 때 마다\n선 생 넘 께서 체육 시 간 에 말 씀 하셨던 체 력 의 Sago] 떠올랐다.\n그래서 나는 자전거 타기 연 습 을 계속 했고, 이제는 오랫동안\n자 전 거 를 타도 HO] 차지 않고 다 리 도 아프지 않다. 지 난 주 에\n학 교 에서 체력 측 정 을 했는데 자전거 타 기 를 처음 배울 때 보 다\n) 이 / 가 많이 향 상 되었고 나의 근 력 과 근 지 구 력 도 좋아\n졌다고 선 생 님 께서 Ay? 주셨다.\n(중략)\n선 쟁 님 께 서 얼마 후에 수행 평 가 가 있다고 하셨다. 그래서\n찍은 우리 가족 자전거 여행 사 진 을 자 료 철 에 모아\n여 행 에 대한 추 억 을 정 리 하였다. 또한 얼마 전부터 모으기\n시작한 자전거 여 행 에 관한 기 사 을 분 류 하여 주 가 하였다.\n처음 몇 슈트\n신문\n그리고 지난 주 말 에 업 마 와 동 생 이랑 합 께 본 ' 자 전 거 로 세계\n여 행 ' 이 라는 영 화 에 내한 소 감 문 도 작 성 하였다. 이빈 자전거\n한 소\n가족 여 행 은 힘 들 기는 했지만, 가 족 들 과 해서 정말 즐거\n웠다.",
+      "method": "tesseract",
+      "char_count": 1826
+    },
+    {
+      "page": 5,
+      "text": "N\noe 4 학 년 “현대 미술 만 나 기 ' 감상 수 업 의 교수 ㆍ 학 습 과 정 인의\n일 부 이다. BSA 답 하 시오. [54]\n단계 교수 ㆍ 학 습 활동\n문제 | ° 학습 문제 인 식 하기\n인식 | - 탐 구할 학습 문 제 를 안 내 한 나.\nㅇ 작 품 의 다양한 표현 방법 탐 색 하기\n( 가 ) 와 (나) 작 품 에 적용된 표현 방 법 을 탐 색 한다\nㅇ 규 칙 성 알 아 보 기\n- ( 가 ) 와 (나) 작 품 의 표현 방 법 을 발 견 한나.\n3 단 계\nㅇ 관련된 미술 용어 이 해 하기\n- 공통적 표현 방 법 에 해 당 되는 미술 용 어 를 이 해 한다.\n4 단 계 | ㅇ ( ! )\n정리 ㅣ ㅇ 서 로 의 작품 감상 및 내용 정 리 하 기\n및 ㅣ - 친 구 들 이 제 작 한 작 품 을 감 상 하며, 학 습 한 내 용 이\n발전 잘 드러나 있는지 살 펴 본 나\n1) 2009 개정 미술과 교 - re 에 제시된 3~/ 학 년\n성 취 기준 가운데, 우 aS\nHAL. [1 점 ]\n기준 ㅣ ㅇ 미술 작 품 에 대한 자 신 의 느 낌 과 생 각 을 설 명 할 수 있다.\n) ( 가 ) 와 (나) 작 품 이 공 통 으로 속한 GS 양 식 을 쓰고\n특 징 을 쓰 시 오 . [24]\n초등학교 교 육 과 정 B (8 면\n3) 이 주업\n@ uta\n년\n0014 에\n20)",
+      "method": "tesseract",
+      "char_count": 657
+    },
+    {
+      "page": 6,
+      "text": "2 oO\non\n8. ( 가 ) 는 2009 개정 음 악 과 교 육 과정 3~4 학 년 군 감상 영 역 의 내용\n체 계 이며, ( 나 ) 는 3~4 학 년 군 감상 수 업 을 위한 제 재 곡 의 일 부 이다.\n물 음 에 답 하 시오. [점]\n(가) 2009 개정 음 악 과 교 육 과정 3~/ 학 년 군 감\n8 역 의 내용 체계\n7 읍 악의 요소 및 개념 이 해 하기\n12 악 곡 의 특 징 을 이 해 하며 감 상 하기\n(나) 제 재 곡\n< 악 보 1>\n:\nyo 그 = =\nbios\n3| [2\nAl Al 징 징 징 | 징 ~\nia] [al [al | 챙 챙 | 챙 |\n< 악 보 3>\nOf | TO} oO!\n02 : OF 0 | :\noF\nO} ofo iO! aon\nO: 1: O oO |:\non ㅇ\non\n1) < 악 보 1> 의 제 재 곡 을 학 생 들 에게 들 려 주면서 a} 연 계 하여\n지 노 할 학습 활 동 으로 적 절 하지 않은 것 2 가 지를 찾아 수 정 하\n시오. [2749]\n0 ㅇ 여 리 게 시 작 되는 부 분 에서 작은 동 작 으로 박자 37]\n2 GOVE Be] opal 맞 주어 빌 구르기\nㅇ [13] 에 들어갈 4 문 섬 표 부 분 에서 손 들어 올리기\n0 3~0 마 디 와 아 디 의 반 북 되는 ELAR ml\nㅇ [CHS] 차 례 가기 가 락 선 을 손 으로 나 타 내 기\n2) < 악 보 2> 와 < 악 보 3> 에 서 한 장 단 의 기 본 박이 몇 박 인 지\n각각 쓰고, 두 정 간 보 에 사 용 된 타악기 연 주 법 의 기보 방 식 을\n각각 쓰 시 오 [2 점 ]\n| 구 분 | < 악 보 2> < 악 보 3>\n기보 방식 é 00000\ne/a eb\ne‘c\n3) < 악 보 1> 과 < 악 보 2> 의 제 재 곡 으로 아래와 같은 학습 MES\n하였을 때, Oo 근 거 하여 두 꼭 에서 공 통 으로 지 도 할 수 있는\n성 취 기준 가 지 를 쓰 시 오 . [1 점 ]\nsot\n악\n띠 >\nnie\non\nㅇ 행사 관련 사 진 이나 동영상 장 면 은\n대해 알 아 보 기\nㅇ 생활 주 변 의 문화 행 사 에서 연 주 되는 사례 찾아서 발 표 하기\nq\nad\nrg\n=\n대\nJo,\n=\n&\n초등학교 교 육 과정 1] (8 면 중 () a)",
+      "method": "tesseract",
+      "char_count": 1092
+    },
+    {
+      "page": 7,
+      "text": "즐거운 생활\n9. (PDE 2009 개정 즐거운 생 활 과 교 육 과 정 에 제시된 ' 교 수 ㆍ 학 습\n지 도 ' 의 일 부 이고, ( 나 ) 는 대 주 제 ' 가 을 ' 의 소 주 제 HAS 지 도 하기\n위한 교수 ㆍ 학습 과 정 안 의 일 부 이다. (HS 참 고 하여 Oa\n들어갈 용 어 를 각각 2 음 절로 쓰 시 오 . [2 점 ]\n영어\n10. 다 음 은 Mr. Hane] 실 행 한 4 학 년 영어 수 업 의 일 부 이다.\n물 음 에 답 하 시오. [3 점 ]\n2-8 황 동 울 준 비 하고 있는 질 문 한나.)\n> Um... What are you doing, Chansu?\ny . SA = .\n(가) ate + Bee 지도 S: Well, I'm draw a picture.\nㅇ ' 증 거 운 생 활 ' 과 의 교 수 ㆍ 학 습 에 서는 …… 다양한 감 각 을\n1- 껴 몰 기 회 를 제 공 한나. 나아가 여 기 에 서는 ( :\n와 / 과 균 형 의 아 름 나 움 과 다양한 놀이 및 표현 PE\nBoise aan 즐 거 움 을 체 험 하 노 흑\nins\nSAG 생 활 ' 의 교 수 ㆍ 학 습 에서는 HES 통해서 높 이 하기,\nT: Oh, 1 566. You're drawing a picture. It looks very nice.\nHmm... Let me see. Are you drawing a cat?\nS: No. It's a dog!\nT: Really? I'm sorrv!\n6 8 ts (잠시 였 에 않아 그 림 을 그리며)\n으악 몸 ㆍ ( As) )( 으 ) 로 나 타 내 기, 모 방 하기, 간단한 Chansu, I'm drawing a picture, too.\n공 연 하기, 느 낌 이나 소 감 을 구 체 적 으로 나누는 감 상 하 기와 S: (Mr. Han2} 그 림 을 보며) Oh, are vou drawing a uger?\n같은 기 초 적 인 표현 기 능 을 수 있도록 지 도 한다. T: Yes, I'm drawing a tiger.\n(이하 생략)\n(나) 교 수 ㆍ 학습 과정안\n학습 목표 | 색 의 어 울 림 을 생 각 하며 색 천을 싼 나 1) 2009 개정 영어과 교 육 과 징 에 제시된 ' 언 어 BAY 교수 ㆍ 학 습\n방법 중 Mr. Hane] 수 업 에 잘 드러난 것 1 가 지를 쓰 시 오 .\n학습 단계 교수 ㆍ 학습 활동 ( 단 ' 오 류 수 장 ' 과 관련된 네 용 은 제 외 할) OA\nㅇ 두 가지 색 이 함께 있을 Go] !- 낌 이 야 기 하기\n탐 색 하기 | ㅇ 여러 가지 색 지을 맞 대 어 보고 추 석 빔 에 어울리는\na 찾기\n. | ㅇ 색 천 짜는 방법 알 아 보 기 2 8 2-2 Mr. Hans} 그의 수 업 을 참 관 한 Ms, Lee7} 수업 후\nBEM | 개의 어 울 립 이 나 타 나 도록 아름다운 색 천 짜기 누는 대 화 이다. Cel] i's’ 시 작 하 는 단 어 를 쓰고,\nMr. Han2} 교수 방 식 이 hy 어 교 사 에게 주는 시 사 접음\n쓰 시 오 . [3 접 ]\nMs. Lee: Mr. Han, I observed that you helped the children\nvery nicely interacting with individual children.\nMr. Han: Right. There were some patterns they had not fully\nmastered yet. So I used the patterns communicatively at\na level that is within their reach. | provided the\n(s ) necessary for the children to communicate\nmore competently.\nMs. Lee: That's great. You moved around the class giving\nthe children chances to interact with vou.\nMr. Han: Yes, I did. I want to expose the children to\nlanguage that is just bevond what they already know.\nI use language of this level naturally when 1\ncommunicate with them.\n초등학교 3239) B (8 면 중 7 A)",
+      "method": "tesseract",
+      "char_count": 2130
+    },
+    {
+      "page": 8,
+      "text": "11. ( 가 ) 는 김 교 사 가 실 행 한 5 학 년 영어 이야기 읽기 수 업 이고,\n( 나 ) 는\n수업 후 작성한 일 지 이다. 물 음 에 답 하 시오. [4 점 ]\n(가)\n읽\n기\n읽\n기\nOn\n기\non\nT: Now,\npicture on page 70. Can you guess what the story\nis about?\nSs: ( 자 신 의 생 각 을 이 야 기 한다.)\nwere going to read a story. Look at the\n‘T: Sounds interesting. Let's watch the video clip and\nlisten to the dialogue.\nSs: ( 화 면 을 보면서 듣는다.)\n1: What's the story about? What's the topic?\n66: 미 녀 와 아 수 가 사 랑 하 게 되는 이 야 기 요 .\nT: Right. It's about love between a beautiful girl and\na wild animal.\n‘T: Let’s read the story aloud all together. I'll read\nfirst. Listen carefully and read after me.\nSs: ( 교 사 를 따라 다 함께 읽 기 를 반 복 한다.)\n‘T: Evervone, read the story aloud by yourself. I'll\ngive you 3 minutes.\nSst (각자 소리 내어 이 야 기 를 읽는다.)\nT: Who will read the story aloud to the class? Any\nvolunteer?\n( 몇 명의 학 생 들 에게 혼자 일 어 서 서 큰 소 리 로 읽음\n기 회 를 준다.)\nT: Excellent! This time, get into pairs. Take a part in\nthe dialogue and read it to your friend. When it’s\nover, switch the roles.\nSst ( 짝 과 역 항운 바 꿔 가며 읽는다.)\nT: Are you done? Then, look at the three questions\non page 72, and answer\n( 학 생 들 과 함께 이 야 기 의 세부 내 용 을 확 인 한 나.)\nT: Have you enjoved reading the story?\nSs: Yes.\nT: Imagine what will happen after the end of the\nstory. Each pair, talk about that with each other\nand make a short story. A very short story.\nSs! ( 짝 과 의 견 을 나누고 함께 새로운 이 야 기 을 반 든다.)\nT: Now, tell your story to the class. Who wants to\ntell the story first?\nSs: (앞에 나와 발 표 한다.)\n초등학교 교 육 과정 [3 (8 면\n(나)\nMon. Sept. 13, 2014\nI emploved reading aloud technique at the while-reading\nstage. It can be effective for learners with low-level\nliteracy skills. First, I read the sentences one by one and\nthe students read after me in chorus. Next, each student\ndid reading aloud individually,\naloud to the class. And then, the whole class got into pairs\nand did\nparticipate\nand several students read\npaired reading. The students appeared to\nactively. However, when the check-up\nquestions were given, many of them failed to answer the\nquestions correctly. To solve this problem I need to use\nthe other reading technique in the next class. At the\npost-reading stage, I tried to help the students develop\nFor this, I asked them to make use of their\nspeaking skill as well, and 160 them to tell a story.\n). In addition, I wanted them to practice\n3) ( 가 ) 에 사 용 된 단 어 를\n17] 전 단 게 에 제시된 ' 듣 기 활 농 ' 은 2009 개정 영어과\n을 반 영 하 는지\n) ( 가 ) 의 ¢\n교 육 과 정 학 년 군 듣기 영 역 의 어떤 성 취 기준\n쓰 시 오 . [1 점 ]\n2) ( 나 ) 의 일 지 에 근 거 하여 김 교 사 가 적용한 기 법 의 단점\n| 가 지를 간 략 하게 기 술 하고, 다음 수 업 에서 활용할 것으로\n예 상 되는 읽기 기 법 을 한글 혹은 영 어 로 쓰 시 오 . [24]\n환 용하여 ( 나 ) 의 한 단 어 의 영 어 로\na\n쓰 시 오 . [179]\n(이하 여백)\n#84)",
+      "method": "tesseract",
+      "char_count": 2620
+    }
+  ]
+}

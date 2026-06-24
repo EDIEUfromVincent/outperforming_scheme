@@ -1,0 +1,9 @@
+# 기본 텍스트 추출
+pypdf>=5.0
+
+# 스캔 PDF(특히 2015년) OCR fallback
+pymupdf>=1.24
+easyocr>=1.7
+opencv-python-headless>=4.10
+numpy>=1.26
+pytesseract>=0.3.13
