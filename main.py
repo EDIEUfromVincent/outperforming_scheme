@@ -11,12 +11,13 @@ FastAPI 서버 - LangChain 서비스 래핑
 import os
 import shutil
 import hashlib
+import json
 from pathlib import Path
 
 from fastapi import FastAPI, File, UploadFile, HTTPException  # FastAPI 관련
 from fastapi.responses import StreamingResponse               # 스트리밍 응답용
 from fastapi.middleware.cors import CORSMiddleware             # CORS 설정용
-from pydantic import BaseModel                                 # 데이터 모델 정의용
+from pydantic import BaseModel, Field                          # 데이터 모델 정의용
 from dotenv import load_dotenv
 
 from langchain_service import LangChainService  # LangChain 서비스 불러오기
@@ -26,7 +27,7 @@ from learning_service import LearningService
 from lecture_note_parser import looks_like_lecture_note, parse_lecture_note
 
 
-APP_VERSION = "2026-06-23-document-aware-upload"
+APP_VERSION = "2026-06-24-multi-document-compare"
 
 
 # ============================================
@@ -72,6 +73,7 @@ learning_service = LearningService()
 # 업로드 파일 저장 폴더 생성
 UPLOAD_DIR = Path("uploaded_files")
 UPLOAD_DIR.mkdir(exist_ok=True)
+UPLOAD_MANIFEST_PATH = UPLOAD_DIR / "manifest.json"
 CURRICULUM_DIR = Path("parsed_exams_native") / "교육과정"
 
 
@@ -82,6 +84,7 @@ class QueryRequest(BaseModel):
     """질문 요청 모델"""
     question: str  # 사용자 질문
     document_id: str | None = None  # 방금 업로드한 문서 등 특정 문서 우선 검색
+    document_ids: list[str] = Field(default_factory=list)  # 여러 업로드 문서를 함께 검색·비교할 때 사용
 
 
 class QueryResponse(BaseModel):
@@ -100,6 +103,12 @@ class SearchResponse(BaseModel):
     status: str  # 성공/실패 상태
     answer: str  # 검색 결과
     query: str   # 검색어
+
+
+class DocumentCompareRequest(BaseModel):
+    question: str = "선택한 문서들의 핵심 내용, 공통점, 차이점을 근거와 함께 비교해 주세요."
+    document_ids: list[str]
+    k_per_doc: int = 6
 
 
 class LibraryResponse(BaseModel):
@@ -172,6 +181,7 @@ def read_root():
             "ingest_library": "/ingest-library",
             "query_stream": "/query/stream",
             "documents": "/documents",
+            "document_compare": "/documents/compare",
             "comparison": "/comparison",
             "lesson_coach": "/lesson-coach",
             "learning_metrics": "/learning/metrics",
@@ -188,6 +198,8 @@ def health():
         "version": APP_VERSION,
         "features": {
             "document_aware_query": True,
+            "multi_document_query": True,
+            "document_compare_graph": True,
             "upload_document": True,
             "lecture_note_ingestion": True,
         },
@@ -250,7 +262,75 @@ def _save_and_process_upload(file: UploadFile) -> dict:
     else:
         result = langchain_service.process_text_document(str(file_path))
     result["filename"] = safe_filename
+    if result.get("status") == "success":
+        _upsert_upload_manifest(file_path, result)
     return result
+
+
+def _load_upload_manifest() -> dict:
+    try:
+        data = json.loads(UPLOAD_MANIFEST_PATH.read_text(encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
+    return data if isinstance(data, dict) else {}
+
+
+def _save_upload_manifest(manifest: dict) -> None:
+    UPLOAD_MANIFEST_PATH.write_text(
+        json.dumps(manifest, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+
+
+def _upsert_upload_manifest(file_path: Path, result: dict) -> None:
+    manifest = _load_upload_manifest()
+    stat = file_path.stat()
+    manifest[file_path.name] = {
+        "filename": file_path.name,
+        "document_id": result.get("document_id"),
+        "pages_count": result.get("pages_count", 1),
+        "chunks_count": result.get("chunks_count", 0),
+        "document_type": result.get("document_type")
+        or langchain_service._document_metadata(str(file_path), result.get("document_id", "")).get("document_type"),
+        "extraction_methods": result.get("extraction_methods", []),
+        "warnings": result.get("warnings", []),
+        "modified_at": stat.st_mtime,
+        "size_bytes": stat.st_size,
+        "indexed": result.get("indexed", True),
+    }
+    _save_upload_manifest(manifest)
+
+
+def _document_listing_from_path(path: Path) -> dict:
+    if path.suffix.lower() == ".pdf":
+        extracted = langchain_service.ocr_service.extract_pdf(str(path))
+        document_id = extracted.document_id
+        pages_count = len(extracted.pages)
+        document_type = langchain_service._document_metadata(str(path), document_id).get("document_type")
+        extraction_methods = extracted.methods
+        warnings = extracted.warnings
+    else:
+        text = path.read_text(encoding="utf-8")
+        if looks_like_lecture_note(text, path.name):
+            note = parse_lecture_note(text, path.name)
+            document_id = note.document_id
+            document_type = "lecture_note"
+        else:
+            document_id = hashlib.sha256(text.encode("utf-8")).hexdigest()
+            document_type = "text_reference"
+        pages_count = 1
+        extraction_methods = ["text"]
+        warnings = []
+    return {
+        "filename": path.name,
+        "document_id": document_id,
+        "pages_count": pages_count,
+        "document_type": document_type,
+        "extraction_methods": extraction_methods,
+        "warnings": warnings,
+        "modified_at": path.stat().st_mtime,
+        "size_bytes": path.stat().st_size,
+    }
 
 
 def _upload_response(result: dict) -> dict:
@@ -276,34 +356,30 @@ def _upload_response(result: dict) -> dict:
 def uploaded_documents():
     """업로드된 PDF/TXT/MD 목록과 document_id를 반환한다."""
     documents = []
+    manifest = _load_upload_manifest()
+    manifest_changed = False
     files = [
         path for path in UPLOAD_DIR.iterdir()
-        if path.is_file() and path.suffix.lower() in {".pdf", ".txt", ".md"}
+        if path.is_file()
+        and path.name != UPLOAD_MANIFEST_PATH.name
+        and path.suffix.lower() in {".pdf", ".txt", ".md"}
     ]
     for pdf in sorted(files, key=lambda path: path.stat().st_mtime, reverse=True):
         try:
-            if pdf.suffix.lower() == ".pdf":
-                extracted = langchain_service.ocr_service.extract_pdf(str(pdf))
-                document_id = extracted.document_id
-                pages_count = len(extracted.pages)
-                document_type = langchain_service._document_metadata(str(pdf), document_id).get("document_type")
-            else:
-                text = pdf.read_text(encoding="utf-8")
-                if looks_like_lecture_note(text, pdf.name):
-                    note = parse_lecture_note(text, pdf.name)
-                    document_id = note.document_id
-                    document_type = "lecture_note"
-                else:
-                    document_id = hashlib.sha256(text.encode("utf-8")).hexdigest()
-                    document_type = "text_reference"
-                pages_count = 1
-            documents.append({
-                "filename": pdf.name,
-                "document_id": document_id,
-                "pages_count": pages_count,
-                "document_type": document_type,
-                "modified_at": pdf.stat().st_mtime,
-            })
+            cached = manifest.get(pdf.name)
+            stat = pdf.stat()
+            if (
+                cached
+                and cached.get("modified_at") == stat.st_mtime
+                and cached.get("size_bytes") == stat.st_size
+                and cached.get("document_id")
+            ):
+                documents.append(cached)
+                continue
+            listing = _document_listing_from_path(pdf)
+            manifest[pdf.name] = listing
+            manifest_changed = True
+            documents.append(listing)
         except Exception as exc:
             documents.append({
                 "filename": pdf.name,
@@ -311,6 +387,13 @@ def uploaded_documents():
                 "error": str(exc),
                 "modified_at": pdf.stat().st_mtime,
             })
+    existing_names = {path.name for path in files}
+    stale_names = [name for name in manifest if name not in existing_names]
+    for name in stale_names:
+        manifest.pop(name, None)
+        manifest_changed = True
+    if manifest_changed:
+        _save_upload_manifest(manifest)
     return {"documents": documents}
 
 
@@ -452,6 +535,7 @@ def query_stream(request: QueryRequest):
         for chunk in langchain_service.query_stream(
             request.question,
             document_id=request.document_id,
+            document_ids=request.document_ids,
         ):
             yield chunk
     
@@ -477,8 +561,22 @@ def get_documents(request: QueryRequest):
     documents = langchain_service.get_retrieved_documents(
         request.question,
         document_id=request.document_id,
+        document_ids=request.document_ids,
     )
     return {"documents": documents}
+
+
+@app.post("/documents/compare")
+def compare_documents(request: DocumentCompareRequest):
+    """여러 업로드 문서를 균형 있게 회수해 비교·요약한다."""
+    clean_ids = [document_id for document_id in request.document_ids if document_id]
+    if len(clean_ids) < 2:
+        raise HTTPException(status_code=400, detail="비교하려면 최소 2개 이상의 문서를 선택해야 합니다")
+    return langchain_service.compare_uploaded_documents(
+        question=request.question,
+        document_ids=clean_ids,
+        k_per_doc=max(2, min(request.k_per_doc, 12)),
+    )
 
 
 # ---------------------------

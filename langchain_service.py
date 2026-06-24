@@ -11,7 +11,9 @@ LangChain 서비스 모듈
 import os
 import json
 import hashlib
-from typing import List, Dict, Optional
+import re
+from collections import Counter
+from typing import Any, List, Dict, Optional
 from pathlib import Path
 
 # LangChain 관련 라이브러리
@@ -491,7 +493,12 @@ Context:
     # ---------------------------
     # 스트리밍 질의응답 메서드
     # ---------------------------
-    def query_stream(self, question: str, document_id: str | None = None):
+    def query_stream(
+        self,
+        question: str,
+        document_id: str | None = None,
+        document_ids: list[str] | None = None,
+    ):
         """
         질문에 대한 답변 생성 (스트리밍 방식)
         
@@ -501,16 +508,23 @@ Context:
         Yields:
             답변 토큰 (한 글자씩)
         """
-        if document_id:
-            primary_documents = self._retrieve_documents(question, document_id=document_id, k=8)
+        selected_document_ids = self._normalize_document_ids(document_id, document_ids)
+        if len(selected_document_ids) > 1:
+            result = self.compare_uploaded_documents(question, selected_document_ids)
+            yield result["answer"]
+            return
+
+        if selected_document_ids:
+            primary_document_id = selected_document_ids[0]
+            primary_documents = self._retrieve_documents(question, document_id=primary_document_id, k=8)
             if not primary_documents:
                 yield "방금 업로드한 문서에서 관련 내용을 찾지 못했습니다. 업로드 처리가 끝났는지 확인해주세요."
                 return
-            secondary_documents = self._retrieve_secondary_documents_for_uploaded_query(question, document_id)
+            secondary_documents = self._retrieve_secondary_documents_for_uploaded_query(question, primary_document_id)
             yield from self._answer_from_documents(
                 question,
                 primary_documents,
-                document_id=document_id,
+                document_id=primary_document_id,
                 secondary_documents=secondary_documents,
             )
             return
@@ -535,7 +549,12 @@ Context:
     # ---------------------------
     # 문서 검색 메서드
     # ---------------------------
-    def get_retrieved_documents(self, question: str, document_id: str | None = None) -> List[Dict]:
+    def get_retrieved_documents(
+        self,
+        question: str,
+        document_id: str | None = None,
+        document_ids: list[str] | None = None,
+    ) -> List[Dict]:
         """
         질문과 관련된 문서 검색
         
@@ -549,22 +568,358 @@ Context:
             return []
 
         try:
-            # 유사 문서 검색
-            retrieved_docs = self._retrieve_documents(question, document_id=document_id, k=8)
+            selected_document_ids = self._normalize_document_ids(document_id, document_ids)
+            if len(selected_document_ids) > 1:
+                documents_by_id = self._retrieve_documents_by_ids(
+                    question,
+                    selected_document_ids,
+                    k_per_doc=4,
+                )
+                retrieved_docs = self._flatten_documents_by_id(documents_by_id)
+                return self._format_retrieved_documents(retrieved_docs, limit=10)
 
-            # 결과 포맷팅
-            documents = []
-            for doc in retrieved_docs[:5]:
-                documents.append({
-                    "content": doc.page_content,
-                    "metadata": doc.metadata
-                })
+            selected_document_id = selected_document_ids[0] if selected_document_ids else None
+            retrieved_docs = self._retrieve_documents(question, document_id=selected_document_id, k=8)
 
-            return documents
+            return self._format_retrieved_documents(retrieved_docs, limit=5)
 
         except Exception as e:
             print(f"문서 검색 실패: {e}")
             return []
+
+    def compare_uploaded_documents(
+        self,
+        question: str,
+        document_ids: list[str],
+        k_per_doc: int = 6,
+    ) -> dict[str, Any]:
+        """여러 업로드 문서를 같은 비중으로 검색해 비교·요약한다."""
+        selected_document_ids = self._normalize_document_ids(None, document_ids)
+        if len(selected_document_ids) < 2:
+            return {
+                "status": "error",
+                "answer": "비교하려면 최소 2개 이상의 문서를 선택해야 합니다.",
+                "document_summaries": [],
+                "documents": [],
+                "missing_document_ids": selected_document_ids,
+                "workflow": "not_started",
+            }
+        try:
+            from document_compare_graph import run_document_comparison_graph
+
+            result = run_document_comparison_graph(
+                self,
+                question=question,
+                document_ids=selected_document_ids,
+                k_per_doc=k_per_doc,
+            )
+            return {
+                "status": "success",
+                "answer": result.get("answer", ""),
+                "document_summaries": result.get("document_summaries", []),
+                "documents": result.get("documents", []),
+                "missing_document_ids": result.get("missing_document_ids", []),
+                "workflow": result.get("workflow", "langgraph"),
+            }
+        except Exception as exc:
+            documents_by_id = self._retrieve_documents_by_ids(
+                question,
+                selected_document_ids,
+                k_per_doc=k_per_doc,
+            )
+            missing = [
+                document_id
+                for document_id in selected_document_ids
+                if not documents_by_id.get(document_id)
+            ]
+            summaries = self._summarize_documents_by_id(question, documents_by_id)
+            answer = self._synthesize_document_comparison(
+                question,
+                summaries,
+                documents_by_id,
+                missing,
+            )
+            return {
+                "status": "partial_success" if summaries else "error",
+                "answer": answer or f"문서 비교 워크플로 실행 실패: {exc}",
+                "document_summaries": summaries,
+                "documents": self._format_retrieved_documents(
+                    self._flatten_documents_by_id(documents_by_id),
+                    limit=12,
+                ),
+                "missing_document_ids": missing,
+                "workflow": "service_fallback",
+            }
+
+    @staticmethod
+    def _normalize_document_ids(
+        document_id: str | None = None,
+        document_ids: list[str] | None = None,
+    ) -> list[str]:
+        output: list[str] = []
+        for value in [*(document_ids or []), document_id]:
+            if not value or value in output:
+                continue
+            output.append(value)
+        return output
+
+    def _retrieve_documents_by_ids(
+        self,
+        question: str,
+        document_ids: list[str],
+        k_per_doc: int = 6,
+    ) -> dict[str, list[Document]]:
+        generic_comparison = self._is_generic_comparison_question(question)
+        documents_by_id: dict[str, list[Document]] = {}
+        for selected_id in self._normalize_document_ids(None, document_ids):
+            docs: list[Document] = []
+            if generic_comparison:
+                docs = self._documents_from_uploaded_file(selected_id)
+            if not docs:
+                docs = self._retrieve_documents(
+                    question,
+                    document_id=selected_id,
+                    k=max(1, k_per_doc),
+                )
+            documents_by_id[selected_id] = self._select_representative_documents(
+                docs,
+                limit=max(1, k_per_doc),
+            )
+        return documents_by_id
+
+    @staticmethod
+    def _is_generic_comparison_question(question: str) -> bool:
+        compact = re.sub(r"\s+", "", question)
+        comparison_words = ["비교", "요약", "정리", "공통점", "차이점", "대조"]
+        return len(compact) <= 24 and any(word in compact for word in comparison_words)
+
+    @staticmethod
+    def _select_representative_documents(
+        documents: list[Document],
+        limit: int,
+    ) -> list[Document]:
+        if len(documents) <= limit:
+            return documents
+        pages = [
+            doc for doc in documents
+            if doc.metadata.get("page_number") is not None
+        ]
+        if len(pages) == len(documents):
+            sorted_docs = sorted(pages, key=lambda doc: doc.metadata.get("page_number") or 0)
+            if limit <= 3:
+                return sorted_docs[:limit]
+            head_count = max(2, limit // 2)
+            tail_count = limit - head_count
+            selected = sorted_docs[:head_count]
+            if tail_count:
+                selected.extend(sorted_docs[-tail_count:])
+            seen = set()
+            deduped = []
+            for doc in selected:
+                key = (doc.metadata.get("source"), doc.metadata.get("page_number"), doc.page_content[:80])
+                if key in seen:
+                    continue
+                seen.add(key)
+                deduped.append(doc)
+            return deduped[:limit]
+        return documents[:limit]
+
+    def _summarize_documents_by_id(
+        self,
+        question: str,
+        documents_by_id: dict[str, list[Document]],
+    ) -> list[dict[str, Any]]:
+        summaries = []
+        for document_id, documents in documents_by_id.items():
+            if not documents:
+                continue
+            label = self._document_label(documents[0])
+            context = self._format_context(documents)
+            fallback = self._fallback_document_summary(document_id, label, documents)
+            summary_text = fallback["summary"]
+            if self.llm is not None:
+                prompt = ChatPromptTemplate.from_messages([
+                    ("system", """문서 비교를 위한 문서별 요약자입니다.
+문서 하나만 보고 핵심 주장, 주요 근거, 비교할 만한 쟁점을 간결하게 정리하세요.
+다른 문서와의 비교는 하지 말고, 이 문서 안의 근거만 사용하세요.
+문서명과 페이지 근거를 유지하세요."""),
+                    ("human", "비교 질문: {question}\n\n문서 context:\n{context}"),
+                ])
+                try:
+                    summary_text = (prompt | self.llm | StrOutputParser()).invoke({
+                        "question": question,
+                        "context": context,
+                    })
+                except Exception as exc:
+                    print(f"문서별 LLM 요약 실패: {exc}")
+            summaries.append({
+                **fallback,
+                "summary": summary_text,
+            })
+        return summaries
+
+    def _synthesize_document_comparison(
+        self,
+        question: str,
+        document_summaries: list[dict[str, Any]],
+        documents_by_id: dict[str, list[Document]],
+        missing_document_ids: list[str] | None = None,
+    ) -> str:
+        missing_document_ids = missing_document_ids or []
+        if not document_summaries:
+            return "선택한 문서에서 비교 가능한 내용을 찾지 못했습니다. 문서 색인 상태를 확인해주세요."
+        if self.llm is not None:
+            summaries_text = json.dumps(document_summaries, ensure_ascii=False, indent=2)
+            evidence_context = self._format_context(
+                self._flatten_documents_by_id(documents_by_id)[:18]
+            )
+            prompt = ChatPromptTemplate.from_messages([
+                ("system", """여러 업로드 문서를 공정하게 비교하는 분석자입니다.
+규칙:
+1. 각 문서를 비슷한 비중으로 다루세요.
+2. 공통점과 차이점을 분리하세요.
+3. 차이는 문서별 주장/범위/근거/용어/실천 방향 기준으로 정리하세요.
+4. 근거가 부족한 문서는 부족하다고 말하세요.
+5. 답변 끝에 사용한 문서명과 페이지를 정리하세요."""),
+                ("human", """사용자 요청: {question}
+
+문서별 요약:
+{summaries}
+
+근거 context:
+{evidence_context}
+
+찾지 못한 문서 ID:
+{missing}"""),
+            ])
+            try:
+                return (prompt | self.llm | StrOutputParser()).invoke({
+                    "question": question,
+                    "summaries": summaries_text,
+                    "evidence_context": evidence_context,
+                    "missing": ", ".join(missing_document_ids) or "없음",
+                })
+            except Exception as exc:
+                print(f"다문서 LLM 비교 합성 실패: {exc}")
+                return self._fallback_document_comparison(document_summaries, missing_document_ids)
+        return self._fallback_document_comparison(document_summaries, missing_document_ids)
+
+    def _fallback_document_summary(
+        self,
+        document_id: str,
+        label: str,
+        documents: list[Document],
+    ) -> dict[str, Any]:
+        text = "\n".join(doc.page_content for doc in documents)
+        pages = [
+            doc.metadata.get("page_number")
+            for doc in documents
+            if doc.metadata.get("page_number") is not None
+        ]
+        excerpts = []
+        for line in re.split(r"[\n\r]+", text):
+            clean_line = line.strip()
+            if len(clean_line) >= 25:
+                excerpts.append(clean_line)
+            if len(excerpts) >= 4:
+                break
+        key_terms = self._extract_key_terms(text, limit=10)
+        return {
+            "document_id": document_id,
+            "label": label,
+            "pages": sorted(set(pages))[:12],
+            "key_terms": key_terms,
+            "summary": "\n".join(f"- {line[:240]}" for line in excerpts) or "- 요약 가능한 문장을 찾지 못했습니다.",
+        }
+
+    @staticmethod
+    def _fallback_document_comparison(
+        document_summaries: list[dict[str, Any]],
+        missing_document_ids: list[str],
+    ) -> str:
+        term_sets = [
+            set(summary.get("key_terms", []))
+            for summary in document_summaries
+            if summary.get("key_terms")
+        ]
+        common_terms = sorted(set.intersection(*term_sets))[:8] if len(term_sets) >= 2 else []
+        lines = [
+            "선택한 문서를 문서별로 균형 있게 회수해 비교했습니다.",
+            "",
+            "## 문서별 핵심 요약",
+        ]
+        for index, summary in enumerate(document_summaries, 1):
+            pages = ", ".join(map(str, summary.get("pages", [])[:6])) or "페이지 정보 없음"
+            lines.extend([
+                f"### 문서 {index}: {summary.get('label')}",
+                f"- 근거 페이지: {pages}",
+                summary.get("summary", "- 요약 없음"),
+                f"- 주요어: {', '.join(summary.get('key_terms', [])[:8]) or '추출 없음'}",
+                "",
+            ])
+        lines.append("## 공통점")
+        if common_terms:
+            lines.append(f"- 공통으로 두드러진 키워드: {', '.join(common_terms)}")
+        else:
+            lines.append("- 표면적으로 겹치는 핵심어가 많지 않습니다. 문서의 목적이나 범위가 다를 수 있습니다.")
+        lines.append("")
+        lines.append("## 차이점")
+        for index, summary in enumerate(document_summaries):
+            other_terms = set().union(
+                *[terms for term_index, terms in enumerate(term_sets) if term_index != index]
+            ) if len(term_sets) > 1 else set()
+            unique_terms = [term for term in summary.get("key_terms", []) if term not in common_terms][:6]
+            if other_terms:
+                unique_terms = [term for term in unique_terms if term not in other_terms] or unique_terms
+            lines.append(f"- {summary.get('label')}: {', '.join(unique_terms) or '고유 쟁점 추가 검토 필요'}")
+        if missing_document_ids:
+            lines.extend([
+                "",
+                "## 확인 필요",
+                f"- 내용을 회수하지 못한 문서 ID: {', '.join(missing_document_ids)}",
+            ])
+        return "\n".join(lines)
+
+    @staticmethod
+    def _extract_key_terms(text: str, limit: int = 10) -> list[str]:
+        stopwords = {
+            "그리고", "그러나", "대한", "관련", "문서", "자료", "내용", "있다",
+            "한다", "위해", "통해", "에서", "으로", "교육", "과정",
+        }
+        tokens = re.findall(r"[가-힣A-Za-z0-9][가-힣A-Za-z0-9·ㆍ\-/]{1,}", text)
+        cleaned = [
+            token.strip(".,;:()[]{}<>")
+            for token in tokens
+            if len(token) >= 2 and token not in stopwords
+        ]
+        return [term for term, _ in Counter(cleaned).most_common(limit)]
+
+    @staticmethod
+    def _document_label(document: Document) -> str:
+        metadata = document.metadata
+        filename = metadata.get("filename") or Path(metadata.get("source", "")).name
+        document_type = metadata.get("document_type")
+        pieces = [filename]
+        if document_type:
+            pieces.append(document_type)
+        return " · ".join(str(piece) for piece in pieces if piece)
+
+    @staticmethod
+    def _flatten_documents_by_id(documents_by_id: dict[str, list[Document]]) -> list[Document]:
+        output: list[Document] = []
+        for documents in documents_by_id.values():
+            output.extend(documents)
+        return output
+
+    @staticmethod
+    def _format_retrieved_documents(documents: list[Document], limit: int = 5) -> list[dict]:
+        return [
+            {
+                "content": doc.page_content,
+                "metadata": doc.metadata,
+            }
+            for doc in documents[:limit]
+        ]
 
     def _retrieve_documents(
         self,

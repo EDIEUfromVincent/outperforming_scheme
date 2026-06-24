@@ -52,6 +52,10 @@ if "active_document_id" not in st.session_state:
     st.session_state.active_document_id = None
 if "active_document_name" not in st.session_state:
     st.session_state.active_document_name = None
+if "active_document_ids" not in st.session_state:
+    st.session_state.active_document_ids = []
+if "comparison_result" not in st.session_state:
+    st.session_state.comparison_result = None
 
 
 def get_backend_status() -> dict:
@@ -59,8 +63,13 @@ def get_backend_status() -> dict:
         health_response = requests.get(f"{API_URL}/health", timeout=5)
         if health_response.status_code == 200:
             data = health_response.json()
+            features = data.get("features", {})
             return {
-                "ok": bool(data.get("features", {}).get("document_aware_query")),
+                "ok": bool(
+                    features.get("document_aware_query")
+                    and features.get("multi_document_query")
+                    and features.get("document_compare_graph")
+                ),
                 "version": data.get("version"),
                 "message": "최신 백엔드 연결됨",
             }
@@ -72,7 +81,12 @@ def get_backend_status() -> dict:
             paths = openapi_response.json().get("paths", {})
             schemas = openapi_response.json().get("components", {}).get("schemas", {})
             query_props = schemas.get("QueryRequest", {}).get("properties", {})
-            ok = "/upload-document" in paths and "document_id" in query_props
+            ok = (
+                "/upload-document" in paths
+                and "/documents/compare" in paths
+                and "document_id" in query_props
+                and "document_ids" in query_props
+            )
             return {
                 "ok": ok,
                 "version": "unknown",
@@ -147,34 +161,46 @@ with tab1:
         valid_uploaded_docs = [doc for doc in uploaded_docs if doc.get("document_id")]
         if valid_uploaded_docs:
             labels = [doc["filename"] for doc in valid_uploaded_docs]
-            default_index = 0
-            if st.session_state.active_document_id:
-                for idx, doc in enumerate(valid_uploaded_docs):
-                    if doc["document_id"] == st.session_state.active_document_id:
-                        default_index = idx
-                        break
-            selected_label = st.selectbox(
-                "우선 답변 문서",
-                labels,
-                index=default_index,
-                help="질문 답변 시 이 문서를 최우선 근거로 사용합니다.",
+            label_to_doc = dict(zip(labels, valid_uploaded_docs))
+            active_ids = st.session_state.active_document_ids or (
+                [st.session_state.active_document_id]
+                if st.session_state.active_document_id
+                else []
             )
-            selected_doc = valid_uploaded_docs[labels.index(selected_label)]
-            st.session_state.active_document_id = selected_doc["document_id"]
-            st.session_state.active_document_name = selected_doc["filename"]
-            st.caption(f"선택됨: {selected_doc['pages_count']}쪽")
+            default_labels = [
+                doc["filename"]
+                for doc in valid_uploaded_docs
+                if doc["document_id"] in active_ids
+            ] or labels[:1]
+            selected_labels = st.multiselect(
+                "우선 답변·비교 문서",
+                labels,
+                default=default_labels,
+                help="1개를 고르면 해당 문서 중심 답변, 2개 이상을 고르면 선택 문서를 함께 비교·요약합니다.",
+            )
+            selected_docs = [label_to_doc[label] for label in selected_labels]
+            st.session_state.active_document_ids = [doc["document_id"] for doc in selected_docs]
+            if selected_docs:
+                st.session_state.active_document_id = selected_docs[0]["document_id"]
+                st.session_state.active_document_name = selected_docs[0]["filename"]
+                pages = sum(int(doc.get("pages_count") or 0) for doc in selected_docs)
+                st.caption(f"선택됨: {len(selected_docs)}개 문서 · 총 {pages}쪽")
+            else:
+                st.session_state.active_document_id = None
+                st.session_state.active_document_name = None
 
         st.divider()
         
         # 파일 업로드 위젯
-        uploaded_file = st.file_uploader(
+        uploaded_files = st.file_uploader(
             "PDF/TXT/MD 파일을 선택하세요",
             type=['pdf', 'txt', 'md'],
+            accept_multiple_files=True,
             help="PDF, 교직논술, 인강 요약본(txt/md)을 업로드하면 자동으로 학습데이터에 추가됩니다"
         )
         
         # 파일이 업로드되었을 때
-        if uploaded_file is not None:
+        if uploaded_files:
             if st.button("업로드 및 처리", use_container_width=True):
                 with st.status("PDF 처리 중...", expanded=True) as status:
                     try:
@@ -184,42 +210,58 @@ with tab1:
                         # 문제1:
                         # streamlit 파일 업로드 컴포넌트 사용
                         # fastapi로 띄워진 /upload-document 엔드포인트 호출
-                        
-                        # 파일 업로드
-                        suffix = Path(uploaded_file.name).suffix.lower()
-                        mime_type = "application/pdf" if suffix == ".pdf" else "text/plain"
-                        files = {"file": (uploaded_file.name, uploaded_file, mime_type)}
-                        st.write(f"📤 파일 업로드 중: {uploaded_file.name}")
-                        
-                        response = requests.post(
-                            f"{API_URL}/upload-document", 
-                            files=files,
-                            timeout=60  # 1분 타임아웃
-                        )
-                        if response.status_code == 404 and suffix == ".pdf":
-                            st.warning("새 업로드 API가 현재 FastAPI 서버에 아직 반영되지 않아 기존 PDF 업로드 API로 다시 시도합니다.")
-                            uploaded_file.seek(0)
+
+                        uploaded_results = []
+                        uploaded_errors = []
+                        for uploaded_file in uploaded_files:
+                            suffix = Path(uploaded_file.name).suffix.lower()
+                            mime_type = "application/pdf" if suffix == ".pdf" else "text/plain"
                             files = {"file": (uploaded_file.name, uploaded_file, mime_type)}
+                            st.write(f"📤 파일 업로드 중: {uploaded_file.name}")
+
                             response = requests.post(
-                                f"{API_URL}/upload-pdf",
+                                f"{API_URL}/upload-document",
                                 files=files,
-                                timeout=60,
+                                timeout=120
                             )
-                        
-                        st.write(f"📥 응답 상태 코드: {response.status_code}")
+                            if response.status_code == 404 and suffix == ".pdf":
+                                st.warning("새 업로드 API가 현재 FastAPI 서버에 아직 반영되지 않아 기존 PDF 업로드 API로 다시 시도합니다.")
+                                uploaded_file.seek(0)
+                                files = {"file": (uploaded_file.name, uploaded_file, mime_type)}
+                                response = requests.post(
+                                    f"{API_URL}/upload-pdf",
+                                    files=files,
+                                    timeout=120,
+                                )
+
+                            st.write(f"📥 {uploaded_file.name} 응답 상태 코드: {response.status_code}")
+                            if response.status_code == 200:
+                                uploaded_results.append((uploaded_file, response.json()))
+                            else:
+                                try:
+                                    error_detail = response.json().get('detail', '알 수 없는 오류')
+                                except Exception:
+                                    error_detail = response.text or '알 수 없는 오류'
+                                uploaded_errors.append(f"{uploaded_file.name}: {error_detail}")
                         
                         #########################################################
                         
                         # 응답 처리
-                        if response.status_code == 200:
-                            result = response.json()
+                        if uploaded_results and not uploaded_errors:
                             status.update(label="✅ 처리 완료", state="complete")
-                            st.success(result["message"])
-                            st.info(f"📄 페이지 수: {result['pages_count']}")
-                            st.info(f"📦 청크 수: {result['chunks_count']}")
-                            st.session_state.active_document_id = result.get("document_id")
-                            st.session_state.active_document_name = safe_name = result.get("filename", uploaded_file.name)
-                            st.success(f"이제 질문은 우선 이 문서 기준으로 답합니다: {safe_name}")
+                        elif uploaded_results:
+                            status.update(label="⚠️ 일부 처리 완료", state="complete")
+                        else:
+                            status.update(label="❌ 처리 실패", state="error")
+                        new_document_ids = []
+                        new_names = []
+                        for uploaded_file, result in uploaded_results:
+                            st.success(f"{uploaded_file.name}: {result['message']}")
+                            st.info(f"📄 {uploaded_file.name} 페이지 수: {result['pages_count']} · 청크 수: {result['chunks_count']}")
+                            document_id = result.get("document_id")
+                            if document_id:
+                                new_document_ids.append(document_id)
+                                new_names.append(result.get("filename", uploaded_file.name))
                             if result.get("document_type") == "lecture_note":
                                 note = result.get("lecture_note") or {}
                                 learning_data = result.get("learning_data") or {}
@@ -236,13 +278,16 @@ with tab1:
                                 st.info(f"🔎 추출 방식: {methods}")
                             for warning in result.get("warnings", []):
                                 st.warning(warning)
-                        else:
-                            status.update(label="❌ 처리 실패", state="error")
-                            try:
-                                error_detail = response.json().get('detail', '알 수 없는 오류')
-                            except Exception:
-                                error_detail = response.text or '알 수 없는 오류'
-                            st.error(f"오류: {error_detail}")
+                        for error in uploaded_errors:
+                            st.error(f"오류: {error}")
+                        if new_document_ids:
+                            st.session_state.active_document_ids = new_document_ids
+                            st.session_state.active_document_id = new_document_ids[0]
+                            st.session_state.active_document_name = new_names[0]
+                            if len(new_document_ids) >= 2:
+                                st.success(f"이제 질문과 비교는 방금 올린 {len(new_document_ids)}개 문서를 함께 사용합니다.")
+                            else:
+                                st.success(f"이제 질문은 우선 이 문서 기준으로 답합니다: {new_names[0]}")
                             
                     except requests.exceptions.ConnectionError:
                         status.update(label="❌ 처리 실패", state="error")
@@ -261,6 +306,7 @@ with tab1:
         if st.button("🗑️ 대화 기록 초기화", use_container_width=True):
             st.session_state.messages = []
             st.session_state.retrieved_docs = []
+            st.session_state.comparison_result = None
             st.rerun()  # 페이지 새로고침
         
         # 사용 방법 안내
@@ -279,8 +325,50 @@ with tab1:
     # 메인 영역: 대화 인터페이스
     # ---------------------------
     st.header("💬 질문하기")
-    if st.session_state.active_document_id:
-        st.caption(f"현재 우선 문서: {st.session_state.active_document_name}")
+    selected_document_ids = st.session_state.active_document_ids or (
+        [st.session_state.active_document_id]
+        if st.session_state.active_document_id
+        else []
+    )
+    if selected_document_ids:
+        if len(selected_document_ids) == 1:
+            st.caption(f"현재 우선 문서: {st.session_state.active_document_name}")
+        else:
+            st.caption(f"현재 선택 문서: {len(selected_document_ids)}개")
+
+    if len(selected_document_ids) >= 2:
+        st.subheader("🧾 선택 문서 비교")
+        compare_prompt = st.text_area(
+            "비교 지시",
+            value="선택한 문서들의 핵심 내용, 공통점, 차이점, 임용 공부에 중요한 쟁점을 근거와 함께 비교해 주세요.",
+            height=80,
+        )
+        if st.button("선택 문서 비교·요약", type="primary", use_container_width=True):
+            try:
+                compare_response = requests.post(
+                    f"{API_URL}/documents/compare",
+                    json={
+                        "question": compare_prompt,
+                        "document_ids": selected_document_ids,
+                        "k_per_doc": 6,
+                    },
+                    timeout=240,
+                )
+                if compare_response.status_code == 200:
+                    st.session_state.comparison_result = compare_response.json()
+                else:
+                    st.error(compare_response.json().get("detail", "문서 비교 실패"))
+            except Exception as e:
+                st.error(f"문서 비교 오류: {e}")
+        if st.session_state.comparison_result:
+            result = st.session_state.comparison_result
+            st.caption(f"워크플로: {result.get('workflow', 'unknown')}")
+            st.markdown(result.get("answer", "비교 결과가 없습니다."))
+            with st.expander("문서별 요약/근거"):
+                for summary in result.get("document_summaries", []):
+                    st.markdown(f"**{summary.get('label')}**")
+                    st.write(summary.get("summary", ""))
+                    st.caption(f"주요어: {', '.join(summary.get('key_terms', []))}")
     
     # 이전 대화 기록 표시
     for message in st.session_state.messages:
@@ -311,7 +399,7 @@ with tab1:
                     f"{API_URL}/query/stream",
                     json={
                         "question": prompt,
-                        "document_id": st.session_state.active_document_id,
+                        "document_ids": selected_document_ids,
                     },
                     stream=True
                 )
@@ -342,7 +430,7 @@ with tab1:
                 f"{API_URL}/documents",
                 json={
                     "question": prompt,
-                    "document_id": st.session_state.active_document_id,
+                    "document_ids": selected_document_ids,
                 }
             )
             
