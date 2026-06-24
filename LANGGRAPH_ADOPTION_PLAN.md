@@ -27,7 +27,9 @@ LangChain은 여전히 retrieval, prompt, parser, model wrapper에 사용한다.
 
 - `langgraph_runtime.py`: 공통 runtime, in-memory checkpointer/store, thread id, health status
 - `document_compare_graph.py`: 다문서 비교를 retrieve -> summarize -> synthesize node로 분리
+- `document_ingestion_graph.py`: PDF 업로드를 extract_ocr -> classify -> quality_check -> split -> index node로 분리
 - `/documents/compare`: `thread_id`를 받을 수 있고, 응답에 `thread_id`, `trace`를 반환
+- `/upload-document`: PDF 처리 응답과 업로드 manifest에 `workflow`, `thread_id`, `trace`, `quality_report`를 반환
 - Streamlit: 비교 결과에 workflow/thread/step trace 표시
 
 아직 production-grade persistence는 아니다. 로컬 개발용 in-memory checkpointer라서 서버 재시작 후 복구는 되지 않는다. 상용화 단계에서는 Postgres/Redis/MongoDB 계열 checkpointer로 바꿔야 한다.
@@ -70,20 +72,19 @@ LangChain은 여전히 retrieval, prompt, parser, model wrapper에 사용한다.
 
 3. 문서 업로드/색인 그래프
 
-현재 업로드는 한 요청 안에서 저장, OCR, split, vector index까지 이어진다. 대용량 PDF나 OCR 실패가 생기면 요청 전체가 불안정해진다. 이 영역이 LangGraph persistence의 가장 큰 수혜자다.
+1차 반영했다. 현재 PDF 업로드는 OCR, 문서 분류, 품질 검사, 청크 분할, vector index를 LangGraph node trace로 남긴다. 다음 단계에서는 summary index, Obsidian export, 낮은 OCR 품질 page의 interrupt review를 붙여야 한다.
 
 목표 node:
 
-- save_original
-- extract_text
-- ocr_if_needed
-- quality_check
-- classify_document
-- split_sections
-- build_summary_index
-- build_vector_index
-- write_manifest
-- export_obsidian_candidate
+- save_original: FastAPI 업로드 경계에서 처리됨
+- extract_text / ocr_if_needed: `extract_ocr` node 1차 반영
+- quality_check: 1차 반영
+- classify_document: 1차 반영
+- split_sections: `split` node 1차 반영
+- build_vector_index: `index` node 1차 반영
+- build_summary_index: 미반영
+- write_manifest: FastAPI 응답/manifest에서 1차 반영
+- export_obsidian_candidate: 미반영
 
 4. OCR 품질 검수 그래프
 

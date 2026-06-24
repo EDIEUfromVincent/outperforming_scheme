@@ -38,7 +38,16 @@ def main_harness() -> int:
         doc for doc in uploaded.json().get("documents", [])
         if doc.get("document_id")
     ] if uploaded.status_code == 200 else []
-    selected_ids = [doc["document_id"] for doc in uploaded_docs[:2]]
+    selected_ids = []
+    seen_ids = set()
+    for doc in uploaded_docs:
+        document_id = doc["document_id"]
+        if document_id in seen_ids:
+            continue
+        selected_ids.append(document_id)
+        seen_ids.add(document_id)
+        if len(selected_ids) == 2:
+            break
     checks["has_two_uploaded_docs"] = len(selected_ids) >= 2
 
     compare_status = None

@@ -69,6 +69,7 @@ def get_backend_status() -> dict:
                     features.get("document_aware_query")
                     and features.get("multi_document_query")
                     and features.get("document_compare_graph")
+                    and features.get("document_ingestion_graph")
                     and features.get("langgraph_persistence")
                 ),
                 "version": data.get("version"),

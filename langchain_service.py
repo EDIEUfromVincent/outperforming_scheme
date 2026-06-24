@@ -266,92 +266,16 @@ Context:
             처리 결과 딕셔너리
         """
         try:
-            # 1. 텍스트 레이어 우선, 저품질 페이지만 OCR
-            extracted = self.ocr_service.extract_pdf(pdf_path)
-            common_metadata = self._document_metadata(pdf_path, extracted.document_id)
-            if metadata_override:
-                common_metadata.update(metadata_override)
-            if extracted.document_id in self.indexed_document_ids:
-                return {
-                    "status": "success",
-                    "message": "이미 색인된 동일 문서입니다.",
-                    "chunks_count": 0,
-                    "pages_count": len(extracted.pages),
-                    "document_id": extracted.document_id,
-                    "extraction_methods": extracted.methods,
-                    "warnings": extracted.warnings,
-                    "indexed": False,
-                }
-            documents = [
-                Document(
-                    page_content=page.text,
-                    metadata={
-                        **common_metadata,
-                        "page": page.page - 1,
-                        "page_number": page.page,
-                        "extraction_method": page.method,
-                        "ocr_confidence": page.confidence,
-                    },
-                )
-                for page in extracted.pages
-                if page.text.strip()
-            ]
-            if not documents:
-                raise ValueError("PDF에서 검색 가능한 텍스트를 추출하지 못했습니다")
-            
-            # 2. 텍스트를 작은 청크로 분할
-            splitter = RecursiveCharacterTextSplitter(
+            from document_ingestion_graph import run_pdf_ingestion_graph
+
+            return run_pdf_ingestion_graph(
+                self,
+                pdf_path=pdf_path,
+                metadata_override=metadata_override,
                 chunk_size=chunk_size,
                 chunk_overlap=chunk_overlap,
-                separators=separators or ["\n\n", "\n", "。", ". ", " ", ""],
+                separators=separators,
             )
-            chunks = splitter.split_documents(documents)
-            for index, chunk in enumerate(chunks, start=1):
-                chunk.metadata["chunk_number"] = index
-                chunk.metadata["chunk_size"] = chunk_size
-                chunk.metadata["chunk_overlap"] = chunk_overlap
-            
-            # 3. FAISS 벡터 스토어 생성 또는 업데이트
-            if self.vector_store is None:
-                # 새로 생성
-                self.vector_store = FAISS.from_documents(
-                    documents=chunks,
-                    embedding=self.embeddings
-                )
-            else:
-                # 기존 스토어에 추가
-                new_vector_store = FAISS.from_documents(
-                    documents=chunks,
-                    embedding=self.embeddings
-                )
-                self.vector_store.merge_from(new_vector_store)
-            
-            # 4. FAISS DB 로컬에 저장
-            self.vector_store.save_local(
-                folder_path=self.faiss_db_path,
-                index_name="index"
-            )
-            self.indexed_document_ids.add(extracted.document_id)
-            self._save_index_manifest()
-            
-            # 5. 검색기 및 체인 설정
-            self.retriever = self.vector_store.as_retriever(
-                search_type="mmr",
-                search_kwargs={"k": 10, "fetch_k": 30}
-            )
-            self._setup_chain()
-            
-            return {
-                "status": "success",
-                "message": f"PDF 처리 완료: {len(chunks)}개 청크 생성",
-                "chunks_count": len(chunks),
-                "pages_count": len(extracted.pages),
-                "document_id": extracted.document_id,
-                "extraction_methods": extracted.methods,
-                "warnings": extracted.warnings,
-                "indexed": True,
-                "document_type": common_metadata.get("document_type"),
-            }
             
         except Exception as e:
             return {
@@ -442,6 +366,32 @@ Context:
                 "status": "error",
                 "message": f"텍스트 자료 처리 실패: {str(e)}",
             }
+
+    def _index_chunks(self, chunks: list[Document], document_id: str) -> None:
+        if not chunks:
+            raise ValueError("색인할 청크가 없습니다")
+        if self.vector_store is None:
+            self.vector_store = FAISS.from_documents(
+                documents=chunks,
+                embedding=self.embeddings,
+            )
+        else:
+            new_vector_store = FAISS.from_documents(
+                documents=chunks,
+                embedding=self.embeddings,
+            )
+            self.vector_store.merge_from(new_vector_store)
+        self.vector_store.save_local(
+            folder_path=self.faiss_db_path,
+            index_name="index",
+        )
+        self.indexed_document_ids.add(document_id)
+        self._save_index_manifest()
+        self.retriever = self.vector_store.as_retriever(
+            search_type="mmr",
+            search_kwargs={"k": 10, "fetch_k": 30},
+        )
+        self._setup_chain()
 
     def _load_index_manifest(self) -> set[str]:
         try:
