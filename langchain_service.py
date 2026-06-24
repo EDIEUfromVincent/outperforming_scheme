@@ -248,7 +248,14 @@ Context:
     # ---------------------------
     # PDF 처리 메서드
     # ---------------------------
-    def process_pdf(self, pdf_path: str) -> Dict[str, any]:
+    def process_pdf(
+        self,
+        pdf_path: str,
+        metadata_override: dict[str, Any] | None = None,
+        chunk_size: int = 1000,
+        chunk_overlap: int = 150,
+        separators: list[str] | None = None,
+    ) -> Dict[str, any]:
         """
         PDF 파일을 처리하고 FAISS에 저장
         
@@ -262,6 +269,8 @@ Context:
             # 1. 텍스트 레이어 우선, 저품질 페이지만 OCR
             extracted = self.ocr_service.extract_pdf(pdf_path)
             common_metadata = self._document_metadata(pdf_path, extracted.document_id)
+            if metadata_override:
+                common_metadata.update(metadata_override)
             if extracted.document_id in self.indexed_document_ids:
                 return {
                     "status": "success",
@@ -292,11 +301,15 @@ Context:
             
             # 2. 텍스트를 작은 청크로 분할
             splitter = RecursiveCharacterTextSplitter(
-                chunk_size=1000,    # 청크 크기 (글자 수)
-                chunk_overlap=150,  # 청크 간 겹침 (문맥 유지용)
-                separators=["\n\n", "\n", "。", ". ", " ", ""]
+                chunk_size=chunk_size,
+                chunk_overlap=chunk_overlap,
+                separators=separators or ["\n\n", "\n", "。", ". ", " ", ""],
             )
             chunks = splitter.split_documents(documents)
+            for index, chunk in enumerate(chunks, start=1):
+                chunk.metadata["chunk_number"] = index
+                chunk.metadata["chunk_size"] = chunk_size
+                chunk.metadata["chunk_overlap"] = chunk_overlap
             
             # 3. FAISS 벡터 스토어 생성 또는 업데이트
             if self.vector_store is None:
@@ -337,6 +350,7 @@ Context:
                 "extraction_methods": extracted.methods,
                 "warnings": extracted.warnings,
                 "indexed": True,
+                "document_type": common_metadata.get("document_type"),
             }
             
         except Exception as e:
@@ -586,6 +600,79 @@ Context:
         except Exception as e:
             print(f"문서 검색 실패: {e}")
             return []
+
+    def search_mock_exam_materials(
+        self,
+        query: str,
+        limit: int = 8,
+        provider: str | None = None,
+        role: str | None = None,
+    ) -> list[dict[str, Any]]:
+        """모의고사 자료만 필터링해서 검색한다."""
+        if self.vector_store is None:
+            return []
+        try:
+            candidates = self.vector_store.similarity_search(
+                query,
+                k=max(80, limit * 30),
+            )
+            docs = []
+            for doc in candidates:
+                metadata = doc.metadata
+                if metadata.get("collection") != "mock_exam":
+                    continue
+                if provider and metadata.get("exam_provider") != provider:
+                    continue
+                if role and metadata.get("material_role") != role:
+                    continue
+                docs.append(doc)
+                if len(docs) >= limit:
+                    break
+            if not docs:
+                docs = self._lexical_mock_exam_search(query, limit, provider, role)
+            return self._format_retrieved_documents(docs, limit=limit)
+        except Exception as exc:
+            print(f"모의고사 검색 실패: {exc}")
+            return []
+
+    def _lexical_mock_exam_search(
+        self,
+        query: str,
+        limit: int,
+        provider: str | None = None,
+        role: str | None = None,
+    ) -> list[Document]:
+        if self.vector_store is None:
+            return []
+        docstore = getattr(getattr(self.vector_store, "docstore", None), "_dict", {})
+        terms = [term for term in re.split(r"\s+", query) if len(term) >= 2]
+        scored: list[tuple[int, Document]] = []
+        for doc in docstore.values():
+            metadata = doc.metadata
+            if metadata.get("collection") != "mock_exam":
+                continue
+            if provider and metadata.get("exam_provider") != provider:
+                continue
+            if role and metadata.get("material_role") != role:
+                continue
+            haystack = " ".join([
+                doc.page_content[:1200],
+                str(metadata.get("relative_path") or ""),
+                str(metadata.get("exam_provider") or ""),
+                str(metadata.get("material_role") or ""),
+            ])
+            score = sum(haystack.count(term) for term in terms)
+            if score:
+                scored.append((score, doc))
+        scored.sort(
+            key=lambda item: (
+                -item[0],
+                item[1].metadata.get("study_priority") or 99,
+                item[1].metadata.get("page_number") or 0,
+                item[1].metadata.get("chunk_number") or 0,
+            )
+        )
+        return [doc for _, doc in scored[:limit]]
 
     def compare_uploaded_documents(
         self,

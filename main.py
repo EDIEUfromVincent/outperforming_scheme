@@ -26,6 +26,13 @@ from agents.supervisor_agent import SupervisorAgent
 from learning_service import LearningService
 from langgraph_runtime import langgraph_status
 from lecture_note_parser import looks_like_lecture_note, parse_lecture_note
+from exam_material_ingestion import (
+    DEFAULT_MOCK_EXAM_DIR,
+    infer_mock_exam_metadata,
+    list_mock_exam_pdfs,
+    mock_exam_splitter_config,
+    summarize_ingestion_results,
+)
 
 
 APP_VERSION = "2026-06-24-langgraph-runtime"
@@ -122,6 +129,20 @@ class LibraryResponse(BaseModel):
     results: list
 
 
+class MockExamIngestRequest(BaseModel):
+    root: str | None = None
+    offset: int = 0
+    limit: int | None = None
+    dry_run: bool = False
+
+
+class MockExamSearchRequest(BaseModel):
+    query: str
+    limit: int = 8
+    provider: str | None = None
+    role: str | None = None
+
+
 class ComparisonRequest(BaseModel):
     subject: str | None = None
     grade_band: str | None = None
@@ -181,6 +202,8 @@ def read_root():
             "upload": "/upload-pdf",
             "upload_document": "/upload-document",
             "ingest_library": "/ingest-library",
+            "ingest_mock_exams": "/ingest-mock-exams",
+            "search_mock_exams": "/mock-exams/search",
             "query_stream": "/query/stream",
             "documents": "/documents",
             "document_compare": "/documents/compare",
@@ -207,6 +230,7 @@ def health():
             "langgraph_store": graph_status["has_store"],
             "upload_document": True,
             "lecture_note_ingestion": True,
+            "mock_exam_ingestion": True,
         },
         "langgraph": graph_status,
     }
@@ -429,6 +453,73 @@ def ingest_library():
         "skipped_count": skipped,
         "failed_count": failed,
         "results": results,
+    }
+
+
+@app.post("/ingest-mock-exams")
+def ingest_mock_exams(request: MockExamIngestRequest):
+    """임용 모의고사 PDF 폴더를 작은 청크와 시험 메타데이터로 색인한다."""
+    root = Path(request.root).expanduser() if request.root else DEFAULT_MOCK_EXAM_DIR
+    if not root.exists():
+        raise HTTPException(status_code=404, detail=f"임용 모의고사 폴더를 찾지 못했습니다: {root}")
+    pdfs = list_mock_exam_pdfs(root)
+    offset = max(0, request.offset)
+    pdfs = pdfs[offset:]
+    if request.limit is not None:
+        pdfs = pdfs[: max(0, request.limit)]
+    splitter_config = mock_exam_splitter_config()
+    if request.dry_run:
+        preview = [
+            {
+                "filename": pdf.name,
+                "relative_path": str(pdf.relative_to(root)),
+                "metadata": infer_mock_exam_metadata(pdf, root),
+            }
+            for pdf in pdfs[:50]
+        ]
+        return {
+            "status": "dry_run",
+            "root": str(root),
+            "offset": offset,
+            "files_count": len(pdfs),
+            "splitter": splitter_config,
+            "preview": preview,
+        }
+
+    results = []
+    for pdf in pdfs:
+        metadata = infer_mock_exam_metadata(pdf, root)
+        result = langchain_service.process_pdf(
+            str(pdf),
+            metadata_override=metadata,
+            **splitter_config,
+        )
+        results.append({
+            "filename": pdf.name,
+            "relative_path": str(pdf.relative_to(root)),
+            **metadata,
+            **result,
+        })
+    summary = summarize_ingestion_results(results)
+    return {
+        **summary,
+        "root": str(root),
+        "offset": offset,
+        "splitter": splitter_config,
+        "results": results,
+    }
+
+
+@app.post("/mock-exams/search")
+def search_mock_exams(request: MockExamSearchRequest):
+    """색인된 임용 모의고사 자료만 검색한다."""
+    return {
+        "documents": langchain_service.search_mock_exam_materials(
+            query=request.query,
+            limit=max(1, min(request.limit, 20)),
+            provider=request.provider,
+            role=request.role,
+        )
     }
 
 
