@@ -30,6 +30,7 @@ def main() -> int:
     parser.add_argument("--offset", type=int, default=0)
     parser.add_argument("--limit", type=int)
     parser.add_argument("--supplemental-only", action="store_true")
+    parser.add_argument("--retag-existing", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--report", type=Path, default=Path("study_folder_ingest_report.json"))
     args = parser.parse_args()
@@ -48,6 +49,13 @@ def main() -> int:
         selected = []
 
     splitter_config = study_splitter_config()
+    if args.retag_existing:
+        service = LangChainService()
+        report = retag_existing_study_documents(service, root)
+        write_report(args.report, report)
+        print(json.dumps(report, ensure_ascii=False, indent=2))
+        return 0 if report["failed_count"] == 0 else 1
+
     if args.dry_run:
         report = {
             "status": "dry_run",
@@ -227,12 +235,16 @@ def infer_study_metadata(path: str | Path, root: str | Path = DEFAULT_STUDY_DIR)
     category_code, category_name = study_category(relative)
     subject = subject_from_text(search_text)
     role = material_role(search_text)
+    application = application_profile(category_code, role, search_text)
     return {
-        "collection": "study_folder",
+        "collection": "exam_application",
+        "source_collection": "study_folder",
+        "knowledge_layer": "exam_application",
         "document_type": document_type(category_code, role),
         "study_category_code": category_code,
         "study_category": category_name,
         "material_role": role,
+        **application,
         "subject": subject,
         "source_folder": str(base),
         "relative_path": relative_text,
@@ -301,6 +313,76 @@ def build_report(
         "results": results,
         "supplemental_results": supplemental_results,
     }
+
+
+def retag_existing_study_documents(service: LangChainService, root: Path) -> dict[str, Any]:
+    if service.vector_store is None:
+        return {
+            "status": "error",
+            "root": str(root),
+            "retagged_chunks": 0,
+            "failed_count": 1,
+            "message": "FAISS vector store를 찾지 못했습니다.",
+        }
+    docstore = getattr(getattr(service.vector_store, "docstore", None), "_dict", {})
+    changed = 0
+    failed = 0
+    category_counts: dict[str, int] = {}
+    use_counts: dict[str, int] = {}
+    for document in docstore.values():
+        metadata = document.metadata
+        source = metadata.get("source") or ""
+        relative = metadata.get("relative_path")
+        if not is_study_folder_document(metadata, source):
+            continue
+        try:
+            path = Path(source)
+            if relative:
+                relative_path = Path(relative)
+            else:
+                try:
+                    relative_path = path.relative_to(root)
+                except ValueError:
+                    relative_path = Path(path.name)
+            inferred = infer_study_metadata(path, root)
+            metadata.update({
+                key: value
+                for key, value in inferred.items()
+                if value is not None
+            })
+            metadata["relative_path"] = normalize(str(relative_path))
+            metadata["retagged_at"] = "2026-06-25"
+            category = metadata.get("study_category") or "unknown"
+            use = metadata.get("exam_application_use") or "unknown"
+            category_counts[category] = category_counts.get(category, 0) + 1
+            use_counts[use] = use_counts.get(use, 0) + 1
+            changed += 1
+        except Exception:
+            failed += 1
+    if changed:
+        service.vector_store.save_local(
+            folder_path=service.faiss_db_path,
+            index_name="index",
+        )
+    return {
+        "status": "success" if failed == 0 else "partial_success",
+        "root": str(root),
+        "retagged_chunks": changed,
+        "failed_count": failed,
+        "collection": "exam_application",
+        "knowledge_layer": "exam_application",
+        "category_counts": category_counts,
+        "exam_application_use_counts": use_counts,
+    }
+
+
+def is_study_folder_document(metadata: dict[str, Any], source: str) -> bool:
+    return (
+        metadata.get("collection") in {"study_folder", "exam_application"}
+        or metadata.get("source_collection") == "study_folder"
+        or "정리/" in source
+        or "정리/" in source
+    )
 
 
 def process_supplemental_material(
@@ -476,17 +558,59 @@ def material_role(text: str) -> str:
 
 def document_type(category_code: str | None, role: str) -> str:
     category_map = {
-        "00": "practice_material",
-        "01": "subject_theory",
-        "02": "basic_theory",
-        "03": "curriculum_summary",
-        "04": "past_exam_analysis",
-        "05": "essay_material",
-        "08": "exam_day_material",
-        "10": "general_curriculum",
+        "00": "exam_application_practice",
+        "01": "exam_application_subject_theory",
+        "02": "exam_application_basic_theory",
+        "03": "exam_application_curriculum",
+        "04": "exam_application_past_exam_analysis",
+        "05": "exam_application_essay",
+        "08": "exam_application_exam_day",
+        "09": "exam_application_output_table",
+        "10": "exam_application_general_curriculum",
     }
-    base = category_map.get(category_code, "study_material")
+    base = category_map.get(category_code, "exam_application_material")
     return f"{base}_{role}" if role not in {"reference", "summary"} else base
+
+
+def application_profile(category_code: str | None, role: str, text: str) -> dict[str, Any]:
+    if role == "question":
+        use = "practice_question"
+    elif role == "explanation":
+        use = "answer_explanation"
+    elif role == "analysis":
+        use = "past_exam_pattern"
+    elif role == "summary":
+        use = "recall_output"
+    else:
+        use = "exam_reference"
+    if category_code == "04":
+        use = "past_exam_pattern"
+    elif category_code == "05":
+        use = "essay_application"
+    elif category_code == "08":
+        use = "exam_day_recall"
+    elif category_code == "09":
+        use = "output_table"
+
+    axis = "curriculum_to_exam"
+    if any(token in text for token in ["모형", "단계"]):
+        axis = "teaching_model_output"
+    elif any(token in text for token in ["성취기준", "내용체계"]):
+        axis = "standard_to_item"
+    elif any(token in text for token in ["답안", "해설", "정답"]):
+        axis = "answer_basis"
+    elif any(token in text for token in ["기출", "분석"]):
+        axis = "past_exam_pattern"
+    elif "논술" in text:
+        axis = "essay_answer"
+
+    return {
+        "exam_application_use": use,
+        "application_axis": axis,
+        "retrieval_intent": "exam_application",
+        "exam_relevance": "high",
+        "is_exam_application": True,
+    }
 
 
 def study_priority(category_code: str | None, role: str) -> int:

@@ -1016,8 +1016,232 @@ Context:
                     return filtered
             return self._documents_from_uploaded_file(document_id=document_id)
         if self.retriever is not None:
-            return self.retriever.invoke(question)[:k]
+            docs = self.retriever.invoke(question)[:k]
+            if self._is_exam_application_query(question):
+                application_docs = self._retrieve_exam_application_documents(question, k=k)
+                docs = self._merge_documents([*application_docs, *docs], limit=k)
+            return docs
         return self.vector_store.similarity_search(question, k=k)
+
+    def _retrieve_exam_application_documents(self, question: str, k: int = 6) -> list[Document]:
+        if self.vector_store is None:
+            return []
+        docs: list[Document] = []
+        query_subject = self._query_subject(question)
+        if query_subject:
+            try:
+                docs.extend(
+                    self.vector_store.similarity_search(
+                        question,
+                        k=max(k * 8, 50),
+                        filter={"collection": "exam_application", "subject": query_subject},
+                    )
+                )
+            except Exception:
+                pass
+        try:
+            docs.extend(
+                self.vector_store.similarity_search(
+                    question,
+                    k=max(k * 10, 80),
+                    filter={"collection": "exam_application"},
+                )
+            )
+        except Exception:
+            pass
+        docs.extend(self._lexical_exam_application_search(question, limit=max(k * 10, 80)))
+        docs.extend(self._metadata_exam_application_candidates(question, limit=max(k * 20, 200)))
+        return self._rank_exam_application_documents(question, self._merge_documents(docs, limit=max(k * 12, 120)))[:k]
+
+    def _lexical_exam_application_search(self, query: str, limit: int = 8) -> list[Document]:
+        if self.vector_store is None:
+            return []
+        docstore = getattr(getattr(self.vector_store, "docstore", None), "_dict", {})
+        terms = [term for term in re.split(r"\s+", query) if len(term) >= 2]
+        scored: list[tuple[int, Document]] = []
+        for doc in docstore.values():
+            metadata = doc.metadata
+            if metadata.get("collection") != "exam_application":
+                continue
+            haystack = " ".join([
+                doc.page_content[:1400],
+                str(metadata.get("relative_path") or ""),
+                str(metadata.get("document_type") or ""),
+                str(metadata.get("material_role") or ""),
+                str(metadata.get("exam_application_use") or ""),
+                str(metadata.get("application_axis") or ""),
+            ])
+            score = sum(haystack.count(term) for term in terms)
+            if score:
+                scored.append((score, doc))
+        scored.sort(
+            key=lambda item: (
+                -item[0],
+                item[1].metadata.get("study_priority") or 99,
+                item[1].metadata.get("page_number") or 0,
+                item[1].metadata.get("chunk_number") or 0,
+            )
+        )
+        return [doc for _, doc in scored[:limit]]
+
+    def _metadata_exam_application_candidates(self, question: str, limit: int = 80) -> list[Document]:
+        if self.vector_store is None:
+            return []
+        query_subject = self._query_subject(question)
+        desired_uses = self._desired_application_uses(question)
+        terms = [term for term in re.split(r"\s+", question) if len(term) >= 2]
+        docstore = getattr(getattr(self.vector_store, "docstore", None), "_dict", {})
+        scored: list[tuple[int, Document]] = []
+        for doc in docstore.values():
+            metadata = doc.metadata
+            if metadata.get("collection") != "exam_application":
+                continue
+            haystack = " ".join([
+                doc.page_content[:1000],
+                str(metadata.get("relative_path") or ""),
+                str(metadata.get("subject") or ""),
+                str(metadata.get("exam_application_use") or ""),
+                str(metadata.get("application_axis") or ""),
+            ])
+            score = min(30, sum(haystack.count(term) for term in terms))
+            if query_subject and metadata.get("subject") == query_subject:
+                score += 120
+            if (
+                metadata.get("exam_application_use") in desired_uses
+                or metadata.get("application_axis") in desired_uses
+            ):
+                score += 90
+            if score > 0:
+                scored.append((score, doc))
+        scored.sort(
+            key=lambda item: (
+                -item[0],
+                item[1].metadata.get("study_priority") or 99,
+                item[1].metadata.get("page_number") or 0,
+                item[1].metadata.get("chunk_number") or 0,
+            )
+        )
+        return [doc for _, doc in scored[:limit]]
+
+    def _rank_exam_application_documents(self, question: str, documents: list[Document]) -> list[Document]:
+        query_subject = self._query_subject(question)
+        desired_uses = self._desired_application_uses(question)
+        terms = [term for term in re.split(r"\s+", question) if len(term) >= 2]
+        ranked: list[tuple[int, Document]] = []
+        for doc in documents:
+            metadata = doc.metadata
+            haystack = " ".join([
+                doc.page_content[:1400],
+                str(metadata.get("relative_path") or ""),
+                str(metadata.get("document_type") or ""),
+                str(metadata.get("exam_application_use") or ""),
+                str(metadata.get("application_axis") or ""),
+            ])
+            score = min(50, sum(haystack.count(term) for term in terms))
+            subject = metadata.get("subject")
+            if query_subject and subject == query_subject:
+                score += 500
+            elif query_subject and subject is None:
+                score -= 80
+            elif query_subject and subject != query_subject:
+                score -= 1000
+            matches_desired_use = (
+                metadata.get("exam_application_use") in desired_uses
+                or metadata.get("application_axis") in desired_uses
+            )
+            if matches_desired_use:
+                score += 320
+            elif desired_uses:
+                score -= 220
+            if metadata.get("study_priority") == 1:
+                score += 20
+            elif metadata.get("study_priority") == 2:
+                score += 10
+            ranked.append((score, doc))
+        ranked.sort(
+            key=lambda item: (
+                -item[0],
+                item[1].metadata.get("study_priority") or 99,
+                item[1].metadata.get("page_number") or 0,
+                item[1].metadata.get("chunk_number") or 0,
+            )
+        )
+        return [doc for _, doc in ranked]
+
+    @staticmethod
+    def _query_subject(question: str) -> str | None:
+        subject_keywords = {
+            "국어": "국어",
+            "수학": "수학",
+            "사회": "사회",
+            "과학": "과학",
+            "도덕": "도덕",
+            "실과": "실과",
+            "체육": "체육",
+            "음악": "음악",
+            "미술": "미술",
+            "영어": "영어",
+            "통합": "통합교과",
+            "총론": "총론",
+            "창체": "창의적 체험활동",
+            "창의적": "창의적 체험활동",
+            "논술": "교직논술",
+            "교직논술": "교직논술",
+        }
+        for keyword, subject in subject_keywords.items():
+            if keyword in question:
+                return subject
+        return None
+
+    @staticmethod
+    def _desired_application_uses(question: str) -> set[str]:
+        compact = re.sub(r"\s+", "", question)
+        uses: set[str] = set()
+        if any(term in compact for term in ["기출", "출제", "나올", "경향"]):
+            uses.add("past_exam_pattern")
+        if any(term in compact for term in ["답안", "해설", "정답"]):
+            uses.update({"answer_explanation", "answer_basis"})
+        if any(term in compact for term in ["문제", "문항", "연습"]):
+            uses.add("practice_question")
+        if any(term in compact for term in ["논술", "서론", "본론", "결론"]):
+            uses.update({"essay_application", "essay_answer"})
+        if any(term in compact for term in ["모형", "단계"]):
+            uses.update({"output_table", "teaching_model_output"})
+        if any(term in compact for term in ["암기", "인출", "스제트", "청킹", "정리"]):
+            uses.add("recall_output")
+        if any(term in compact for term in ["시험장", "최종", "오답"]):
+            uses.add("exam_day_recall")
+        return uses
+
+    @staticmethod
+    def _is_exam_application_query(question: str) -> bool:
+        compact = re.sub(r"\s+", "", question)
+        application_terms = [
+            "시험", "임용", "기출", "문제", "문항", "답안", "해설", "적용",
+            "나올", "출제", "암기", "인출", "모형", "단계", "논술", "스제트",
+            "실전", "연습", "정리",
+        ]
+        return any(term in compact for term in application_terms)
+
+    @staticmethod
+    def _merge_documents(documents: list[Document], limit: int) -> list[Document]:
+        merged: list[Document] = []
+        seen = set()
+        for doc in documents:
+            metadata = doc.metadata
+            key = (
+                metadata.get("document_id"),
+                metadata.get("page_number"),
+                metadata.get("chunk_number"),
+                doc.page_content[:80],
+            )
+            if key in seen:
+                continue
+            seen.add(key)
+            merged.append(doc)
+            if len(merged) >= limit:
+                break
+        return merged
 
     def _documents_from_uploaded_file(self, document_id: str) -> List[Document]:
         """FAISS와 manifest가 어긋난 경우 업로드 폴더의 원문 PDF를 직접 읽는다."""
